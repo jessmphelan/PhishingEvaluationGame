@@ -10,11 +10,9 @@ const DemographicForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log({ age, gender, vanderbilt_association });
-  };
-
-  const goToEmailEvaluation = () => {
     navigate("/email_evaluation");
   };
+
 
   return (
     <form onSubmit={handleSubmit}>
