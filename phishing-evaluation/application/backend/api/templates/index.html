@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phishing Game Database</title>
+</head>
+<body>
+    <h1>Welcome to the Phishing Evalaution Database Collections</h1>
+    <p>(Accessed through our Flask API)</p>
+    <ul>
+        {% for collection in collections %}
+        <li>{{ collection }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
