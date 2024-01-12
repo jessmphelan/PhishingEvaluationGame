@@ -3,4 +3,5 @@ react-router-dom
 flask
 flask-cors
 mongodb
-pymongo==3.11.1
+Pymongo
+Flask-Pymongo

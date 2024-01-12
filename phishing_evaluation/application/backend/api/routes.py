@@ -1,4 +1,5 @@
 from flask import request, jsonify, render_template
+from flask_pymongo import PyMongo
 
 
 def init_routes(app, mongo):

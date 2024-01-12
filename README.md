@@ -38,3 +38,8 @@ Data Privacy: Properly handling and storing user information
 
 
 
+# How to Run 
+
+Open terminal from root: 
+
+` python3 run.py `
