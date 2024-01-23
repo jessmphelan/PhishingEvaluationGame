@@ -40,14 +40,18 @@ Data Privacy: Properly handling and storing user information
 
 # How to Run 
 
-1. Activate virtual environment 
+1. Create virtual environment 
 
-` source venv/bin/activate `
+` python3 -m venv myvenv `
 
-2. Install dependencies 
+2. Activate virtual environment 
 
-` pip3 install -r requirements.txt `
+` source myvenv/bin/activate `
 
-3. Open terminal from root directory and run: 
+3. Install dependencies 
 
-` python3 run.py `
+` pip install -r requirements.txt `
+
+4. Open terminal from root directory and run: 
+
+` python run.py `
