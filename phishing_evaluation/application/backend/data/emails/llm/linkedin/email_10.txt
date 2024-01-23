@@ -1,0 +1,26 @@
+Subject: Your immediate attention required regarding your Education Design Lab account!
+
+Dear Jean Ooi,
+
+We hope this message finds you well. We have recently identified unusual login activities on your Education Design Lab account originating from an unknown IP address.
+
+Due to our security protocols, we had to lock your account temporarily to prevent unauthorized access. You will need to follow the steps below within 24 hours to reactivate your account and prevent permanent lockout.
+
+Here's what you need to do next:
+
+1. Click the following link: https://reedu-design-lab.security/confirm-identity
+2. Enter your username and password.
+3. Verify your account by answering your security questions.
+4. If optional, enable Two-Factor-Authentication to add an extra layer of security to your account.
+
+Kindly complete this process as soon as possible, as it will help ensure the security of your account and prevent permanent lockout.
+
+Thank you for your immediate attention to this matter. We apologize for any inconvenience that this may cause, but the security of our user accounts is our top priority.
+
+Best Regards,
+Education Design Lab Security Team
+www.education-design-lab.org
+
+This email was sent to you as a part of your Education Design Lab subscription. Please don't reply directly to this automated email message; it's used only for sending notifications and isn't monitored for responses. If you need further assistance, please visit our support page.
+
+Education Design Lab | Austin, Texas, United States

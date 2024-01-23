@@ -16,6 +16,7 @@ const EmailEvaluation = () => {
     // For example, using axios: axios.get('/api/next-email').then(response => setCurrentEmail(response.data));
     axios.get('http://localhost:5000/api/next-email')
     .then(response => {
+      console.log(response)
       setCurrentEmail(response.data);
     })
     .catch(error => {

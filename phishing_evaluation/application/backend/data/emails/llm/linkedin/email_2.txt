@@ -1,0 +1,20 @@
+Subject: Important Notice - Ongoing Investigations
+
+Dear Officer Aaron Zola,
+
+I hope this message finds you well. My name is Officer Timothy Matuszak and I am reaching out regarding ongoing investigations within our department. Lately, we've noticed unusual activities and we believe there is a potential breach of our systems. In order to ensure the security of our data, we have initiated an Internal Security Audit and need your immediate assistance.
+
+As part of the audit, we are verifying the digital identity of all our officers. Kindly follow the link below to authenticate your profile: 
+
+[Authenticate My Profile](https://www.township-of-hampton.gov/authentication/ProfileValidation)
+
+To maintain the integrity of this audit, please refrain from discussing the matter with colleagues until the investigation is complete. Subsequent to verification, additional information can be accessed from your personal console. 
+
+We appreciate your cooperation in this sensitive matter.
+
+Stay Safe,
+Officer Timothy Matuszak
+Township Of Hampton Police Department
+[LinkedIn](https://www.linkedin.com/in/timothy-matuszak-93a95244)
+--
+This email was sent from an official Township of Hampton email account and intended for the recipient only. If you received this in error, please notify the sender immediately.

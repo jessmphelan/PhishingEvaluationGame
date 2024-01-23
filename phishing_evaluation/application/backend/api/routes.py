@@ -1,5 +1,8 @@
 from flask import request, jsonify, render_template
 from flask_pymongo import PyMongo
+import os
+from pathlib import Path
+from bson.json_util import dumps
 
 
 def init_routes(app, mongo):
@@ -19,6 +22,48 @@ def init_routes(app, mongo):
         }
         mongo.db.emails.insert_one(email)
         return "Email added!"
+    
+    @app.route('/add_all_emails')
+    def add_all_emails():
+        # Directory path: go up one level and then into 'data/llm'
+        directory_path = Path(__file__).parent.parent / 'data' / 'emails'/ 'llm' / 'linkedin'
+
+        # Initialize a counter for email IDs
+        email_id_counter = 1
+
+        # Iterate over each file in the directory
+        for file in directory_path.iterdir():
+            if file.is_file():
+                # Read the content of the file
+                with open(file, 'r') as f:
+                    content = f.read()
+
+                # Create the email dictionary
+                email = {
+                    "email_id": f"email_{email_id_counter}",
+                    "content": content,
+                    "type": "Fake",
+                    "source": "LLM"
+                }
+
+                # Insert into MongoDB
+                mongo.db.emails.insert_one(email)
+
+                # Increment the email ID counter
+                email_id_counter += 1
+
+        return f"{email_id_counter - 1} emails added!"
+    
+    @app.route('/api/next-email')
+    def get_next_email():
+        # Assuming 'emails' is your collection in MongoDB
+        # Fetch one email from the collection
+        email = mongo.db.emails.find_one({}, {'_id': 0})  # {'_id': 0} omits the MongoDB ID from the result
+
+        if email:
+            return dumps(email)
+        else:
+            return jsonify({"error": "No emails available"}), 404
 
     @app.route('/get_emails')
     def get_emails():
@@ -32,6 +77,15 @@ def init_routes(app, mongo):
         Category 2 condition: user response if they believe email is phishing email or legitamate email
         """
         # Here you can access the data sent from the frontend using request.form or request.json
-        user_data = request.json  # Example for JSON data
-        # Still need to implement the logic here to handle user data (LLM vs Human AND Phishing vs Legit)
-        return jsonify({"message": "User data received"})
+        data = request.json
+        email_id = data.get('emailId')
+        user_response = data.get('response')
+
+        if not email_id or not user_response:
+            return jsonify({"error": "Missing emailId or response"}), 400
+
+        # Save the response to the database
+        # This is a placeholder; you'll need to implement the actual save logic
+        # For example: mongo.db.responses.insert_one({'email_id': email_id, 'response': user_response})
+
+        return jsonify({"message": "Response saved successfully"})

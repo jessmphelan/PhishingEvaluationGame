@@ -40,6 +40,14 @@ Data Privacy: Properly handling and storing user information
 
 # How to Run 
 
-Open terminal from root: 
+1. Activate virtual environment 
+
+` source venv/bin/activate `
+
+2. Install dependencies 
+
+` pip3 install -r requirements.txt `
+
+3. Open terminal from root directory and run: 
 
 ` python3 run.py `

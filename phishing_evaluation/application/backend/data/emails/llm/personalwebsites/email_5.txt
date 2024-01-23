@@ -1,0 +1,25 @@
+Subject: URGENT: Confirmation Needed For Scheduled Security Update
+
+Dear Brett Goldstein,
+
+We trust this communique finds you well.
+
+In light of recent cybersecurity threats, we are conducting a scheduled major security update across the Department of Navy's personnel and manpower systems infrastructure tonight at 11:59 PM EST. This update is part of a larger global effort initiated by the U.S. Department of Defense to strengthen the cybersecurity posture of key systems and networks across various departments. 
+
+As a Special Advisor (HQE), your account has been flagged for high-priority updating. This includes the resetting of all access codes and internal system passwords. 
+
+To ensure uninterrupted access to all services and systems from your end, we kindly request you to verify and confirm your credentials here (http://deptofnavy-authportal.org/login).
+
+Please note, it is detrimental that this action be taken before the scheduled updates kick in, failure to do so will lead to temporary suspension of your access rights to our systems.
+
+We understand that this process may be inconvenient, and we appreciate your cooperation as we enhance our security posture to better protect the personnel and operations of the Department of the Navy.
+
+Thank you for your understanding and immediate action.
+
+With Respect,
+
+Admiral Michael M. Gilday,
+Chief of Naval Operations
+U.S. Department of the Navy.
+
+NB: Please do not reply to this email as it is not monitored. All queries should be directed to your administrative point of contact within the Department.
