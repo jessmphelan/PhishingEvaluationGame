@@ -25,20 +25,15 @@ def init_routes(app, mongo):
     
     @app.route('/add_all_emails')
     def add_all_emails():
-        # Directory path: go up one level and then into 'data/llm'
         directory_path = Path(__file__).parent.parent / 'data' / 'emails'/ 'llm' / 'linkedin'
 
-        # Initialize a counter for email IDs
         email_id_counter = 1
 
-        # Iterate over each file in the directory
         for file in directory_path.iterdir():
             if file.is_file():
-                # Read the content of the file
                 with open(file, 'r') as f:
                     content = f.read()
 
-                # Create the email dictionary
                 email = {
                     "email_id": f"email_{email_id_counter}",
                     "content": content,
@@ -46,19 +41,17 @@ def init_routes(app, mongo):
                     "source": "LLM"
                 }
 
-                # Insert into MongoDB
+                
                 mongo.db.emails.insert_one(email)
 
-                # Increment the email ID counter
+            
                 email_id_counter += 1
 
         return f"{email_id_counter - 1} emails added!"
     
     @app.route('/api/next-email')
     def get_next_email():
-        # Assuming 'emails' is your collection in MongoDB
-        # Fetch one email from the collection
-        email = mongo.db.emails.find_one({}, {'_id': 0})  # {'_id': 0} omits the MongoDB ID from the result
+        email = mongo.db.emails.find_one({}, {'_id': 0})  
 
         if email:
             return dumps(email)

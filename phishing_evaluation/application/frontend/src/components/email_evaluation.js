@@ -30,7 +30,7 @@ const EmailEvaluation = () => {
   };
 
   const handleNextEmail = () => {
-    // save the current response to the database
+    // Save the current response to the database
     axios.post('http://localhost:5000/api/save-response', { emailId: currentEmail?.id, response: userResponse })
       .then(() => {
         fetchNextEmail();
