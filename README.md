@@ -58,8 +58,6 @@ Terminal 1 (to start React app):
 
 ` cd frontend `
 
-` npm install `
-
 ` npm start `
 
 
