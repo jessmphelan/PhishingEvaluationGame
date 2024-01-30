@@ -5,12 +5,16 @@ const DemographicForm = () => {
   const [age, setAge] = useState('');
   const [gender, setGender] = useState('');
   const [vanderbilt_association, setAssociation] = useState('');
+  const [error, setError] = useState('');
   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log({ age, gender, vanderbilt_association });
-    navigate("/email_evaluation");
+    if(age === '' || gender === '' || vanderbilt_association === '')
+      setError('Required field left empty');
+    else
+      navigate("/email_evaluation");
   };
 
 
@@ -44,6 +48,9 @@ const DemographicForm = () => {
       </div>
       <div>
         <button type="submit">Submit</button>
+      </div>
+      <div>
+        <label>{error}</label>
       </div>
     </form>
     </div>
