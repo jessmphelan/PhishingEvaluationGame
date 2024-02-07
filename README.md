@@ -56,7 +56,7 @@ Data Privacy: Properly handling and storing user information
 
 Terminal 1 (to start React app): 
 
-` cd frontend `
+` cd phishing_evaluation/applications/frontend `
 
 ` npm start `
 
