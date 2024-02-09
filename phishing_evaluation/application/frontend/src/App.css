@@ -82,3 +82,50 @@ button[type="submit"]:hover {
   padding: 10px;
   width: 150px; /* Adjust width as needed */
 }
+
+.label {
+  display: block;
+  font-size: larger;
+  color: black;
+  padding: 5px;
+  text-align: left;
+}
+
+.input {
+  font-size: larger;
+  padding: 5px;
+  margin: 2px;
+}
+
+.btn {
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  font-size: larger;
+  display: block;
+  padding: 5px;
+  margin: 10px auto;
+  justify-content: center;
+}
+
+.messages {
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  display: block;
+  background-color: red;
+  color: white;
+  width: fit-content;
+  height: 50px;
+  padding: 5px;
+}
+
+.success {
+  display: block;
+  color: black;
+  width: fit-content;
+  height: 50px;
+  padding: 5px;
+}
