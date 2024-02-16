@@ -11,8 +11,16 @@ const DemographicForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log({ age, gender, vanderbilt_association });
+    console.log("got here");
+
+    //reset error if it is already full
+    if(error !== '')
+      setError('');
+
+    //set error if any of the fields are empty
     if(age === '' || gender === '' || vanderbilt_association === '')
-      setError('Required field left empty');
+      setError('Error: Required field left empty');
+    //otherwise navigate to the next page
     else
       navigate("/email_evaluation");
   };

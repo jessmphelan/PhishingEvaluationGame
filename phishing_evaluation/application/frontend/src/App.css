@@ -5,7 +5,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 90%; /* Reduced to 90% for better margins on small screens */
+  max-width: 600px; /* Max width for larger screens */
+  background-color: #fff; /* Background color for contrast */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .show-form-button {
@@ -13,45 +18,58 @@
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  background-color: #007bff; /* More vibrant button color */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.show-form-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
 }
 
 /* Styling for the form elements */
 form {
-  background-color: #f2f2f2;
+  background-color: #f8f9fa; /* Slightly lighter than the original for subtlety */
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   display: inline-block;
   margin-top: 20px;
 }
 
 form div {
-  margin-bottom: 10px;
+  margin-bottom: 15px; /* Increased spacing for better readability */
 }
 
 label {
   margin-right: 10px;
+  font-weight: bold; /* Make labels bold */
 }
 
 input[type="number"],
 input[type="text"],
 select {
-  padding: 8px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  padding: 10px; /* More padding for better field visibility */
+  border: 1px solid #ccc; /* Lighter border color */
+  border-radius: 5px; /* Rounded borders */
+  width: calc(100% - 22px); /* Full width for better usability */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
 }
 
 button[type="submit"] {
-  padding: 10px 20px;
-  background-color: #4CAF50;
+  padding: 12px 24px; /* Larger button for easier interaction */
+  background-color: #28a745; /* More vibrant submit button color */
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 button[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #218838; /* Slightly darker on hover */
 }
 
 .email-evaluation-container {
@@ -59,10 +77,12 @@ button[type="submit"]:hover {
 }
 
 .email-container {
-  border: 1px solid #ccc;
+  border: 1px solid #dee2e6; /* Lighter border color for subtlety */
   padding: 20px;
   margin: 20px auto;
-  width: 80%; /* Adjust width as needed */
+  width: 80%;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
 }
 
 .evaluation-section {
@@ -80,5 +100,14 @@ button[type="submit"]:hover {
   display: block;
   margin-bottom: 10px;
   padding: 10px;
-  width: 150px; /* Adjust width as needed */
+  width: auto; /* Auto width for content adaptability */
+  background-color: #17a2b8; /* Different color for distinction */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 5px; /* Rounded borders */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.column button:hover {
+  background-color: #138496; /* Darker shade on hover */
 }
