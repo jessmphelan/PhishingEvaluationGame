@@ -5,33 +5,63 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  /*width: 100%;*/
 }
+
+html, body {
+  height: 100%; 
+  margin: 0; 
+  color: #ffffff;
+  background-color: #121f3d; 
+  font-family: 'Arial Black', Gadget, sans-serif;
+ }
 
 .show-form-button {
   margin: 20px;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  background-color: #1c4072;
+  color: white;
+  border: none;
+  border-radius: 5px;
 }
 
+.show-form-button:hover {
+  background-color: #2a5a9e; 
+}
+
+
 /* Styling for the form elements */
-form {
+/* form {
   background-color: #f2f2f2;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: inline-block;
   margin-top: 20px;
+} */
+
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-top: 20px;
 }
 
 form div {
-  margin-bottom: 10px;
-}
+  margin-bottom: 15px;
+ }
 
-label {
+
+ label {
+  color: #121f3d;
   margin-right: 10px;
-}
+  font-weight: bold;
+ }
 
 input[type="number"],
 input[type="text"],
@@ -39,19 +69,22 @@ select {
   padding: 8px;
   border: 1px solid #ddd;
   border-radius: 4px;
+  width: calc(100% - 24px);
 }
 
 button[type="submit"] {
   padding: 10px 20px;
-  background-color: #4CAF50;
+  /* background-color: #4CAF50; */
+  background-color: #1c4072;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #2a5a9e;
 }
 
 .email-evaluation-container {
@@ -63,6 +96,8 @@ button[type="submit"]:hover {
   padding: 20px;
   margin: 20px auto;
   width: 80%; /* Adjust width as needed */
+  background-color: #e8eaf6; 
+  border-radius: 8px;
 }
 
 .evaluation-section {
@@ -80,7 +115,14 @@ button[type="submit"]:hover {
   display: block;
   margin-bottom: 10px;
   padding: 10px;
-  width: 150px; /* Adjust width as needed */
+  width: 150px; 
+  background-color: #1c4072; 
+  color: white;
+  border-radius: 5px;
+}
+
+.column button:hover {
+  background-color: #2a5a9e; 
 }
 
 .label {
