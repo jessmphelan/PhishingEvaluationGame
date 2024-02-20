@@ -14,9 +14,9 @@ const EmailEvaluation = () => {
   const fetchNextEmail = () => {
     // Fetch the next email from your database or API
     // For example, using axios: axios.get('/api/next-email').then(response => setCurrentEmail(response.data));
-    axios.get('http://localhost:5000/api/next-email')
+    axios.get('http://127.0.0.1:5000/api/next-email')
     .then(response => {
-      console.log(response)
+      console.log("Received email data:", response.data);
       setCurrentEmail(response.data);
     })
     .catch(error => {
@@ -31,7 +31,7 @@ const EmailEvaluation = () => {
 
   const handleNextEmail = () => {
     // Save the current response to the database
-    axios.post('http://localhost:5000/api/save-response', { emailId: currentEmail?.id, response: userResponse })
+    axios.post('http://127.0.0.1:5000/api/save-response', { emailId: currentEmail?.id, response: userResponse })
       .then(() => {
         fetchNextEmail();
         setUserResponse({ evaluatorType: '', emailType: '' });
@@ -39,6 +39,7 @@ const EmailEvaluation = () => {
       .catch(error => {
         console.error('Error saving response:', error);
       });
+    //fetchNextEmail();
   };
 
   return (
@@ -47,17 +48,27 @@ const EmailEvaluation = () => {
       <div style={{ position: 'absolute', top: 0, right: 0 }}>
         <Timer />
       </div>
-      <div className="email-container">
+      {/* <div className="email-container">
         {currentEmail ? currentEmail.content : 'Loading email...'}
+      </div> */}
+      <div className="email-container">
+        {currentEmail ? 
+          currentEmail.content.split('\n').map((line, index) => (
+            <React.Fragment key={index}>
+              {line}
+              <br />
+            </React.Fragment>
+          ))
+          : 'Loading email...'}
       </div>
       <div className="evaluation-section">
         <div className="column">
-          <h2>Evaluator Type</h2>
+          <h3>Evaluator Type</h3>
           <button onClick={() => handleResponse('evaluatorType', 'LLM')}>LLM</button>
           <button onClick={() => handleResponse('evaluatorType', 'Human')}>Human</button>
         </div>
         <div className="column">
-          <h2>Email Type</h2>
+          <h3>Email Type</h3>
           <button onClick={() => handleResponse('emailType', 'Phishing Email')}>Phishing Email</button>
           <button onClick={() => handleResponse('emailType', 'Real Email')}>Real Email</button>
         </div>

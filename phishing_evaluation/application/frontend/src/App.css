@@ -97,6 +97,7 @@ button[type="submit"]:hover {
   margin: 20px auto;
   width: 80%; /* Adjust width as needed */
   background-color: #e8eaf6; 
+  color: black;
   border-radius: 8px;
 }
 
@@ -171,3 +172,4 @@ button[type="submit"]:hover {
   height: 50px;
   padding: 5px;
 }
+

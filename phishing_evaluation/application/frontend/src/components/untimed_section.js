@@ -13,7 +13,7 @@ const UntimedSection = () => {
   const fetchNextEmail = () => {
     // Fetch the next email from your database or API
     // For example, using axios: axios.get('/api/next-email').then(response => setCurrentEmail(response.data));
-    axios.get('http://localhost:5000/api/next-email')
+    axios.get('http://127.0.0.1:5000/api/next-email')
     .then(response => {
       console.log(response)
       setCurrentEmail(response.data);
@@ -30,7 +30,7 @@ const UntimedSection = () => {
 
   const handleNextEmail = () => {
     // save the current response to the database
-    axios.post('http://localhost:5000/api/save-response', { emailId: currentEmail?.id, response: userResponse })
+    axios.post('http://127.0.0.1:5000/api/save-response', { emailId: currentEmail?.id, response: userResponse })
       .then(() => {
         fetchNextEmail();
         setUserResponse({emailType: '' });
