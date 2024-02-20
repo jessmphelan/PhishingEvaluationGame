@@ -40,3 +40,6 @@ yarn-error.log*
 
 
 phishing_evaluation/application/frontend/node_modules/.cache/
+
+
+phishing_evaluation/application/Backend/data/scripts/gpt_email_generation/.env
