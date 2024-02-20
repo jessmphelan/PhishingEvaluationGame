@@ -30,10 +30,13 @@ yarn-debug.log*
 yarn-error.log*
 
 # Backend specific
-/Phishing-Evaluation/Application/Backend/__pycache__/
-/Phishing-Evaluation/Application/Backend/*.pyc
-/Phishing-Evaluation/Application/Backend/*.pyo
+# /Phishing-Evaluation/Application/Backend/__pycache__/
+# /Phishing-Evaluation/Application/Backend/*.pyc
+# /Phishing-Evaluation/Application/Backend/*.pyo
 
 # IDE specific (uncomment or add as necessary)
 # .vscode/
 # .idea/
+
+
+phishing_evaluation/application/frontend/node_modules/.cache/
