@@ -52,6 +52,15 @@ Data Privacy: Properly handling and storing user information
 
 ` pip install -r requirements.txt `
 
-4. Open terminal from root directory and run: 
+4. Open two terminals from root directory 
+
+Terminal 1 (to start React app): 
+
+` cd phishing_evaluation/applications/frontend `
+
+` npm start `
+
+
+Terminal 2 (to start the database)
 
 ` python run.py `
