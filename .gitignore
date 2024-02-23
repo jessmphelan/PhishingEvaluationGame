@@ -43,3 +43,8 @@ phishing_evaluation/application/frontend/node_modules/.cache/
 
 
 phishing_evaluation/application/Backend/data/scripts/gpt_email_generation/.env
+
+phishing_evaluation/application/Backend/data/scripts/gpt_email_generation/
+
+phishing_evaluation/application/Backend/data/scripts/gpt_email_generation/kaggle_datasets/job_postings.csv
+phishing_evaluation/application/Backend/data/scripts/gpt_email_generation/kaggle_datasets/list_of_univs.csv

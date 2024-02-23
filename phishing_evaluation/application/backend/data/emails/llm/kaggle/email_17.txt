@@ -1,0 +1,28 @@
+Subject: Urgent: Discrepancy in Blending Component
+
+Dear [Your Name],
+
+I trust this email finds you in good health. My name is Dr. Ayesha Siddiqui, Head of Quality Assurance department at Kerry's Central Division. We've been experiencing recent inconsistencies in our product batches that have been raising internal alarms over here.
+
+Having analysed data from many shifts, we have identified the issue origin to be from one of the blending component ratios being utilized during your shift. This might simply be due to the outdated blending measure metrics in your copy of our Production SOPs.
+
+I understand how instrumental your role as a Blending Operator is at Kerry, and your attention to detail is often commendable. This is why I am certain this has been a case of procedural oversight.
+
+Given the urgency, I have attached the updated SOPs in this email along with an urgent revision in some existing recipes. We need you to verify and implement these changes in your upcoming shifts. 
+
+Please review the attachment. It should match with your current list in the SAP software. It is crucial that you implement these changes from the next shift onwards to avoid any significant quality issues with our products.
+
+This message is meant for you only, kindly do not share the attached document as we are still working out the communication chain. We trust your skills for fulfilling this task accurately and efficiently.
+
+If you face any difficulties in accessing the attached document, or have any questions, please don't hesitate to let me know.
+
+In advance, thank you for your prompt attention to this matter.
+
+Best Regards,
+
+Dr. Ayesha Siddiqui
+Head of Quality Assurance
+Kerry Central Division
+asiddiqui@kerry-central-division.com
+
+Attachment: Updated_Blending_SOPs_Recipe_Directory.pdf

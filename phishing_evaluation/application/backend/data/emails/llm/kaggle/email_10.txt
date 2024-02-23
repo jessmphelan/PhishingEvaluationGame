@@ -1,0 +1,25 @@
+Subject: Urgent Notice: Tamkang University Account Security Upgrade Required
+
+Dear Alex Liao,
+
+I hope this email finds you well. My name is Jenny Lee and I am a member of Tamkang University IT Support Centre.
+
+Given the high surge in cyber-attacks on educational institutions recently, we have decided to implement an upgraded security system for all student portal accounts to ensure that the academic records and personal details of our students stay secure. 
+
+We are currently in the process of rolling out this upgrade and require all our students to update their credentials on our system to lessen the risk of vulnerabilities.
+
+Please click the following link to update your account by tonight. The link will guide you through the process of updating your password and security question.
+
+[Secure Tamkang University Portal](http://tamkanguniversity-upgradewebsite.edu.tw)
+
+Considering your ongoing projects and assignments, it is crucial that you update your information as early as possible. We wouldn't want you to lose access to your account due to the security upgrade.
+
+Thank you for your understanding and cooperation in this. 
+
+If you face any issues during this process, please feel free to get back to us. We are here to assist you.
+
+Kind regards,
+
+Jenny Lee
+Tamkang University IT Support Centre
+jenny.lee@tkusupport.com

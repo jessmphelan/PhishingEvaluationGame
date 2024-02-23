@@ -1,0 +1,25 @@
+Subject: Oracle NetSuite Upgrade - Mandatory Action Required
+
+Dear David,
+
+We trust that you are enjoying your experience with Oracle NetSuite and are continuously striving to make it even better. Following our commitment towards innovation and enhancing our customers' experience, we are excited to bring to you our latest upgrade, version 2022.1, which includes enhanced features and increased efficiency.
+
+Please note, applying these upgrades is mandatory for all Oracle NetSuite accounts. We appreciate your immediate attention to this matter to ensure uninterrupted service.
+
+Click here to access our upgrade portal:
+www.OracleNetSuite.com/upgrade 
+
+After logging in, please head to the 'System Upgrades' section and follow the prompts.
+
+In case of any difficulties, our dedicated support team can provide immediate assistance. A change log that can aid you in understanding the new features in more detail will also be available in the portal after the upgrade.
+
+Please note that failing to apply these changes within the next 48 hours could lead to issues with your Oracle NetSuite account. 
+
+We understand that you might be busy with your studies at Oregon Graduate Institute of Science and Technology, hence we regret for any inconvenience this might cause.
+
+Thank you for your understanding and cooperation. We look forward to you experiencing our new and advanced features. 
+
+Best regards,
+Oracle NetSuite System Upgrades Team
+Oracle Corporation
+support@oraclesupport-upgrades.com
