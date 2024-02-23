@@ -24,9 +24,10 @@ const EmailEvaluation = () => {
     });
   };
 
-  const handleResponse = (field, value) => {
+  const handleResponse = (field, value, BtnID) => {
     setUserResponse({ ...userResponse, [field]: value });
     // Optionally, you can also send this response to your database here
+    document.getElementById(BtnID).style.backgroundColor = '#2a5a9e'; // Change the color of the button when clicked
   };
 
   const handleNextEmail = () => {
@@ -64,13 +65,13 @@ const EmailEvaluation = () => {
       <div className="evaluation-section">
         <div className="column">
           <h3>Evaluator Type</h3>
-          <button onClick={() => handleResponse('evaluatorType', 'LLM')}>LLM</button>
-          <button onClick={() => handleResponse('evaluatorType', 'Human')}>Human</button>
+          <button id="LLMBtn" onClick={() => handleResponse('evaluatorType', 'LLM', 'LLMBtn')}>LLM</button>
+          <button id="HumanBtn" onClick={() => handleResponse('evaluatorType', 'Human', 'HumanBtn')}>Human</button>
         </div>
         <div className="column">
           <h3>Email Type</h3>
-          <button onClick={() => handleResponse('emailType', 'Phishing Email')}>Phishing Email</button>
-          <button onClick={() => handleResponse('emailType', 'Real Email')}>Real Email</button>
+          <button id="PhishBtn" onClick={() => handleResponse('emailType', 'Phishing Email', 'PhishBtn')}>Phishing Email</button>
+          <button id="RealBtn" onClick={() => handleResponse('emailType', 'Real Email', 'RealBtn')}>Real Email</button>
         </div>
       </div>
       <button onClick={handleNextEmail}>Next Email</button>
