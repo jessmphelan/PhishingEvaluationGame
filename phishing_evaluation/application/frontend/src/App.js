@@ -7,6 +7,7 @@ import CreateAccountForm from './components/create_account.js';
 import DemographicForm from './components/demographic_form.js';
 import EmailEvaluation from './components/email_evaluation.js';
 import UntimedSection from './components/untimed_section.js';
+import Score from './components/score.js';
 import Timer from './components/timer.js';
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/demographic_form" element={<DemographicForm />} />
           <Route path="/email_evaluation" element={<EmailEvaluation />} />
           <Route path="/untimed_section" element={<UntimedSection />} />
+          <Route path="/score" element={<Score />} />
           <Route path="/timer" element={<Timer />} />
           {/* Other routes */}
         </Routes>

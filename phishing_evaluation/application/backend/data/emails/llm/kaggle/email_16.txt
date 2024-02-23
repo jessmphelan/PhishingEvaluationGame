@@ -1,0 +1,31 @@
+Subject: Important: ManTech Job Application Follow-Up – Action Required
+
+Dear John Doe,
+
+I hope this email finds you well. My name is Sarah Robertson, and I am a human resources executive from ManTech International Corporation.
+
+The reason for this email is to bring to your attention that some essential documents pertaining to your recent job application for the Information system security officer (ISSO) post were missing. 
+
+Due to the urgency given the large volume of applications we are processing, we request that you log into our secure portal to confirm some of your personal details. It's also an opportunity for you to verify your qualifications and the documents you've submitted. This step is fundamental to proceed with your application, and we appreciate your immediate attention.
+
+Please follow this link to access the secure portal:
+
+www.ManTech-CareersOnline.com/Login
+
+To recap, the missing paperwork includes documentation supporting your knowledge of current security tools, hardware/software security implementation, communication protocols, encryption techniques/tools, and your familiarity with NIST and CMS security documentation.
+
+While on the portal, could you also kindly provide evidence of the IT duties you performed during your previous internships? Understanding your hands-on experience, will allow us to better assess your viability for the ISSO role. We are impressed with your dedication towards achieving the CISSP certification and it would be great if you could update us on your progress on the same.
+
+We appreciate your prompt attention to this matter as we are eager to move forward with the next steps in the application process, given the impressive skills and dedication you've shown.
+
+If you have any queries or run into trouble accessing the site, please don't hesitate to contact me directly at sarah.robertson@mantech-hr.com.
+
+Thanks in advance, John, and we're looking forward to working with you.
+
+Best Regards,
+
+Sarah Robertson,
+HR Executive,
+ManTech International Corporation,
+2251 Corporate Park Drive,
+Herndon, VA 20171

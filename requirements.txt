@@ -7,3 +7,4 @@ Pymongo
 Flask-Pymongo
 python-dotenv
 openai
+pandas
