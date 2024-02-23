@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const UntimedSection = () => {
   const [currentEmail, setCurrentEmail] = useState(null);
   const [userResponse, setUserResponse] = useState({ emailType: '', userTextResponse: '' });
+  const [emailCount, setEmailCount] = useState(0);
+  const navigate = useNavigate();
 
-  // Fetch the first email when the component mounts
   useEffect(() => {
     fetchNextEmail();
   }, []);
 
   const fetchNextEmail = () => {
-    // Fetch the next email from your database or API
-    // For example, using axios: axios.get('/api/next-email').then(response => setCurrentEmail(response.data));
-    axios.get('http://127.0.0.1:5000/api/next-email')
+    axios.get('http://127.0.0.1:5000/api/next_email')
     .then(response => {
       console.log(response)
       setCurrentEmail(response.data);
@@ -25,12 +25,10 @@ const UntimedSection = () => {
 
   const handleResponse = (field, value) => {
     setUserResponse({ ...userResponse, [field]: value });
-    // Optionally, you can also send this response to your database here
   };
 
   const handleNextEmail = () => {
-    // save the current response to the database
-    axios.post('http://127.0.0.1:5000/api/save-response', { emailId: currentEmail?.id, response: userResponse })
+    axios.post('http://127.0.0.1:5000/api/save_response', { emailId: currentEmail.email_id, response: userResponse })
       .then(() => {
         fetchNextEmail();
         setUserResponse({emailType: '' });
@@ -38,6 +36,15 @@ const UntimedSection = () => {
       .catch(error => {
         console.error('Error saving response:', error);
       });
+
+
+    setEmailCount(prevCount => {
+      const updatedCount = prevCount + 1;
+      if (updatedCount >= 5) {
+        navigate('/score'); 
+      }
+      return updatedCount;
+    });
   };
 
   return (
@@ -45,7 +52,14 @@ const UntimedSection = () => {
       <h1>Phishing Email Evaluation Untimed Section</h1>
 
       <div className="email-container">
-        {currentEmail ? currentEmail.content : 'Loading email...'}
+        {currentEmail ? 
+          currentEmail.content.split('\n').map((line, index) => (
+            <React.Fragment key={index}>
+              {line}
+              <br />
+            </React.Fragment>
+          ))
+          : 'Loading email...'}
       </div>
 
       <div className="evaluation-section">

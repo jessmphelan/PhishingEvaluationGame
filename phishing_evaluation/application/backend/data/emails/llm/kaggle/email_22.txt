@@ -1,0 +1,24 @@
+Subject: Official Document Update: Change in IT Protocols
+From: IT_Department@unilasalle.edu.mx 
+
+Dear Mr. Gomez,
+
+I trust this message finds you well. 
+
+In our continuous endeavor to upgrade our Information Technology infrastructure at Universidad La Salle, our department has noticed that there is an inconsistency with the regional lead technical data on file for Compucom Systems, Inc. We have noticed that this inconsistency may be related to the involvement of a former employee who had unauthorized access to our system.
+
+Given your significant role as a Regional Lead Technician, we want to confirm that the information we have is consistent with your current records and does not affect the responsibilities assigned to you. To ensure that the integrity of our network and your related tasks are not compromised, we kindly request your immediate attention to this matter.
+
+Please click the following secure link to confirm the validity of the records we have on file. 
+
+[unilasalle.mx/verify/it/71728]
+
+We understand and appreciate the crucial role you play in maintaining the highest standards of service and customer satisfaction at Compucom Systems, Inc. We're confident that with your attention to this matter, we can quickly resolve any discrepancy and reinforce the security on our network. 
+
+I hope we can depend on you for a swift response to this request so that any potential impact on our operations can be minimized.
+
+Cordially,
+
+Humberto Santillan
+Director of IT,
+Universidad La Salle.

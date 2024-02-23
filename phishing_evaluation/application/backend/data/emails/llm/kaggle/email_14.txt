@@ -1,0 +1,21 @@
+Subject: Congratulations, Your Application Stands Out!
+
+Dear Unnamed,
+
+I hope this email finds you well. I am reaching out to you on behalf of our recruiting team from San Bernardino, CA.
+
+After thoroughly reviewing your application for the Oracle Database Administrator contract-based position on LinkedIn, we were impressed by your degree pursuits in Computer Information Systems and your extensive experience as an Oracle Database Administrator. Your technical communication skills, strong analytical and troubleshooting abilities, experience with shell scripts, Linux and Windows operating systems, and your familiarity with Oracle DB design and report generation stood out to us amongst a pool of very competitive candidates. We eagerly want to move ahead with discussing potential opportunities with you.
+
+For the next step in this process, we require you to fill out a pre-interview form to ascertain informations such as your availability, preferred pay scale, and any adjustments that might be essential based on your skills and preferences. This will help us facilitate a smooth interview process.
+
+You can access the form by clicking here: pre-interview.sanbernardino.oraclecareer.net
+
+Please complete this form as soon as possible to move forward with the application process.
+
+Looking forward to hearing from you.
+
+
+Best regards,
+Human Resources
+Your Oracle Career, San Bernardino, CA
+career.hr@sanbernardino.oraclecareer.net
