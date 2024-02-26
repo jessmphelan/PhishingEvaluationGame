@@ -6,22 +6,29 @@ import axios from 'axios';
 const EmailEvaluation = () => {
   const [currentEmail, setCurrentEmail] = useState(null);
   const [userResponse, setUserResponse] = useState({ evaluatorType: '', emailType: '' });
+  const [emailCount, setEmailCount] = useState(0); 
+  const [startTime, setStartTime] = useState(null);
   const navigate = useNavigate();
 
+  useEffect(() => {
+    if (emailCount < 10) {
+      fetchNextEmail();
+    } else {
+      // After 10 emails have been evaluated, navigate to the untimed_section
+      navigate('/untimed_section');
+    }
+  }, [emailCount, navigate]); // Depend on emailCount to trigger the effect
 
   const handleTimerEnd = () => {
-    navigate('/untimed_section'); 
+    setEmailCount(count => count + 1);
   };
-
-  useEffect(() => {
-    fetchNextEmail();
-  }, []);
 
   const fetchNextEmail = () => {
     axios.get('http://127.0.0.1:5000/api/next_email')
     .then(response => {
       console.log("Received email data:", response.data);
       setCurrentEmail(response.data);
+      setStartTime(Date.now());
     })
     .catch(error => {
       console.error('Error fetching email:', error);
@@ -29,7 +36,9 @@ const EmailEvaluation = () => {
   };
 
   const handleResponse = (field, value, BtnID) => {
-    setUserResponse({ ...userResponse, [field]: value });
+    const endTime = Date.now(); // End time- when selection is made
+    const elapsedTime = (endTime - startTime) / 1000; // Elapsed time in seconds
+    setUserResponse({ ...userResponse, [field]: value, elapsedTime: elapsedTime });
     document.getElementById(BtnID).style.backgroundColor = '#2a5a9e'; // Change the color of the button when clicked
   };
 
@@ -39,15 +48,17 @@ const EmailEvaluation = () => {
       alert("Please make a selection for both evaluator type and email type.");
       return; // Stop the function if either response is missing
     }
-    
-    // Save the current response to the database
     axios.post('http://127.0.0.1:5000/api/save_response', {
       emailId: currentEmail.email_id,
       response: userResponse
     })
       .then(() => {
-        fetchNextEmail();
-        setUserResponse({ evaluatorType: '', emailType: '' }); // Resetting the user response for the next evaluation
+        setUserResponse({ evaluatorType: '', emailType: '', elapsedTime: null }); // Reset user responses for the next email
+        if (emailCount < 9) {
+          setEmailCount(current => current + 1); // Manually progress to the next email
+        } else {
+          navigate('/untimed_section'); // Navigate away after the last email
+        }
       })
       .catch(error => {
         console.error('Error saving response:', error);
@@ -59,7 +70,7 @@ const EmailEvaluation = () => {
       <h1>Phishing Email Evaluation</h1>
       <div style={{ position: 'absolute', top: 0, right: 0 }}>
         {/* <Timer /> */}
-        <Timer initialMinute={1} onTimerEnd={handleTimerEnd} width={300} height={20} strokeWidth={4} />
+        <Timer key={emailCount} initialMinute={0.5} onTimerEnd={handleTimerEnd} width={300} height={20} strokeWidth={4} />
       </div>
       {/* <div className="email-container">
         {currentEmail ? currentEmail.content : 'Loading email...'}
@@ -86,7 +97,7 @@ const EmailEvaluation = () => {
           <button id="RealBtn" onClick={() => handleResponse('emailType', 'Real Email', 'RealBtn')}>Real Email</button>
         </div>
       </div>
-      <button onClick={handleNextEmail}>Next Email</button>
+      <button className="startEvaluationButton" onClick={handleNextEmail}>Next Email</button>
     </div>
   );
 };
