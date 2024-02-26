@@ -6,6 +6,7 @@ const UntimedSection = () => {
   const [currentEmail, setCurrentEmail] = useState(null);
   const [userResponse, setUserResponse] = useState({ emailType: '', userTextResponse: '' });
   const [emailCount, setEmailCount] = useState(0);
+  const [startTime, setStartTime] = useState(Date.now()); 
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -17,6 +18,7 @@ const UntimedSection = () => {
     .then(response => {
       console.log(response)
       setCurrentEmail(response.data);
+      setStartTime(Date.now());
     })
     .catch(error => {
       console.error('Error fetching email:', error);
@@ -24,7 +26,9 @@ const UntimedSection = () => {
   };
 
   const handleResponse = (field, value) => {
-    setUserResponse({ ...userResponse, [field]: value });
+    const endTime = Date.now(); // End time- when selection is made
+    const elapsedTime = (endTime - startTime) / 1000; // Elapsed time in seconds
+    setUserResponse({ ...userResponse, [field]: value , elapsedTime: elapsedTime });
   };
 
   const handleNextEmail = () => {

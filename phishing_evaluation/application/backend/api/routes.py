@@ -117,7 +117,8 @@ def init_routes(app, mongo):
         for response in user_responses:
             total_count += 1
             if 'email_id' in response:
-                email = mongo.db.emails.find_one({"_id": ObjectId(response['email_id'])})
+                # 'email_id' is our custom identifier field that we're using to retrieve the email name, not the MongoDB '_id' field
+                email = mongo.db.emails.find_one({"email_id": response['email_id']})
                 if email and 'emailType' in response and 'evaluatorType' in response:
                     is_correct_type = response['emailType'] == email.get('type')
                     is_correct_source = response['evaluatorType'] == email.get('source')
