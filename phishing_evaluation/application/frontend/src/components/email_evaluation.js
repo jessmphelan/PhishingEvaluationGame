@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const EmailEvaluation = () => {
   const [currentEmail, setCurrentEmail] = useState(null);
-  const [userResponse, setUserResponse] = useState({ evaluatorType: '', emailType: '' });
+  const [userResponse, setUserResponse] = useState({ source: '', type: '' });
   const [emailCount, setEmailCount] = useState(0); 
   const [startTime, setStartTime] = useState(null);
   const navigate = useNavigate();
@@ -44,7 +44,7 @@ const EmailEvaluation = () => {
 
 
   const handleNextEmail = () => {
-    if (!userResponse.evaluatorType || !userResponse.emailType) {
+    if (!userResponse.source || !userResponse.type) {
       alert("Please make a selection for both evaluator type and email type.");
       return; // Stop the function if either response is missing
     }
@@ -53,7 +53,7 @@ const EmailEvaluation = () => {
       response: userResponse
     })
       .then(() => {
-        setUserResponse({ evaluatorType: '', emailType: '', elapsedTime: null }); // Reset user responses for the next email
+        setUserResponse({ source: '', type: '', elapsedTime: null }); // Reset user responses for the next email
         if (emailCount < 9) {
           setEmailCount(current => current + 1); // Manually progress to the next email
         } else {
@@ -87,14 +87,14 @@ const EmailEvaluation = () => {
       </div>
       <div className="evaluation-section">
         <div className="column">
-          <h3>Evaluator Type</h3>
-          <button id="LLMBtn" onClick={() => handleResponse('evaluatorType', 'LLM', 'LLMBtn')}>LLM</button>
-          <button id="HumanBtn" onClick={() => handleResponse('evaluatorType', 'Human', 'HumanBtn')}>Human</button>
+          <h3>Source Type</h3>
+          <button id="LLMBtn" onClick={() => handleResponse('source', 'LLM', 'LLMBtn')}>LLM</button>
+          <button id="HumanBtn" onClick={() => handleResponse('source', 'Human', 'HumanBtn')}>Human</button>
         </div>
         <div className="column">
           <h3>Email Type</h3>
-          <button id="PhishBtn" onClick={() => handleResponse('emailType', 'Phishing Email', 'PhishBtn')}>Phishing Email</button>
-          <button id="RealBtn" onClick={() => handleResponse('emailType', 'Real Email', 'RealBtn')}>Real Email</button>
+          <button id="PhishBtn" onClick={() => handleResponse('type', 'Phishing Email', 'PhishBtn')}>Phishing Email</button>
+          <button id="RealBtn" onClick={() => handleResponse('type', 'Real Email', 'RealBtn')}>Real Email</button>
         </div>
       </div>
       <button className="startEvaluationButton" onClick={handleNextEmail}>Next Email</button>
