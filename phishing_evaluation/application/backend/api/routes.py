@@ -114,19 +114,30 @@ def init_routes(app, mongo):
         correct_count = 0
         total_count = 0
 
+        print('Fetching user responses...')
         for response in user_responses:
             total_count += 1
+            print(f'Response #{total_count}: {dumps(response)}')
+
             if 'email_id' in response:
                 # 'email_id' is our custom identifier field that we're using to retrieve the email name, not the MongoDB '_id' field
+                print(f"Querying for email_id: {response['email_id']}")
                 email = mongo.db.emails.find_one({"email_id": response['email_id']})
-                if email and 'emailType' in response and 'evaluatorType' in response:
-                    is_correct_type = response['emailType'] == email.get('type')
-                    is_correct_source = response['evaluatorType'] == email.get('source')
-                    
+                if email and 'response' in response and 'type' in response['response'] and 'source' in response['response']:
+                    is_correct_type = response['response']['type'] == email.get('type')
+                    is_correct_source = response['response']['source'] == email.get('source')
+                    print(f"Correct Type: {is_correct_type}, Correct Source: {is_correct_source}")  # Log comparison results
+
+                
                     if is_correct_type and is_correct_source:
                         correct_count += 1
+
+                else: 
+                    print(f"No email found for email_id: {response['email_id']}")
             else:
-                print("No emailId found in response:", response)
+                print(f"No emailId found in response #{total_count}: {dumps(response)}")
+
+        print(f"Total count: {total_count}, Correct count: {correct_count}")  
 
         # Calculate score
         if total_count > 0:

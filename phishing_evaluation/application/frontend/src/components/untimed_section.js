@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const UntimedSection = () => {
   const [currentEmail, setCurrentEmail] = useState(null);
-  const [userResponse, setUserResponse] = useState({ emailType: '', userTextResponse: '' });
+  const [userResponse, setUserResponse] = useState({ type: '', userTextResponse: '' });
   const [emailCount, setEmailCount] = useState(0);
   const [startTime, setStartTime] = useState(Date.now()); 
   const navigate = useNavigate();
@@ -35,7 +35,7 @@ const UntimedSection = () => {
     axios.post('http://127.0.0.1:5000/api/save_response', { emailId: currentEmail.email_id, response: userResponse })
       .then(() => {
         fetchNextEmail();
-        setUserResponse({emailType: '' });
+        setUserResponse({type: '' });
       })
       .catch(error => {
         console.error('Error saving response:', error);
@@ -70,9 +70,9 @@ const UntimedSection = () => {
          <div className="form-group">
             <label>Email Type:</label>
             <select 
-              value={userResponse.emailType} 
+              value={userResponse.type} 
               aria-label="Select Email Type" 
-              onChange={e => handleResponse('emailType', e.target.value)}
+              onChange={e => handleResponse('type', e.target.value)}
             >
               <option value="">Select...</option>
               <option value="Phishing">Phishing</option>
