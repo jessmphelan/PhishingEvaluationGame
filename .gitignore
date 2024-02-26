@@ -38,7 +38,7 @@ yarn-error.log*
 # .vscode/
 # .idea/
 
-
+phishing_evaluation/application/frontend/node_modules/
 phishing_evaluation/application/frontend/node_modules/.cache/
 
 
