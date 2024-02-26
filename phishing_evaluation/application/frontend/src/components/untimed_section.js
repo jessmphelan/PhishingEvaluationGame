@@ -26,8 +26,8 @@ const UntimedSection = () => {
   };
 
   const handleResponse = (field, value) => {
-    const endTime = Date.now(); // End time- when selection is made
-    const elapsedTime = (endTime - startTime) / 1000; // Elapsed time in seconds
+    const endTime = Date.now(); 
+    const elapsedTime = (endTime - startTime) / 1000; 
     setUserResponse({ ...userResponse, [field]: value , elapsedTime: elapsedTime });
   };
 
