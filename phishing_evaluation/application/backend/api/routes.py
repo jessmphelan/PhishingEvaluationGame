@@ -22,15 +22,15 @@ def init_routes(app, mongo):
         email = {
             "subject": "Test Email",
             "content": "This is a test email.",
-            "type": "Legitimate",
+            "type": "Benign Email",
             "source": "Human"
         }
         mongo.db.emails.insert_one(email)
         return "Email added!"
     
-    @app.route('/add_all_emails')
+    @app.route('/add_llm_emails')
     @cross_origin()
-    def add_all_emails():
+    def add_llm_emails():
         directory_path = Path(__file__).parent.parent / 'data' / 'emails'/ 'llm' / 'linkedin'
 
         email_id_counter = 1
@@ -45,6 +45,60 @@ def init_routes(app, mongo):
                     "content": content,
                     "type": "Phishing Email",
                     "source": "LLM"
+                }
+
+                
+                mongo.db.emails.insert_one(email)
+
+            
+                email_id_counter += 1
+
+        return f"{email_id_counter - 1} emails added!"
+    
+    @app.route('/add_benign_emails')
+    @cross_origin()
+    def add_benign_emails():
+        directory_path = Path(__file__).parent.parent / 'data' / 'emails'/ 'human' / 'benign'
+
+        email_id_counter = 26
+
+        for file in directory_path.iterdir():
+            if file.is_file():
+                with open(file, 'r') as f:
+                    content = f.read()
+
+                email = {
+                    "email_id": f"email_{email_id_counter}",
+                    "content": content,
+                    "type": "Benign Email",
+                    "source": "Human"
+                }
+
+                
+                mongo.db.emails.insert_one(email)
+
+            
+                email_id_counter += 1
+
+        return f"{email_id_counter - 1} emails added!"
+    
+    @app.route('/add_phishing_emails')
+    @cross_origin()
+    def add_phishing_emails():
+        directory_path = Path(__file__).parent.parent / 'data' / 'emails'/ 'human' / 'phishing'
+
+        email_id_counter = 40
+
+        for file in directory_path.iterdir():
+            if file.is_file():
+                with open(file, 'r') as f:
+                    content = f.read()
+
+                email = {
+                    "email_id": f"email_{email_id_counter}",
+                    "content": content,
+                    "type": "Phishing Email",
+                    "source": "Human"
                 }
 
                 
