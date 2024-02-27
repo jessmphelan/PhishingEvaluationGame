@@ -12,7 +12,7 @@ const NCS6 = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log({NC1, NC2, NC3, NC4, NC5, NC6 });
-    navigate("/instructions");
+    navigate("/email_evaluation");
   };
 
 

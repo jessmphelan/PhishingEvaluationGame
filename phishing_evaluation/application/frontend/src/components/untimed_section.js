@@ -65,7 +65,7 @@ const UntimedSection = () => {
           ))
           : 'Loading email...'}
       </div>
-
+      <h4>Please select the type of email you believe this is, and provide a brief explanation as to why. </h4>
       <div className="evaluation-section">
          <div className="form-group">
             <label>Email Type:</label>
@@ -75,23 +75,28 @@ const UntimedSection = () => {
               onChange={e => handleResponse('type', e.target.value)}
             >
               <option value="">Select...</option>
-              <option value="Phishing">Phishing</option>
-              <option value="Real">Real</option>
+              <option value="Phishing Email">Phishing Email</option>
+              <option value="Real Email">Real Email</option>
             </select>
 
         </div>
         <div className="form-group">
             <label>Your Response:</label>
-            <input 
+            <textarea 
+                value={userResponse.userTextResponse} 
+                onChange={e => handleResponse('userTextResponse', e.target.value)}
+                rows="4" // Adjust the number of rows as needed to change the height
+                style={{width: '300px'}}
+            />
+            {/* <input 
                 type="text" 
                 value={userResponse.userTextResponse} 
                 onChange={e => handleResponse('userTextResponse', e.target.value)}
                 rows="4"
-            />
-
-    </div>
+            /> */}
+        </div>
       </div>
-      <button aria-label="Next Email" onClick={handleNextEmail}>Next Email</button>
+      <button className="startEvaluationButton" aria-label="Next Email" onClick={handleNextEmail}>Next Email</button>
     </div>
   );
 };

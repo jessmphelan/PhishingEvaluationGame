@@ -5,7 +5,7 @@ const InstructionsPage = () => {
     const navigate = useNavigate();
 
     const handleStartEvaluation = () => {
-        navigate('/email_evaluation'); // Navigate to email_evaluation page
+        navigate('/demographic'); // Navigate to email_evaluation page
     };
 
     return (
@@ -19,7 +19,7 @@ const InstructionsPage = () => {
             <li>For each email, you will decide whether you believe it was written by a Language Learning Model (LLM) or a human.</li>
             <li>You will also categorize each email as either "Phishing" or "Real."</li>
             <li>Once you make your selections, you will proceed to the next email.</li>
-            <li>You can spend as much time as you wish on each email, but there is a maximum limit of 30 seconds per email.</li>
+            <li>You can spend as much time as you wish on each email, but there is a maximum limit of 1 minute per email.</li>
         </ol>
         
         <h2>Data Collected</h2>

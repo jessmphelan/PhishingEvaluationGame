@@ -45,7 +45,7 @@ const EmailEvaluation = () => {
 
   const handleNextEmail = () => {
     if (!userResponse.source || !userResponse.type) {
-      alert("Please make a selection for both evaluator type and email type.");
+      alert("Please make a selection for both source type and email type.");
       return; // Stop the function if either response is missing
     }
     axios.post('http://127.0.0.1:5000/api/save_response', {
@@ -70,7 +70,7 @@ const EmailEvaluation = () => {
       <h1>Phishing Email Evaluation</h1>
       <div style={{ position: 'absolute', top: 0, right: 0 }}>
         {/* <Timer /> */}
-        <Timer key={emailCount} initialMinute={0.5} onTimerEnd={handleTimerEnd} width={300} height={20} strokeWidth={4} />
+        <Timer key={emailCount} initialMinute={1} onTimerEnd={handleTimerEnd} width={300} height={20} strokeWidth={4} />
       </div>
       {/* <div className="email-container">
         {currentEmail ? currentEmail.content : 'Loading email...'}
