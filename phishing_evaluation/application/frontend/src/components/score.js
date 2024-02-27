@@ -23,7 +23,7 @@ const ScorePage = () => {
       <h1>You Scored</h1>
       <p style={{ fontSize: '36px' }}>{score}%</p>
       {score > 50 ? (
-        <p style={{ fontSize: '20px' }}>More than half of your responses matched the correct labeling.</p>
+        <p style={{ fontSize: '20px' }}>More than half of your responses matched the correct labeling!</p>
       ) : score === 50 ? (
         <p style={{ fontSize: '20px' }}>Half of your responses matched the correct labeling.</p>
       ) : (
