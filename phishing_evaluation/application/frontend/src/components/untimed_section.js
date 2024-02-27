@@ -77,7 +77,6 @@ const UntimedSection = () => {
               <option value="">Select...</option>
               <option value="Phishing">Phishing</option>
               <option value="Real">Real</option>
-              <option value="Other">Other</option>
             </select>
 
         </div>
