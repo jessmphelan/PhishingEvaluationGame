@@ -63,6 +63,12 @@ const EmailEvaluation = () => {
       .catch(error => {
         console.error('Error saving response:', error);
       });
+
+      const buttonIds = ['LLMBtn', 'HumanBtn', 'PhishBtn', 'RealBtn'];
+      buttonIds.forEach(buttonId => {
+        document.getElementById(buttonId).style.backgroundColor = '#1c4072'; // Reset to original color
+  });
+
   };
   
   return (
