@@ -20,9 +20,16 @@ const ScorePage = () => {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-      <h1>Your Score</h1>
+      <h1>You Scored</h1>
       <p style={{ fontSize: '36px' }}>{score}%</p>
-      <p style={{ fontSize: '20px' }}>of your responses matched the correct labeling</p>
+      if (score {'>'} 50){
+        <p style={{ fontSize: '20px' }}>More than half of your responses matched the correct labeling.</p>
+      } else if (score == 50) {
+        <p style={{ fontSize: '20px' }}>Half of your responses matched the correct labeling.</p>
+      } else {
+        <p style={{ fontSize: '20px' }}>Less than half of your responses matched the correct labeling.</p>
+      }
+      
     </div>
   );
 };
