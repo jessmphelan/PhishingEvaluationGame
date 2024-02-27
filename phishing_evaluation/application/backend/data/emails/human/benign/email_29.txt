@@ -1,0 +1,58 @@
+From:	VUIT Identity System <vuit.identitysystem@vanderbilt.edu>
+Sent:	Sunday, February 25, 2024 5:45 AM
+To:	[student_deidentified]
+Subject:	It's time to change your Vanderbilt Password
+
+
+You don't often get email from vuit.identitysystem@vanderbilt.edu. Learn why this is important
+
+ 
+Hello [student_deidentified],  
+ 
+You are receiving this message because it�s time to change your password connected to 
+your VUnetID to comply with Vanderbilt�s annual password change requirement. You will 
+continue to receive reminder messages until you change your password. If you do not 
+change your password by the date below, your VUnetID and password will be locked and 
+you will be unable to access any VU systems. 
+
+VUnetID:  
+[student_deidentified]
+
+Password Expiration Date:
+Apr 25, 2024
+
+ 
+To change your password: 
+1.	Go to the VUIT website (https://it.vanderbilt.edu/) and click the �Change My 
+Password� button.
+2.	Log in to the system using your VUnetID and current password.
+3.	From the VU Identity Home page click the �Change My Password� button.
+4.	Follow the on-screen instructions.
+ 
+For staff and faculty working remotely, it is best to change your password while on Pulse VPN. For 
+more info, Click Here 
+ 
+Vanderbilt established the annual password change requirement to enhance computer-system 
+security and to comply with federal audit requirements. Vanderbilt requires all faculty, staff, and 
+students with a VUnetID to change their password at least once each year. Your password pairs 
+with your VUnetID, which grants access to many online systems at Vanderbilt. For faculty and staff, 
+the systems include Oracle Cloud, e-mail, Zoom online library resources, online storage, and many 
+other systems across Vanderbilt. For students, those systems include VU Gmail, YES (Your 
+Enrollment Services), Zoom, Brightspace, and others. 
+ 
+NOTE: Password changes can take up to 15 minutes to propagate to all systems. If you have 
+questions or need assistance, please contact VUIT Support at 615-343-9999 or submit a help 
+request at help.it.vanderbilt.edu 
+
+
+ 
+Vanderbilt University | Nashville, Tennessee 37240 | http://www.Vanderbilt.edu 
+ 
+This message was intended for [student_deidentified]@Vanderbilt.Edu. Do not reply to this e-mail. 
+ 
+To ensure you continue to receive our emails, please add NoReply@vanderbilt.edu to your address book or safe sender 
+list. 
+ 
+
+ 
+
