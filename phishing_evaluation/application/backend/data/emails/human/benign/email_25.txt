@@ -1,0 +1,55 @@
+From:	Vanderbilt Information Technology <vuit@message.vu.edu>
+Sent:	Monday, February 26, 2024 11:15 AM
+To:	[deidentified]@vanderbilt.edu
+Subject:	Action Required: You are Exceeding the Vanderbilt Google Workspace Storage Limit
+
+You don't often get email from vuit@message.vu.edu. Learn why this is important
+
+View email online
+
+As a result of Google�s decision to discontinue unlimited storage 
+to Google Workspace for Education accounts, VUIT has 
+implemented a 15 GB storage limit on each account in 
+Vanderbilt�s Google Workspace tenant as of July 7, 2023. This 
+is the same amount of storage that is available with a free 
+Google account -- the storage equivalent of ~6,000 high-quality 
+photos.
+You are currently over the storage limit and should follow 
+the steps below:
+1.	Review your current storage usage and delete large or 
+unnecessary files in Google Drive. Please see Drive 
+Storage. 
+2.	Delete large or unnecessary emails. Follow the 
+instructions for Gmail in Manage files in your Google 
+Drive storage.
+3.	To keep large files, you can export an archive of your 
+Google Drive, Gmail, and/or Photos data with Google 
+Takeout. After the export, delete dispensable files, 
+messages, and attachments. Ensure you empty your 
+trash to free up storage space. Learn how to download 
+your data into an archive. 
+4.	If you have too many files in Drive to feasibly delete on 
+your own, and you would like VUIT to empty your Drive for 
+you, please contact the Tech Hub at (615) 343-9999 or via 
+email at it@vanderbilt.edu to request this service. 
+On April 2, 2024, VUIT will begin to delete data in accounts that 
+are over 15 GB to reduce Vanderbilt�s storage use to within 
+Google�s requirements. All of the data in accounts over 15 GB 
+will be lost and unrecoverable. 
+In order to avoid deletion of data, please make sure that 
+your Vanderbilt Google Workspace account is under 15 GB 
+before April 2, 2024.
+Please review Appropriate Use of Technology Assets to 
+ensure you are using data in accordance with Vanderbilt policy.
+If you have questions, please reference our FAQs or contact the 
+Tech Hub at (615) 343-9999 or via email at it@vanderbilt.edu.
+Thank you!
+Vanderbilt University Information Technology
+
+
+Manage your email preferences   |   Unsubscribe from all 
+"Vanderbilt" and the Vanderbilt logo are registered trademarks and service marks of Vanderbilt University. 
+
+
+ 
+
