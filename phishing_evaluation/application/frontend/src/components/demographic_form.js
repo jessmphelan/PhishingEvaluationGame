@@ -213,7 +213,7 @@ const DemographicForm = () => {
       <div>
         <label>
         I am confident in my ability to identify emails as malicious versus legitimate.
-        <select value={year} aria-label="confidence" onChange={e => setConfidence(e.target.value)}>
+        <select value={confidence} aria-label="confidence" onChange={e => setConfidence(e.target.value)}>
           <option value="">Select...</option>
           <option value="1">Strongly Disagree</option>
           <option value="2">Somewhat Disagree</option>
