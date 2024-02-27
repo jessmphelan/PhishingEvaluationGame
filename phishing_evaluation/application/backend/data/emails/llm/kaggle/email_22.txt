@@ -1,24 +1,15 @@
-Subject: Official Document Update: Change in IT Protocols
-From: IT_Department@unilasalle.edu.mx 
+Subject: Job Opportunity | Upscale Bar in Philadelphia - Networking Event
 
-Dear Mr. Gomez,
+Hello,
 
-I trust this message finds you well. 
+My name is Heinrich Mueller, the owner of Bistro Mueller in Philadelphia. I came across your LinkedIn profile and your experience as a Bartender truly impressed me. Bistro Mueller is also family-oriented with a reputation that spans 5 decades and we're consistently seeking to build our team with diligent, passionate individuals like yourself.
 
-In our continuous endeavor to upgrade our Information Technology infrastructure at Universidad La Salle, our department has noticed that there is an inconsistency with the regional lead technical data on file for Compucom Systems, Inc. We have noticed that this inconsistency may be related to the involvement of a former employee who had unauthorized access to our system.
+We are hosting a by-invitation-only networking event this coming week for individuals in the service industry. We believe you could benefit by connecting with some accomplished service industry professionals and possibly learn about attractive job opportunities. This could also be your chance to explore a work environment different from what you've experienced at your current workplace.
 
-Given your significant role as a Regional Lead Technician, we want to confirm that the information we have is consistent with your current records and does not affect the responsibilities assigned to you. To ensure that the integrity of our network and your related tasks are not compromised, we kindly request your immediate attention to this matter.
+My assistant will be sending you an invite, but we have been having some issues with our mail server. If you don't receive an invite within the next 24 hours, please do reach out to her directly here: [assistant’s at phishing link disguised as mailto:assistant@bistromueller.com] to ensure you don't miss out on this opportunity.
 
-Please click the following secure link to confirm the validity of the records we have on file. 
+We very much look forward to meeting you and discussing how we can help each other. Do let us know if you have any questions.
 
-[unilasalle.mx/verify/it/71728]
-
-We understand and appreciate the crucial role you play in maintaining the highest standards of service and customer satisfaction at Compucom Systems, Inc. We're confident that with your attention to this matter, we can quickly resolve any discrepancy and reinforce the security on our network. 
-
-I hope we can depend on you for a swift response to this request so that any potential impact on our operations can be minimized.
-
-Cordially,
-
-Humberto Santillan
-Director of IT,
-Universidad La Salle.
+Best regards,
+Heinrich Mueller
+Owner, Bistro Mueller, Philadelphia

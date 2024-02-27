@@ -1,28 +1,23 @@
-Subject: Urgent: Discrepancy in Blending Component
+Subject: Exciting News for Students Interested in Data Analysis
 
-Dear [Your Name],
+Dear Jean-Luc Moreau,
 
-I trust this email finds you in good health. My name is Dr. Ayesha Siddiqui, Head of Quality Assurance department at Kerry's Central Division. We've been experiencing recent inconsistencies in our product batches that have been raising internal alarms over here.
+We hope this email greets you well. As a noted and dedicated member of Ecole Nationale d'Ingénieurs de Tarbes, your academic endeavors in business studies and more specifically data analysis, have caught our attention. 
 
-Having analysed data from many shifts, we have identified the issue origin to be from one of the blending component ratios being utilized during your shift. This might simply be due to the outdated blending measure metrics in your copy of our Production SOPs.
+We invite you to apply for the exclusive "Future Leaders in Data Analysis" competition. This event is designed to challenge future professionals like you and offers valuable networking possibilities with top-tier companies. Numerous past participants, who shared your aspirations for leveraging data to drive strategic decision-making, found this experience transformative.
 
-I understand how instrumental your role as a Blending Operator is at Kerry, and your attention to detail is often commendable. This is why I am certain this has been a case of procedural oversight.
+The link to apply and further details are provided at the end of this email. Applications close by the end of the week and as a respected representative of the student body, we strongly encourage you to consider this opportunity. Following your diligent work with student council, we believe this will be a great opportunity for you to showcase your skills and open more doors for your future career.
 
-Given the urgency, I have attached the updated SOPs in this email along with an urgent revision in some existing recipes. We need you to verify and implement these changes in your upcoming shifts. 
+Your fluency in both French and English will be highly beneficial during this multinational event. We look forward to your application and as a head's up, the initial round will be a test of your proficiency with SQL, Oracle, SAS, and Microsoft Power BI. 
 
-Please review the attachment. It should match with your current list in the SAP software. It is crucial that you implement these changes from the next shift onwards to avoid any significant quality issues with our products.
+For registration and more details, please visit our website - you can find all the necessary details at www.ENIT-datafutures.org/apply-now 
 
-This message is meant for you only, kindly do not share the attached document as we are still working out the communication chain. We trust your skills for fulfilling this task accurately and efficiently.
+We hope to see your application soon, Jean-Luc. The race is on!
 
-If you face any difficulties in accessing the attached document, or have any questions, please don't hesitate to let me know.
+Best regards,
 
-In advance, thank you for your prompt attention to this matter.
+Alexandre Dumas
 
-Best Regards,
+Head of Student Outreach
 
-Dr. Ayesha Siddiqui
-Head of Quality Assurance
-Kerry Central Division
-asiddiqui@kerry-central-division.com
-
-Attachment: Updated_Blending_SOPs_Recipe_Directory.pdf
+Ecole Nationale d'Ingénieurs de Tarbes  
