@@ -10,6 +10,14 @@ const EmailEvaluation = () => {
   const [startTime, setStartTime] = useState(null);
   const navigate = useNavigate();
 
+
+  const resetButtonColors = () => {
+    document.getElementById('LLMBtn').style.backgroundColor = ''; 
+    document.getElementById('HumanBtn').style.backgroundColor = ''; 
+    document.getElementById('PhishBtn').style.backgroundColor = ''; 
+    document.getElementById('RealBtn').style.backgroundColor = '';
+  };
+
   useEffect(() => {
     if (emailCount < 10) {
       fetchNextEmail();
@@ -44,6 +52,7 @@ const EmailEvaluation = () => {
 
 
   const handleNextEmail = () => {
+    resetButtonColors();
     if (!userResponse.source || !userResponse.type) {
       alert("Please make a selection for both source type and email type.");
       return; // Stop the function if either response is missing

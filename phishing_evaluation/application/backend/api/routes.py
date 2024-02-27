@@ -205,4 +205,5 @@ def init_routes(app, mongo):
 
         # Calculate score
         score = (correct_count / total_count) * 100 if total_count > 0 else 0
+        score = round(score)
         return jsonify({"score": score})
