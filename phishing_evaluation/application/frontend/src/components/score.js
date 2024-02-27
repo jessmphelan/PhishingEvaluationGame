@@ -21,11 +21,8 @@ const ScorePage = () => {
   return (
     <div style={{textAlign: 'center'}}>
       <h1>Your Score</h1>
-      <p>{score}% of your responses matched the correct labeling.</p>
-    
-      <div style={{width: '${score}%', height: '100%', backgroundColor: score >=50 ? '#4CAF50' : '#f44336', textAlign: 'center', lineHeight: '30px', color: 'white'}}>
-        {score}%
-      </div>
+      <p>{score}%</p>
+      <p>of your responses matched the correct labeling</p>
     </div>
   );
 };
