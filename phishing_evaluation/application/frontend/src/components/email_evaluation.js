@@ -54,6 +54,10 @@ const EmailEvaluation = () => {
     })
       .then(() => {
         setUserResponse({ source: '', type: '', elapsedTime: null }); // Reset user responses for the next email
+        document.getElementById("LLMBtn").style.backgroundColor = '#1c4072';//scuffed button reset, will fix later
+        document.getElementById("HumanBtn").style.backgroundColor = '#1c4072';
+        document.getElementById("PhishBtn").style.backgroundColor = '#1c4072';
+        document.getElementById("RealBtn").style.backgroundColor = '#1c4072';
         if (emailCount < 9) {
           setEmailCount(current => current + 1); // Manually progress to the next email
         } else {
