@@ -29,9 +29,7 @@ const ScorePage = () => {
       ) : (
         <p style={{ fontSize: '20px' }}>Less than half of your responses matched the correct labeling.</p>
       )}
-      <div>
-        <button type="learn more about phishing">Learn More About Phishing</button>
-      </div>
+
     </div>
     
   );

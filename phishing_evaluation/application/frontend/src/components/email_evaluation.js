@@ -19,6 +19,14 @@ const EmailEvaluation = () => {
     }
   }, [emailCount, navigate]); // Depend on emailCount to trigger the effect
 
+
+  const resetButtonColors = () => {
+    document.getElementById('LLMBtn').style.backgroundColor = ''; 
+    document.getElementById('HumanBtn').style.backgroundColor = ''; 
+    document.getElementById('PhishBtn').style.backgroundColor = ''; 
+    document.getElementById('RealBtn').style.backgroundColor = '';
+  };
+
   const handleTimerEnd = () => {
     setEmailCount(count => count + 1);
   };
@@ -44,6 +52,7 @@ const EmailEvaluation = () => {
 
 
   const handleNextEmail = () => {
+    resetButtonColors();
     if (!userResponse.source || !userResponse.type) {
       alert("Please make a selection for both evaluator type and email type.");
       return; // Stop the function if either response is missing
