@@ -21,7 +21,7 @@ const ScorePage = () => {
   return (
     <div style={{textAlign: 'center'}}>
       <h1>Your Score</h1>
-      <p>{score}%</p>
+      <p style={{ fontSize: '36px' }}>{score}%</p>
       <p>of your responses matched the correct labeling</p>
     </div>
   );
