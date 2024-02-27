@@ -31,7 +31,7 @@ def init_routes(app, mongo):
     @app.route('/add_llm_emails')
     @cross_origin()
     def add_llm_emails():
-        directory_path = Path(__file__).parent.parent / 'data' / 'emails'/ 'llm' / 'linkedin'
+        directory_path = Path(__file__).parent.parent / 'data' / 'emails'/ 'llm' / 'kaggle'
 
         email_id_counter = 1
 
