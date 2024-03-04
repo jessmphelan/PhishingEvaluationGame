@@ -1,0 +1,19 @@
+Subject: Urgent Action Required: Confirm CRM System Access
+
+Dear Shun Takahashi,
+
+I'm Brian O'Connell, the Technical Support Lead at City Lifestyle. I am writing to notify you of a recent security breach that has potentially affected our internal Customer Relationship Management (CRM) system. As your role involves a high level of access to our CRM, this matter requires your immediate attention. 
+
+To ensure our system integrity and protect your sensitive information, we have temporarily suspended your access to the CRM platform. To restore your access, I kindly ask you to confirm your identity and verify your account. 
+
+Please follow this link (http://www.citylifestyle-crm.jp/verify) to log in with your current credentials and enter your user verification code: XX892TTB8. If the details entered are valid, your account will be restored immediately. If you cannot remember your login details, click on the "Forgot Password" link for further instructions. 
+
+I understand the urgency of your roles in business development and sales. Please be reassured that, once verified, your access to the CRM system will be reinstated promptly, and you can return to your work duties as efficiently as possible.
+
+Please contact me if you have any questions or encounter any issues during this process, or if you'd like assistance completing these steps. We appreciate your understanding and cooperation during this critical time.
+
+Best Regards,
+Brian O’Connell
+Technical Support Lead, City Lifestyle
+brian.oconnell@citylifestyle.com
+Office: (860)-678-0982

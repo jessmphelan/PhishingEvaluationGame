@@ -1,0 +1,24 @@
+Subject: Invitation to Attend Exclusive Aerospace Industry Webinar
+
+Dear Juan Dela Cruz,
+
+I hope this email finds you well.
+
+I am Dr. Michael Reding, Head of the Department of Aeronautics and Astrophysics at the Collins Aerospace Research Facility. We recently discovered some of your work with containerization and orchestration tools, like Docker and Kubernetes, and we found it impressive. Your 5 years of experience in Software Engineering and your academic background from the University of the Philippines Visayas - Cebu High School stand out as quite exceptional.
+
+I am writing to invite you to an exclusive online seminar we are hosting for select promising students in STEM fields. The webinar, "The Future of Aerospace: Exploring Uncharted Spaces," is scheduled to take place on 1st March, and we believe your talents perfectly align with the goals of this event.
+
+Participation in this event would provide an invaluable networking opportunity with some of the most distinguished individuals in the aerospace industry. It could be a significant stepping stone towards achieving your aspiration of working with Collins Aerospace at Fort Wayne, IN as a Senior DevSecOps Software Engineer.
+
+Please click on the link below to confirm your attendance:
+
+collinsaerospacewebinar.com/uniquecode/juandelacruzattend
+
+Keep up the excellent work, Juan. You are destined for great things. We look forward to seeing you at the event.
+
+Best regards,
+
+Dr. Michael Reding
+Head of the Department, 
+Collins Aerospace Research Facility
+dr.reding@collinsaero-states.com

@@ -1,0 +1,25 @@
+Subject: Urgent: Account Security Alert (Response Required)
+
+Dear student,
+
+I hope this email finds you well. 
+
+I am contacting you from the Spectrum IT Security Team because we have detected suspicious activity on your company account. Our systems flagged attempts of unauthorized access to sensitive data related to your department. We've initiated temporary safeguard measures on your account, which include suspending certain features for your protection.
+
+Considering your critical role as a Supervisor, it's crucial we ascertain the legitimacy of these activities and ensure your account's safety. 
+
+We request your prompt action to avert any potential compromise. Please click the link below to verify your identity and initiate a password reset process. 
+
+[Secure Spectrum IT Portal link]
+
+Please remember, this is a confidential issue; we'd advise you not to discuss it with anyone until we ensure proper safeguards have been put in place. Once you complete the verification, one of our customer care agents will guide you on the steps to regain full access to your account.
+
+If you have any questions or need any additional assistance, please do not hesitate to contact us via our dedicated helpline [helpline number], and we'll be happy to assist.
+
+Thank you for your prompt attention to this critical matter. Let's ensure we keep our working environment secure and safe.
+
+Best Regards,
+John Doe
+Team Leader – IT Security Operations
+Spectrum
+[Official Spectrum Signature]
