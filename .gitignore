@@ -11,6 +11,7 @@
 
 # Python virtual environment
 /myenv/
+/myvenv/
 
 # Python bytecodes
 __pycache__/
