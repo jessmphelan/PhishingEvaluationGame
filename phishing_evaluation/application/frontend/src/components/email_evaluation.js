@@ -12,8 +12,6 @@ const EmailEvaluation = () => {
 
 
   const resetButtonColors = () => {
-    document.getElementById('LLMBtn').style.backgroundColor = ''; 
-    document.getElementById('HumanBtn').style.backgroundColor = ''; 
     document.getElementById('PhishBtn').style.backgroundColor = ''; 
     document.getElementById('RealBtn').style.backgroundColor = '';
   };
@@ -53,7 +51,7 @@ const EmailEvaluation = () => {
 
   const handleNextEmail = () => {
     resetButtonColors();
-    if (!userResponse.source || !userResponse.type) {
+    if (!userResponse.type) {
       alert("Please make a selection for both source type and email type.");
       return; // Stop the function if either response is missing
     }
@@ -63,8 +61,6 @@ const EmailEvaluation = () => {
     })
       .then(() => {
         setUserResponse({ source: '', type: '', elapsedTime: null }); // Reset user responses for the next email
-        document.getElementById("LLMBtn").style.backgroundColor = '#1c4072';//scuffed button reset, will fix later
-        document.getElementById("HumanBtn").style.backgroundColor = '#1c4072';
         document.getElementById("PhishBtn").style.backgroundColor = '#1c4072';
         document.getElementById("RealBtn").style.backgroundColor = '#1c4072';
         if (emailCount < 9) {
@@ -77,7 +73,7 @@ const EmailEvaluation = () => {
         console.error('Error saving response:', error);
       });
 
-      const buttonIds = ['LLMBtn', 'HumanBtn', 'PhishBtn', 'RealBtn'];
+      const buttonIds = ['PhishBtn', 'RealBtn'];
       buttonIds.forEach(buttonId => {
         document.getElementById(buttonId).style.backgroundColor = '#1c4072'; // Reset to original color
   });
@@ -105,16 +101,8 @@ const EmailEvaluation = () => {
           : 'Loading email...'}
       </div>
       <div className="evaluation-section">
-        <div className="column">
-          <h3>Source Type</h3>
-          <button id="LLMBtn" onClick={() => handleResponse('source', 'LLM', 'LLMBtn')}>LLM</button>
-          <button id="HumanBtn" onClick={() => handleResponse('source', 'Human', 'HumanBtn')}>Human</button>
-        </div>
-        <div className="column">
-          <h3>Email Type</h3>
-          <button id="PhishBtn" onClick={() => handleResponse('type', 'Phishing Email', 'PhishBtn')}>Phishing Email</button>
-          <button id="RealBtn" onClick={() => handleResponse('type', 'Real Email', 'RealBtn')}>Real Email</button>
-        </div>
+          <button className="emailTypeButton" id="PhishBtn" onClick={() => handleResponse('type', 'Phishing Email', 'PhishBtn')}>Phishing</button>
+          <button className="emailTypeButton" id="RealBtn" onClick={() => handleResponse('type', 'Real Email', 'RealBtn')}>Real</button>
       </div>
       <button className="startEvaluationButton" onClick={handleNextEmail}>Next Email</button>
     </div>

@@ -160,12 +160,15 @@ button[type="submit"]:hover {
 }
 
 .error {
+  color: #f44336;
+  border: 1px solid #f44336;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
   display: block;
-  background-color: red;
-  color: white;
-  width: fit-content;
-  height: 50px;
-  padding: 5px;
+  background-color: #f8c3bf;
 }
 
 .success {
@@ -188,6 +191,10 @@ button[type="submit"]:hover {
   border: none; /* Remove border */
   border-radius: 5px;
   cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.emailTypeButton {
+
 }
 
 .score-container {
