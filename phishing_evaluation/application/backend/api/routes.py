@@ -31,7 +31,7 @@ def init_routes(app, mongo):
     @app.route('/add_llm_emails')
     @cross_origin()
     def add_llm_emails():
-        directory_path = Path(__file__).parent.parent / 'data' / 'emails'/ 'llm' / 'linkedin'
+        directory_path = Path(__file__).parent.parent / 'data' / 'emails'/ 'llm' / 'kaggle'
 
         email_id_counter = 1
 
@@ -165,6 +165,7 @@ def init_routes(app, mongo):
     @app.route('/api/user_responses', methods=['GET'])
     def get_user_responses():
         user_responses = mongo.db.player_data.find()
+        email_labels = {email['email_id']: email for email in mongo.db.emails.find()}
         correct_count = 0
         total_count = 0
 
@@ -174,19 +175,28 @@ def init_routes(app, mongo):
             print(f'Response #{total_count}: {dumps(response)}')
 
             if 'email_id' in response:
-                # 'email_id' is our custom identifier field that we're using to retrieve the email name, not the MongoDB '_id' field
                 print(f"Querying for email_id: {response['email_id']}")
-                email = mongo.db.emails.find_one({"email_id": response['email_id']})
-                if email and 'response' in response and 'type' in response['response'] and 'source' in response['response']:
-                    is_correct_type = response['response']['type'] == email.get('type')
-                    is_correct_source = response['response']['source'] == email.get('source')
-                    print(f"Correct Type: {is_correct_type}, Correct Source: {is_correct_source}")  # Log comparison results
+                email = email_labels.get(response['email_id'])
+                if email and 'response' in response and 'type' in response['response']:
+                    response_type = response['response']['type'].strip().lower()  
+                    email_type = email.get('type', '').strip().lower()  
+                    
+                    is_correct_type = response_type == email_type
+                    print(f"Correct Type: {is_correct_type}")
 
-                
-                    if is_correct_type and is_correct_source:
+                    if is_correct_type:
                         correct_count += 1
-
-                else: 
+                    else:
+                        print(f"Type mismatch: Response type '{response_type}' vs Email type '{email_type}'")
+                        
+                    if 'source' in response['response']:
+                        response_source = response['response']['source'].strip().lower()  
+                        email_source = email.get('source', '').strip().lower()  
+                        is_correct_source = response_source == email_source
+                        print(f"Correct Source: {is_correct_source}")
+                        if not is_correct_source:
+                            print(f"Source mismatch: Response source '{response_source}' vs Email source '{email_source}'")
+                else:
                     print(f"No email found for email_id: {response['email_id']}")
             else:
                 print(f"No emailId found in response #{total_count}: {dumps(response)}")
@@ -194,9 +204,6 @@ def init_routes(app, mongo):
         print(f"Total count: {total_count}, Correct count: {correct_count}")  
 
         # Calculate score
-        if total_count > 0:
-            score = (correct_count / total_count) * 100
-        else:
-            score = 0
-
+        score = (correct_count / total_count) * 100 if total_count > 0 else 0
+        score = round(score)
         return jsonify({"score": score})

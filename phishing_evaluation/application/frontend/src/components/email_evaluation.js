@@ -10,6 +10,14 @@ const EmailEvaluation = () => {
   const [startTime, setStartTime] = useState(null);
   const navigate = useNavigate();
 
+
+  const resetButtonColors = () => {
+    document.getElementById('LLMBtn').style.backgroundColor = ''; 
+    document.getElementById('HumanBtn').style.backgroundColor = ''; 
+    document.getElementById('PhishBtn').style.backgroundColor = ''; 
+    document.getElementById('RealBtn').style.backgroundColor = '';
+  };
+
   useEffect(() => {
     if (emailCount < 10) {
       fetchNextEmail();
@@ -44,8 +52,9 @@ const EmailEvaluation = () => {
 
 
   const handleNextEmail = () => {
+    resetButtonColors();
     if (!userResponse.source || !userResponse.type) {
-      alert("Please make a selection for both evaluator type and email type.");
+      alert("Please make a selection for both source type and email type.");
       return; // Stop the function if either response is missing
     }
     axios.post('http://127.0.0.1:5000/api/save_response', {
@@ -54,6 +63,10 @@ const EmailEvaluation = () => {
     })
       .then(() => {
         setUserResponse({ source: '', type: '', elapsedTime: null }); // Reset user responses for the next email
+        document.getElementById("LLMBtn").style.backgroundColor = '#1c4072';//scuffed button reset, will fix later
+        document.getElementById("HumanBtn").style.backgroundColor = '#1c4072';
+        document.getElementById("PhishBtn").style.backgroundColor = '#1c4072';
+        document.getElementById("RealBtn").style.backgroundColor = '#1c4072';
         if (emailCount < 9) {
           setEmailCount(current => current + 1); // Manually progress to the next email
         } else {
@@ -76,7 +89,7 @@ const EmailEvaluation = () => {
       <h1>Phishing Email Evaluation</h1>
       <div style={{ position: 'absolute', top: 0, right: 0 }}>
         {/* <Timer /> */}
-        <Timer key={emailCount} initialMinute={0.5} onTimerEnd={handleTimerEnd} width={300} height={20} strokeWidth={4} />
+        <Timer key={emailCount} initialMinute={1} onTimerEnd={handleTimerEnd} width={300} height={20} strokeWidth={4} />
       </div>
       {/* <div className="email-container">
         {currentEmail ? currentEmail.content : 'Loading email...'}
