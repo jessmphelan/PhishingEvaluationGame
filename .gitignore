@@ -33,6 +33,7 @@ yarn-error.log*
 /Phishing-Evaluation/Application/Backend/__pycache__/
 /Phishing-Evaluation/Application/Backend/*.pyc
 /Phishing-Evaluation/Application/Backend/*.pyo
+phishing_evaluation/application/frontend/node_modules/.cache/
 
 # IDE specific (uncomment or add as necessary)
 # .vscode/
