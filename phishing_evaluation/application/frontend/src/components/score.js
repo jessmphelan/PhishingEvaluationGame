@@ -9,8 +9,8 @@ const ScorePage = () => {
   useEffect(() => {
     const fetchScore = async () => {
       try {
-        const { data } = await axios.get('http://127.0.0.1:5000/api/user_responses'); 
-        setScore(data.score); 
+        const { data } = await axios.get('http://127.0.0.1:5000/api/user_responses');
+        setScore(data.score);
       } catch (error) {
         console.error('Error fetching score:', error);
 
@@ -21,21 +21,66 @@ const ScorePage = () => {
   }, []);
 
   const handleLearnMoreClick = () => {
-    navigate('/educational'); 
+    navigate('/educational');
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-      <h1>You Scored</h1>
-      <p style={{ fontSize: '36px' }}>{score}%</p>
-      {score > 50 ? (
-        <p style={{ fontSize: '20px' }}>More than half of your responses matched the correct labeling!</p>
-      ) : score === 50 ? (
-        <p style={{ fontSize: '20px' }}>Half of your responses matched the correct labeling.</p>
-      ) : (
-        <p style={{ fontSize: '20px' }}>Less than half of your responses matched the correct labeling.</p>
-      )}
-      <button className="startEvaluationButton" onClick={handleLearnMoreClick}>Learn How to Improve</button> 
+    <div>
+      <div class="results-summary-container">
+        <div class="confetti">
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+        </div>
+        <div class="results-summary-container__result">
+          <div class="heading-tertiary">Your Score</div>
+          <div class="result-box">
+            <div class="heading-primary">{score}%</div>
+          </div>
+          <div class="result-text-box">
+            <div class="heading-secondary">excellent</div>
+            <p class="paragraph">
+              You scored higher than 65% of the people who have taken these tests.
+            </p>
+          </div>
+        </div>
+        <div class="results-summary-container__options">
+          <div class="heading-secondary heading-secondary--blue">Leaderboard</div>
+          <div class="summary-result-options">
+            <div class="result-option">
+              <span class="result-text">First Place</span>
+              <div class="result-box"><span>11</span> / 15</div>
+            </div>
+            <div class="result-option">
+              <span class="result-text">Second Place</span>
+              <div class="result-box"><span>10</span> / 15</div>
+            </div>
+            <div class="result-option">
+              <span class="result-text">Third Place</span>
+              <div class="result-box"><span>8</span> / 15</div>
+            </div>
+            <div class="summary__cta">
+              <button class="learnMoreBtn" onClick={handleLearnMoreClick}>Learn How to Improve</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
