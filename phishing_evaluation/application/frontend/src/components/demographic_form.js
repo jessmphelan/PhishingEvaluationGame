@@ -149,6 +149,7 @@ const DemographicForm = () => {
           <option value="DA">Danish</option>
           <option value="NL">Dutch</option>
           <option value="ET">Estonian</option>
+          <option value="FA">Farsi</option>
           <option value="FJ">Fiji</option>
           <option value="FI">Finnish</option>
           <option value="FR">French</option>
