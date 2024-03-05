@@ -79,7 +79,7 @@ const EmailEvaluation = () => {
       <h1>Phishing Email Evaluation</h1>
       <div style={{ position: 'absolute', top: 0, right: 0 }}>
         {/* <Timer /> */}
-        <Timer key={emailCount} initialMinute={0.5} onTimerEnd={handleTimerEnd} width={300} height={20} strokeWidth={4} />
+        <Timer key={emailCount} initialMinute={0.5} onTimerEnd={handleTimerEnd} width={300} height={40} strokeWidth={4} />
       </div>
       {/* <div className="email-container">
         {currentEmail ? currentEmail.content : 'Loading email...'}

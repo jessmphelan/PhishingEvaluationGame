@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
-// const Timer = ({ initialMinute = 1, size = 80, strokeWidth = 4 }) => {
-const Timer = ({ initialMinute = 1, width = 300, height = 20, strokeWidth = 4, onTimerEnd}) => {
+const Timer = ({ initialMinute = 1, width = 300, height = 40, strokeWidth = 4, onTimerEnd}) => {
   const [seconds, setSeconds] = useState(initialMinute * 60);
-  // const radius = (size - strokeWidth) / 2;
-  // const circumference = radius * 2 * Math.PI;
-  // const offset = circumference - (seconds / (initialMinute * 60)) * circumference;
+ 
   const fullWidth = width - strokeWidth * 2; // Adjust the width for the stroke
   const progressWidth = (seconds / (initialMinute * 60)) * fullWidth;
 
@@ -21,20 +18,14 @@ const Timer = ({ initialMinute = 1, width = 300, height = 20, strokeWidth = 4, o
     }
   }, [seconds, onTimerEnd]);
 
+  let backgroundColor = '#6699CC';
+  if (seconds <= 10){
+    if (seconds % 2 == 0){
+      backgroundColor = '#ff6865'
+    }
+  }
+
   return (
-    // <div style={{ position: 'relative', width: size, height: size }}>
-    //   <svg width={size} height={size}>
-    //     <circle
-    //       stroke="gray"
-    //       fill="transparent"
-    //       strokeWidth={strokeWidth}
-    //       strokeDasharray={circumference + ' ' + circumference}
-    //       style={{ strokeDashoffset: offset }}
-    //       r={radius}
-    //       cx={size / 2}
-    //       cy={size / 2}
-    //     />
-    //   </svg>
     <div style={{
       position: 'relative',
       width: width,
@@ -50,12 +41,26 @@ const Timer = ({ initialMinute = 1, width = 300, height = 20, strokeWidth = 4, o
       <div style={{
         height: '100%',
         width: `${progressWidth}px`,
-        background: '#6699CC',
+        background: backgroundColor,
         transition: 'width 1s linear',
         willChange: 'width',
         position: 'absolute', // Make the div positioned absolutely
         right: 0, // Align the progress bar to the right
-      }}></div>
+      }}>
+       <img src="/images/fish1.png" alt="Fish" style={{
+          height: '100%',
+          position: 'absolute',
+          right: `${progressWidth-40}px`, 
+          transition: 'right 1s linear', // Make the fish move smoothly
+        }} />  
+       <img src="/images/shark.png" alt="Fish" style={{
+          height: '100%',
+          position: 'absolute',
+          right: 0, 
+          transition: 'right 1s linear', // Make the fish move smoothly
+        }} />
+      </div>
+      
       <span style={{
         zIndex: 2,
         color: 'black',

@@ -16,6 +16,7 @@ const App = () => {
   return (
     <Router>
       <div>
+      <div className="wave-container"></div>
         {/* <nav>
           <ul>
             <li><a href="/create_account_form">User Registration</a></li>
