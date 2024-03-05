@@ -64,3 +64,5 @@ Terminal 1 (to start React app):
 Terminal 2 (to start the database)
 
 ` python run.py `
+
+test
