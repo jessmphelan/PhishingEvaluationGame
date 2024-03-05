@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import ProgressBar from './progress_bar.js';
 
 const UntimedSection = () => {
   const [currentEmail, setCurrentEmail] = useState(null);
   const [userResponse, setUserResponse] = useState({ type: '', userTextResponse: '' });
   const [emailCount, setEmailCount] = useState(0);
   const [startTime, setStartTime] = useState(Date.now()); 
+  const [progress, setProgress] = useState(0);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -49,9 +51,20 @@ const UntimedSection = () => {
       }
       return updatedCount;
     });
+
+    setProgress((oldProgress) => {
+      const newProgress = oldProgress + 20;
+      if (newProgress >= 100) {
+        return 100;
+      }
+      return newProgress;
+      console.log(newProgress);
+    });
   };
 
   return (
+    <div>
+    <ProgressBar progress={progress} />
     <div style={{ position: 'relative' }} className="email-evaluation-container">
       <h1>Phishing Email Evaluation Untimed Section</h1>
 
@@ -97,6 +110,7 @@ const UntimedSection = () => {
         </div>
       </div>
       <button className="startEvaluationButton" aria-label="Next Email" onClick={handleNextEmail}>Next Email</button>
+    </div>
     </div>
   );
 };

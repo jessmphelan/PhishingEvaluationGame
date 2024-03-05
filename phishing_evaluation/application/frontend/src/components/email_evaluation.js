@@ -12,8 +12,6 @@ const EmailEvaluation = () => {
 
 
   const resetButtonColors = () => {
-    document.getElementById('LLMBtn').style.backgroundColor = ''; 
-    document.getElementById('HumanBtn').style.backgroundColor = ''; 
     document.getElementById('PhishBtn').style.backgroundColor = ''; 
     document.getElementById('RealBtn').style.backgroundColor = '';
   };
@@ -44,46 +42,36 @@ const EmailEvaluation = () => {
   };
 
   const handleResponse = (field, value, BtnID) => {
-    const endTime = Date.now(); // End time- when selection is made
-    const elapsedTime = (endTime - startTime) / 1000; // Elapsed time in seconds
+    const endTime = Date.now();
+    const elapsedTime = (endTime - startTime) / 1000;
     setUserResponse({ ...userResponse, [field]: value, elapsedTime: elapsedTime });
-    document.getElementById(BtnID).style.backgroundColor = '#2a5a9e'; // Change the color of the button when clicked
-  };
+    document.getElementById(BtnID).style.backgroundColor = '#2a5a9e';
 
-
-  const handleNextEmail = () => {
-    resetButtonColors();
-    if (!userResponse.source || !userResponse.type) {
-      alert("Please make a selection for both source type and email type.");
-      return; // Stop the function if either response is missing
-    }
+    // Save the response
     axios.post('http://127.0.0.1:5000/api/save_response', {
       emailId: currentEmail.email_id,
       response: userResponse
     })
-      .then(() => {
-        setUserResponse({ source: '', type: '', elapsedTime: null }); // Reset user responses for the next email
-        if (emailCount < 9) {
-          setEmailCount(current => current + 1); // Manually progress to the next email
-        } else {
-          navigate('/untimed_section'); // Navigate away after the last email
-        }
-      })
-      .catch(error => {
-        console.error('Error saving response:', error);
-      });
+    .then(() => {
+      setUserResponse({ source: '', type: '', elapsedTime: null });
+      resetButtonColors();
+      if (emailCount < 9) {
+        setEmailCount(current => current + 1);
+      } else {
+        navigate('/untimed_section');
+      }
+    })
+    .catch(error => {
+      console.error('Error saving response:', error);
+    });
   };
-  
+
   return (
     <div style={{ position: 'relative' }} className="email-evaluation-container">
       <h1>Phishing Email Evaluation</h1>
       <div style={{ position: 'absolute', top: 0, right: 0 }}>
-        {/* <Timer /> */}
         <Timer key={emailCount} initialMinute={1} onTimerEnd={handleTimerEnd} width={300} height={20} strokeWidth={4} />
       </div>
-      {/* <div className="email-container">
-        {currentEmail ? currentEmail.content : 'Loading email...'}
-      </div> */}
       <div className="email-container">
         {currentEmail ? 
           currentEmail.content.split('\n').map((line, index) => (
@@ -95,18 +83,9 @@ const EmailEvaluation = () => {
           : 'Loading email...'}
       </div>
       <div className="evaluation-section">
-        <div className="column">
-          <h3>Source Type</h3>
-          <button id="LLMBtn" onClick={() => handleResponse('source', 'LLM', 'LLMBtn')}>LLM</button>
-          <button id="HumanBtn" onClick={() => handleResponse('source', 'Human', 'HumanBtn')}>Human</button>
-        </div>
-        <div className="column">
-          <h3>Email Type</h3>
-          <button id="PhishBtn" onClick={() => handleResponse('type', 'Phishing Email', 'PhishBtn')}>Phishing Email</button>
-          <button id="RealBtn" onClick={() => handleResponse('type', 'Real Email', 'RealBtn')}>Real Email</button>
-        </div>
+          <button className="emailTypeButton" id="PhishBtn" onClick={() => handleResponse('type', 'Phishing Email', 'PhishBtn')}>Phishing</button>
+          <button className="emailTypeButton" id="RealBtn" onClick={() => handleResponse('type', 'Real Email', 'RealBtn')}>Real</button>
       </div>
-      <button className="startEvaluationButton" onClick={handleNextEmail}>Next Email</button>
     </div>
   );
 };

@@ -31,17 +31,6 @@ html, body {
   background-color: #2a5a9e; 
 }
 
-
-/* Styling for the form elements */
-/* form {
-  background-color: #f2f2f2;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: inline-block;
-  margin-top: 20px;
-} */
-
 form {
   background-color: #ffffff;
   padding: 20px;
@@ -74,7 +63,6 @@ select {
 
 button[type="submit"] {
   padding: 10px 20px;
-  /* background-color: #4CAF50; */
   background-color: #1c4072;
   color: white;
   border: none;
@@ -102,7 +90,6 @@ button[type="submit"]:hover {
   color: black;
   border-radius: 8px;
 } 
-
 
 .evaluation-section {
   display: flex;
@@ -160,12 +147,15 @@ button[type="submit"]:hover {
 }
 
 .error {
+  color: #f44336;
+  border: 1px solid #f44336;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
   display: block;
-  background-color: red;
-  color: white;
-  width: fit-content;
-  height: 50px;
-  padding: 5px;
+  background-color: #f8c3bf;
 }
 
 .success {
@@ -175,7 +165,6 @@ button[type="submit"]:hover {
   height: 50px;
   padding: 5px;
 }
-
 
 .startEvaluationButton {
   display: block;
@@ -190,13 +179,24 @@ button[type="submit"]:hover {
   cursor: pointer; /* Change cursor to pointer on hover */
 }
 
-.score-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  text-align: center;
+.startEvaluationButton:hover {
+  background-color: #6691cd; 
+}
+
+.emailTypeButton {
+display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 150px; 
+  background-color: #1c4072; 
+  color: white;
+  border: none; /* Remove border */
+  border-radius: 5px;
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.emailTypeButton:hover {
+  background-color: #6691cd; 
 }
 
 .title {
@@ -204,22 +204,338 @@ button[type="submit"]:hover {
   margin-bottom: 1rem;
 }
 
-.score {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
-
 .learnMoreBtn {
   padding: 10px 20px;
   font-size: 1rem;
   cursor: pointer;
-  background-color: #007bff;
-  color: white;
+  background-color: hsl(198, 71%, 53%);
+  color: #121F3D;
   border: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  margin: 20px;
 }
 
 .learnMoreBtn:hover {
-  background-color: #0056b3;
+  background-color:  hsl(198, 100%, 84%);
 }
+
+
+.results-summary-container {
+  font-family: "Hanken Grotesk", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: 10px 20px 30px rgba(0, 87, 255, 0.5);
+  backface-visibility: hidden;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.heading-primary {
+  font-size: 50px;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #121F3D, #121F3D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.4);
+  color: #121F3D;
+}
+
+.heading-secondary {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 15px;
+  letter-spacing: 1px;
+}
+
+.heading-secondary--blue {
+  color: hsl(198, 71%, 53%);
+  text-align: center;
+  font-size: 30px;
+}
+
+.heading-tertiary {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: hsl(198, 100%, 96%);
+}
+
+.paragraph {
+  font-size: 20px;
+  line-height: 1.6;
+  color: hsl(198, 100%, 96%);
+}
+
+.paragraph-text-box {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.margin-1 {
+  margin-bottom: 10px;
+}
+
+.results-summary-container__result {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  border-radius: 10px 10px 0 0;
+  background-image: linear-gradient(to bottom, #007991, #78ffd6);
+}
+
+.results-summary-container__options {
+  padding: 0 16px;
+}
+
+.summary-result-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.result-option {
+  width: 90%;
+  height: 40px;
+  background-color: hsl(205, 65%, 87%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.result-text{
+  color: #121F3D;
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.result-box {
+  font-size: 16px;
+  color: #121F3D;
+  font-weight: 700;
+  padding-right: 10px;
+}
+
+.result-box span {
+  font-size: 16px;
+  color: #121F3D;
+}
+
+.confetti {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.confetti-piece {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(0, 105, 251, 0.265); /* Semi-transparent white for a bubbly effect */
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  top: 0;
+  opacity: 0;
+  animation: bubbleRise 3000ms infinite ease-in-out;
+}
+
+.confetti-piece:nth-child(1) {
+  left: 7%;
+  transform: rotate(-10deg);
+  animation-delay: 182ms;
+  animation-duration: 2000ms;
+}
+
+.confetti-piece:nth-child(2) {
+  left: 14%;
+  transform: rotate(20deg);
+  animation-delay: 161ms;
+  animation-duration: 2076ms;
+}
+
+.confetti-piece:nth-child(3) {
+  left: 21%;
+  transform: rotate(-51deg);
+  animation-delay: 481ms;
+  animation-duration: 2103ms;
+}
+
+.confetti-piece:nth-child(4) {
+  left: 28%;
+  transform: rotate(61deg);
+  animation-delay: 334ms;
+  animation-duration: 1008ms;
+}
+
+.confetti-piece:nth-child(5) {
+  left: 35%;
+  transform: rotate(-52deg);
+  animation-delay: 302ms;
+  animation-duration: 1776ms;
+}
+
+.confetti-piece:nth-child(6) {
+  left: 42%;
+  transform: rotate(38deg);
+  animation-delay: 180ms;
+  animation-duration: 1168ms;
+}
+
+.confetti-piece:nth-child(7) {
+  left: 49%;
+  transform: rotate(11deg);
+  animation-delay: 395ms;
+  animation-duration: 1200ms;
+}
+
+.confetti-piece:nth-child(8) {
+  left: 56%;
+  transform: rotate(49deg);
+  animation-delay: 14ms;
+  animation-duration: 1887ms;
+}
+
+.confetti-piece:nth-child(9) {
+  left: 63%;
+  transform: rotate(-72deg);
+  animation-delay: 149ms;
+  animation-duration: 1805ms;
+}
+
+.confetti-piece:nth-child(10) {
+  left: 70%;
+  transform: rotate(10deg);
+  animation-delay: 351ms;
+  animation-duration: 2059ms;
+}
+
+.confetti-piece:nth-child(11) {
+  left: 77%;
+  transform: rotate(4deg);
+  animation-delay: 307ms;
+  animation-duration: 1132ms;
+}
+
+.confetti-piece:nth-child(12) {
+  left: 84%;
+  transform: rotate(42deg);
+  animation-delay: 464ms;
+  animation-duration: 1776ms;
+}
+
+.confetti-piece:nth-child(13) {
+  left: 91%;
+  transform: rotate(-72deg);
+  animation-delay: 429ms;
+  animation-duration: 1818ms;
+}
+
+.confetti-piece:nth-child(14) {
+  left: 94%;
+  transform: rotate(-72deg);
+  animation-delay: 429ms;
+  animation-duration: 818ms;
+}
+
+.confetti-piece:nth-child(15) {
+  left: 96%;
+  transform: rotate(-72deg);
+  animation-delay: 429ms;
+  animation-duration: 2818ms;
+}
+
+.confetti-piece:nth-child(16) {
+  left: 98%;
+  transform: rotate(-72deg);
+  animation-delay: 429ms;
+  animation-duration: 2818ms;
+}
+
+.confetti-piece:nth-child(17) {
+  left: 50%;
+  transform: rotate(-72deg);
+  animation-delay: 429ms;
+  animation-duration: 2818ms;
+}
+
+.confetti-piece:nth-child(18) {
+  left: 60%;
+  transform: rotate(-72deg);
+  animation-delay: 429ms;
+  animation-duration: 1818ms;
+}
+
+.confetti-piece:nth-child(odd) {
+  background-color: hsl(190, 100%, 67%);
+}
+
+.confetti-piece:nth-child(even) {
+  z-index: 1;
+}
+
+.confetti-piece:nth-child(4n) {
+  animation-duration: 4000ms;
+  background-color: #37c3ae;
+}
+
+.confetti-piece:nth-child(5n) {
+  animation-duration: 4000ms;
+  background-color: #7a6ab3;
+}
+
+.confetti-piece:nth-child(3n) {
+  animation-duration: 2500ms;
+  animation-delay: 3000ms;
+  background-color: #2433dd;
+}
+
+.confetti-piece:nth-child(3n-7) {
+  background-color: hsl(212, 90%, 77%);
+}
+
+@keyframes bubbleRise {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+

@@ -7,12 +7,28 @@ const DemographicForm = () => {
   const [major, setMajor] = useState('');
   const [language, setLanguage] = useState('');
   const [confidence, setConfidence] = useState('');
+  const [error, setError] = useState('');
 
   const navigate = useNavigate();
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log({ age, year, major, language, confidence});
-    navigate("/ncs6");
+    //reset error if it is already full
+    if(error !== '')
+      setError('');
+
+    //set error if any of the fields are empty
+    if(!(age && age > 0))
+      setError('Error: invalid age');
+    else if(!year)
+      setError('Error: invalid year');
+    else if(!major)
+      setError('Error: invalid major');
+    else if(!language)
+      setError('Error: invalid language field');
+    //otherwise navigate to the next page
+    else
+      navigate("/ncs6");
   };
 
 
@@ -223,9 +239,11 @@ const DemographicForm = () => {
         </select>
         </label>
       </div>
-      
       <div>
         <button type="submit">Submit</button>
+      </div>
+      <div>
+      {error && <div className="error">{error}</div>}
       </div>
     </form>
     
