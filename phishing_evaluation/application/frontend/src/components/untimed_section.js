@@ -111,7 +111,6 @@ const UntimedSection = () => {
       </div>
       <button className="startEvaluationButton" aria-label="Next Email" onClick={handleNextEmail}>Next Email</button>
     </div>
-    </div>
   );
 };
 

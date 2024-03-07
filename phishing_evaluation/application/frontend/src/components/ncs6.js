@@ -12,7 +12,7 @@ const NCS6 = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log({NC1, NC2, NC3, NC4, NC5, NC6 });
-    navigate("/instructions");
+    navigate("/email_evaluation");
   };
 
 
@@ -32,7 +32,7 @@ const NCS6 = () => {
           <option value="1">Extremely Uncharacteristic of Me</option>
           <option value="2">Somewhat Uncharacteristic of Me</option>
           <option value="3">Uncertain</option>
-          <option value="4">Somwhat Characteristic of Me</option>
+          <option value="4">Somewhat Characteristic of Me</option>
           <option value="5">Extremely Characteristic of Me</option>
         </select>
         </label>
@@ -46,7 +46,7 @@ const NCS6 = () => {
           <option value="1">Extremely Uncharacteristic of Me</option>
           <option value="2">Somewhat Uncharacteristic of Me</option>
           <option value="3">Uncertain</option>
-          <option value="4">Somwhat Characteristic of Me</option>
+          <option value="4">Somewhat Characteristic of Me</option>
           <option value="5">Extremely Characteristic of Me</option>
         </select>
         </label>
@@ -60,7 +60,7 @@ const NCS6 = () => {
           <option value="1">Extremely Uncharacteristic of Me</option>
           <option value="2">Somewhat Uncharacteristic of Me</option>
           <option value="3">Uncertain</option>
-          <option value="4">Somwhat Characteristic of Me</option>
+          <option value="4">Somewhat Characteristic of Me</option>
           <option value="5">Extremely Characteristic of Me</option>
         </select>
         </label>
@@ -74,7 +74,7 @@ const NCS6 = () => {
           <option value="1">Extremely Uncharacteristic of Me</option>
           <option value="2">Somewhat Uncharacteristic of Me</option>
           <option value="3">Uncertain</option>
-          <option value="4">Somwhat Characteristic of Me</option>
+          <option value="4">Somewhat Characteristic of Me</option>
           <option value="5">Extremely Characteristic of Me</option>
         </select>
         </label>
@@ -88,7 +88,7 @@ const NCS6 = () => {
           <option value="1">Extremely Uncharacteristic of Me</option>
           <option value="2">Somewhat Uncharacteristic of Me</option>
           <option value="3">Uncertain</option>
-          <option value="4">Somwhat Characteristic of Me</option>
+          <option value="4">Somewhat Characteristic of Me</option>
           <option value="5">Extremely Characteristic of Me</option>
         </select>
         </label>
@@ -102,7 +102,7 @@ const NCS6 = () => {
           <option value="1">Extremely Uncharacteristic of Me</option>
           <option value="2">Somewhat Uncharacteristic of Me</option>
           <option value="3">Uncertain</option>
-          <option value="4">Somwhat Characteristic of Me</option>
+          <option value="4">Somewhat Characteristic of Me</option>
           <option value="5">Extremely Characteristic of Me</option>
         </select>
         </label>

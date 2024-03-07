@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const ScorePage = () => {
   const [score, setScore] = useState(0);
-  
+  const navigate = useNavigate();
+
   useEffect(() => {
     const fetchScore = async () => {
       try {
@@ -18,6 +20,10 @@ const ScorePage = () => {
     fetchScore();
   }, []);
 
+  const handleLearnMoreClick = () => {
+    navigate('/educational'); 
+  };
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
       <h1>You Scored</h1>
@@ -29,7 +35,7 @@ const ScorePage = () => {
       ) : (
         <p style={{ fontSize: '20px' }}>Less than half of your responses matched the correct labeling.</p>
       )}
-
+      <button className="startEvaluationButton" onClick={handleLearnMoreClick}>Learn How to Improve</button> 
     </div>
     
   );

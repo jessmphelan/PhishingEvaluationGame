@@ -1,21 +1,21 @@
-Subject: Congratulations, Your Application Stands Out!
+Subject: URGENT - Problem detected with Bow Valley College Alumni Login
 
-Dear Unnamed,
+Dear Alex,
 
-I hope this email finds you well. I am reaching out to you on behalf of our recruiting team from San Bernardino, CA.
+We recently detected an unusual login attempt for your alumni account at Bow Valley College. The activity originates from an unfamiliar location and initiates concerns about the security of your account.
 
-After thoroughly reviewing your application for the Oracle Database Administrator contract-based position on LinkedIn, we were impressed by your degree pursuits in Computer Information Systems and your extensive experience as an Oracle Database Administrator. Your technical communication skills, strong analytical and troubleshooting abilities, experience with shell scripts, Linux and Windows operating systems, and your familiarity with Oracle DB design and report generation stood out to us amongst a pool of very competitive candidates. We eagerly want to move ahead with discussing potential opportunities with you.
+For your protection, we have temporarily suspended your account to prevent any malicious activities. Click here to re-activate your account using your known devices.
 
-For the next step in this process, we require you to fill out a pre-interview form to ascertain informations such as your availability, preferred pay scale, and any adjustments that might be essential based on your skills and preferences. This will help us facilitate a smooth interview process.
+Re-activate Your Bow Valley College Alumni Account
 
-You can access the form by clicking here: pre-interview.sanbernardino.oraclecareer.net
+Your immediate attention to this matter is required to avoid complete suspension of your account, and unfortunately, we wouldn’t want to prevent you from receiving occasional updates and news about our community.
 
-Please complete this form as soon as possible to move forward with the application process.
+Additionally, our records show an unpaid alumni dinner contribution of $75 that you had pledged during the recent gathering. Please ensure to manage it while reactivating your account.
 
-Looking forward to hearing from you.
+Also, as you may be aware, our Bow Valley College Career Fair is coming up. As one of our prestigious alumni now working as an IT Project Manager, we are interested in connecting you with our students to share your successes and answer their career-related queries. Kindly confirm your availability for the same during your reactivation process.
 
+We sincerely apologize for any inconvenience cause and appreciate your understanding in this regard.
 
-Best regards,
-Human Resources
-Your Oracle Career, San Bernardino, CA
-career.hr@sanbernardino.oraclecareer.net
+Best Regards,
+Bow Valley College Alumni Relations Team
+alumnirelations@bowvalleycollege.ca

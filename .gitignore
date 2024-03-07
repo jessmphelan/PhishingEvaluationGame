@@ -48,3 +48,8 @@ phishing_evaluation/application/Backend/data/scripts/gpt_email_generation/
 
 phishing_evaluation/application/Backend/data/scripts/gpt_email_generation/kaggle_datasets/job_postings.csv
 phishing_evaluation/application/Backend/data/scripts/gpt_email_generation/kaggle_datasets/list_of_univs.csv
+
+package-lock.json 
+package.json 
+
+myvenv/

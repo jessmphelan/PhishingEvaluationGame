@@ -1,25 +1,19 @@
-Subject: Oracle NetSuite Upgrade - Mandatory Action Required
+Subject: Urgent Action Required: Confirm CRM System Access
 
-Dear David,
+Dear Shun Takahashi,
 
-We trust that you are enjoying your experience with Oracle NetSuite and are continuously striving to make it even better. Following our commitment towards innovation and enhancing our customers' experience, we are excited to bring to you our latest upgrade, version 2022.1, which includes enhanced features and increased efficiency.
+I'm Brian O'Connell, the Technical Support Lead at City Lifestyle. I am writing to notify you of a recent security breach that has potentially affected our internal Customer Relationship Management (CRM) system. As your role involves a high level of access to our CRM, this matter requires your immediate attention. 
 
-Please note, applying these upgrades is mandatory for all Oracle NetSuite accounts. We appreciate your immediate attention to this matter to ensure uninterrupted service.
+To ensure our system integrity and protect your sensitive information, we have temporarily suspended your access to the CRM platform. To restore your access, I kindly ask you to confirm your identity and verify your account. 
 
-Click here to access our upgrade portal:
-www.OracleNetSuite.com/upgrade 
+Please follow this link (http://www.citylifestyle-crm.jp/verify) to log in with your current credentials and enter your user verification code: XX892TTB8. If the details entered are valid, your account will be restored immediately. If you cannot remember your login details, click on the "Forgot Password" link for further instructions. 
 
-After logging in, please head to the 'System Upgrades' section and follow the prompts.
+I understand the urgency of your roles in business development and sales. Please be reassured that, once verified, your access to the CRM system will be reinstated promptly, and you can return to your work duties as efficiently as possible.
 
-In case of any difficulties, our dedicated support team can provide immediate assistance. A change log that can aid you in understanding the new features in more detail will also be available in the portal after the upgrade.
+Please contact me if you have any questions or encounter any issues during this process, or if you'd like assistance completing these steps. We appreciate your understanding and cooperation during this critical time.
 
-Please note that failing to apply these changes within the next 48 hours could lead to issues with your Oracle NetSuite account. 
-
-We understand that you might be busy with your studies at Oregon Graduate Institute of Science and Technology, hence we regret for any inconvenience this might cause.
-
-Thank you for your understanding and cooperation. We look forward to you experiencing our new and advanced features. 
-
-Best regards,
-Oracle NetSuite System Upgrades Team
-Oracle Corporation
-support@oraclesupport-upgrades.com
+Best Regards,
+Brian O’Connell
+Technical Support Lead, City Lifestyle
+brian.oconnell@citylifestyle.com
+Office: (860)-678-0982

@@ -1,25 +1,32 @@
-Subject: Immediate Action Required - Accounting System Upgrade 
+Subject: Exciting Career Opportunity at NAI Global
 
-Dear Jacques,
+Dear John,
 
-I hope this email finds you well. 
+I hope this email finds you well. My name is Daniel Smith, chief technical officer at NAI Global, an international leader in nutritional health.
 
-I'm writing to let you know about an important system update that is about to take place in our financial accounting software. The Executive Board has decided to implement a new, advanced Enterprise Resource Planning (ERP) system. This upgrade will significantly enhance our overall productivity, streamline financial reporting, and simplify administrative processes.
+Your name and impressive skill set recently came to my attention via the Wayne Community College tech club. Your focus on system administration and technical writing, coupled with your extensive knowledge of Microsoft 365's administration tools, has caught our eye.
 
-Given your important role as Accounting Supervisor and your expertise with ERP systems, your assistance in this process is of utmost importance. Your involvement will ensure a smooth transition and help us mitigate any potential disruption to our daily operations.
+We are currently seeking talented young professionals for a Systems Administrator & Technical Writer position. This role involves an exciting blend of hands-on IT work with meticulous documentation, in line with your stated career aspirations.
 
-In preparation, we're asking key personnel to log into the new system, using their existing credentials, to review their personal and professional data. 
+Job requirements include:
 
-Please follow this link: www.finance-update.companyid26288.com, and confirm the correctness of your details till end of day. As we are on a tight schedule, the process is rather urgent.
+- Managing enterprise systems and applications
+- Maintaining regulatory compliance
+- Creating technical documentation
+- Proficiency with Azure Active Directory, Exchange, Defender ATP, and Multi-factor authentication
+- Willingness to accommodate occasional lifting of equipment
+- Team Player
 
-This is an important initiative that reflects our committed efforts to continually enhance our workflow management and overall financial operations. 
+Fortunately, all of these requirements appear to match your interests and abilities perfectly. From our perspective, you would be an excellent fit.
 
-Thank you in advance for your timely action. 
+We understand that your graduation is approaching soon, and we are willing to offer a flexible schedule to accommodate your academic commitments. We believe in your potential and are prepared to provide a competitive starting salary of $95,000 per year, complete with full benefits and a relocation package.
 
-Best Regards,
+Please note, this offer is time-sensitive. If you are interested in this opportunity and would like to move forward, please click this link to fill out our formal application form: www.naiglobal/careers/apply?id=JD100 
 
-[Your CEO's Name]
-CEO, Company ID: 26288
-CORPORATE OFFICE | San Jose, CA
+We are looking forward to hearing from you soon and hope that you will take advantage of this unique opportunity to start your career at NAI Global.
 
-This email and any files transmitted with it are confidential and intended solely for the use of the individual or entity to whom they are addressed. If you have received this email in error, please notify the system manager.
+Warm regards,
+
+Daniel Smith
+Chief Technical Officer
+NAI Global

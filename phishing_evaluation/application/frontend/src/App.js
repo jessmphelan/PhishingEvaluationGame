@@ -10,6 +10,7 @@ import InstructionsPage from './components/instructions.js';
 import EmailEvaluation from './components/email_evaluation.js';
 import UntimedSection from './components/untimed_section.js';
 import Score from './components/score.js';
+import Educational from './components/educational.js';
 import Timer from './components/timer.js';
 
 const App = () => {
@@ -31,12 +32,13 @@ const App = () => {
         </nav> */}
         <Routes>
           {/* <Route path="/" element={<CreateAccountForm />} /> */}
-          <Route path="/" element={<DemographicForm />} />
+          <Route path="/" element={<InstructionsPage />} />
+          <Route path="/demographic" element={<DemographicForm />} />
           <Route path="/ncs6" element={<NCS6/>} />
-          <Route path="/instructions" element={<InstructionsPage />} />
           <Route path="/email_evaluation" element={<EmailEvaluation />} />
           <Route path="/untimed_section" element={<UntimedSection />} />
           <Route path="/score" element={<Score />} />
+          <Route path="/educational" element={<Educational />} />
           <Route path="/timer" element={<Timer />} />
           {/* Other routes */}
         </Routes>
