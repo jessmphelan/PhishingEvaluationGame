@@ -10,7 +10,7 @@ const ScorePage = () => {
     const fetchScore = async () => {
       try {
         const { data } = await axios.get('http://127.0.0.1:5000/api/user_responses'); 
-        setScore(data.score); 
+        setScore(Math.round(data.score)); 
       } catch (error) {
         console.error('Error fetching score:', error);
 
@@ -37,6 +37,7 @@ const ScorePage = () => {
       )}
       <button className="startEvaluationButton" onClick={handleLearnMoreClick}>Learn How to Improve</button> 
     </div>
+    
   );
 };
 

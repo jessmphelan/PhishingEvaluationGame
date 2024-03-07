@@ -27,6 +27,14 @@ const EmailEvaluation = () => {
     }
   }, [emailCount, navigate]); // Depend on emailCount to trigger the effect
 
+
+  const resetButtonColors = () => {
+    document.getElementById('LLMBtn').style.backgroundColor = ''; 
+    document.getElementById('HumanBtn').style.backgroundColor = ''; 
+    document.getElementById('PhishBtn').style.backgroundColor = ''; 
+    document.getElementById('RealBtn').style.backgroundColor = '';
+  };
+
   const handleTimerEnd = () => {
     setEmailCount(count => count + 1);
   };
@@ -79,10 +87,13 @@ const EmailEvaluation = () => {
   };
   
   return (
+     
     <div style={{ position: 'relative' }} className="email-evaluation-container">
       <h1>Phishing Email Evaluation</h1>
-      <div style={{ position: 'absolute', top: 0, right: 0 }}>
-        {/* <Timer /> */}
+      <div>
+       {/* <Timer key={emailCount} initialMinute={0.5} onTimerEnd={handleTimerEnd} width={300} height={40} strokeWidth={4}/> */}
+      {/* <div style={{ position: 'absolute', top: 0, right: 0 }}> */}
+        {/* <Timer /> */
         <Timer key={emailCount} initialMinute={1} onTimerEnd={handleTimerEnd} width={300} height={20} strokeWidth={4} />
       </div>
       {/* <div className="email-container">
@@ -98,6 +109,8 @@ const EmailEvaluation = () => {
           ))
           : 'Loading email...'}
       </div>
+      <div>
+      <Timer key={emailCount} initialMinute={0.5} onTimerEnd={handleTimerEnd} width={300} height={40} strokeWidth={4}/>
       <div className="evaluation-section">
         <div className="column">
           <h3>Source Type</h3>
@@ -111,6 +124,10 @@ const EmailEvaluation = () => {
         </div>
       </div>
       <button className="startEvaluationButton" onClick={handleNextEmail}>Next Email</button>
+      
+    </div>
+    
+    </div>
     </div>
   );
 };
