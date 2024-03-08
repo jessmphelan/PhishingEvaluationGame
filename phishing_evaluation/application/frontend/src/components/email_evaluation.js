@@ -18,9 +18,15 @@ const EmailEvaluation = () => {
     }
   }, [emailCount, navigate]);
 
+
   const handleTimerEnd = () => {
     setEmailCount(count => count + 1);
   };
+
+  const ResetButtonColors = () =>{
+    document.getElementById("PhishBtn").style.backgroundColor = '';
+    document.getElementById("RealBtn").style.backgroundColor = '';
+  }
 
   const fetchNextEmail = () => {
     axios.get('http://127.0.0.1:5000/api/next_email')
@@ -32,6 +38,7 @@ const EmailEvaluation = () => {
       .catch(error => {
         console.error('Error fetching email:', error);
       });
+      ResetButtonColors();
   };
 
   const handleResponse = (value, BtnID) => {
