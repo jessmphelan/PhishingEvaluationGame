@@ -18,7 +18,7 @@ const Timer = ({ initialMinute = 1, width = 300, height = 40, strokeWidth = 4, o
     
       let backgroundColor = '#6699CC';
       if (seconds <= 10){
-        if (seconds % 2 == 0){
+        if (seconds % 2 === 0){
           backgroundColor = '#ff6865'
         }
       }

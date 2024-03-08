@@ -64,10 +64,10 @@ const UntimedSection = () => {
 
   return (
     <div>
-    <ProgressBar progress={progress} />
     <div style={{ position: 'relative' }} className="email-evaluation-container">
-      <h1>Phishing Email Evaluation Untimed Section</h1>
-
+      <h1>Phishing Email Evaluation</h1>
+      <h4>Please classify the email in the dropdown menu below and provide a brief explanation of your reasoning. </h4>
+      <ProgressBar progress={progress} />
       <div className="email-container">
         {currentEmail ? 
           currentEmail.content.split('\n').map((line, index) => (
@@ -78,7 +78,6 @@ const UntimedSection = () => {
           ))
           : 'Loading email...'}
       </div>
-      <h4>Please select the type of email you believe this is, and provide a brief explanation as to why. </h4>
       <div className="evaluation-section">
          <div className="form-group">
             <label>Email Type:</label>
@@ -94,12 +93,12 @@ const UntimedSection = () => {
 
         </div>
         <div className="form-group">
-            <label>Your Response:</label>
             <textarea 
                 value={userResponse.userTextResponse} 
                 onChange={e => handleResponse('userTextResponse', e.target.value)}
-                rows="4" // Adjust the number of rows as needed to change the height
+                rows="6" // Adjust the number of rows as needed to change the height
                 style={{width: '300px'}}
+                placeholder= "Please input your explanation or reasoning here"
             />
             {/* <input 
                 type="text" 
@@ -111,6 +110,7 @@ const UntimedSection = () => {
       </div>
       <button className="startEvaluationButton" aria-label="Next Email" onClick={handleNextEmail}>Next Email</button>
     </div>
+  </div>
   );
 };
 

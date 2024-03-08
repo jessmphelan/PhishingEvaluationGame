@@ -12,14 +12,14 @@ const NCS6 = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log({NC1, NC2, NC3, NC4, NC5, NC6 });
-    navigate("/email_evaluation");
+    navigate("/bigfive");
   };
 
 
   return (
     <div className='app-container'>
       <div> 
-      <h1>Phishing Evaluation</h1> 
+      <h1>Phishing Email Evaluation</h1> 
       </div>
     
     <form onSubmit={handleSubmit}>

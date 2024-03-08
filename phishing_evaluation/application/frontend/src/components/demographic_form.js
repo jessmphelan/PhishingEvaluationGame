@@ -19,7 +19,7 @@ const DemographicForm = () => {
   return (
     <div className='app-container'>
       <div> 
-      <h1>Phishing Evaluation</h1> 
+      <h1>Phishing Email Evaluation</h1> 
       <h3>Demographic Information</h3>
       </div>
     
