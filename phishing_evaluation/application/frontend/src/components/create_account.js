@@ -43,7 +43,7 @@ const CreateAccountForm = () => {
 		} else {
 			setSubmitted(true);
 			setError(false);
-            navigate("/demographic_form");
+            navigate("/demographic");
 		}
 	};
 

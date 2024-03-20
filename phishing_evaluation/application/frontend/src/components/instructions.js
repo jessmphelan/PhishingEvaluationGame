@@ -5,7 +5,7 @@ const InstructionsPage = () => {
     const navigate = useNavigate();
 
     const handleStartEvaluation = () => {
-        navigate('/demographic'); // Navigate to email_evaluation page
+        navigate('/create_account'); // Navigate to email_evaluation page
     };
 
     return (
