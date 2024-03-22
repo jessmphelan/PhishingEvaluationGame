@@ -133,6 +133,82 @@ def init_routes(app, mongo):
     def get_emails():
         emails = mongo.db.emails.find()
         return str(list(emails))
+    
+
+    @app.route('/api/save_demographic', methods=['POST'])
+    def save_demographic():
+        data = request.get_json()
+
+        # Extract data
+        player_id = data.get('playerID')
+        age = data.get('age')
+        year = data.get('year')
+        major = data.get('major')
+        language = data.get('language')
+        confidence = data.get('confidence')
+
+        # Validation or additional processing can go here
+
+        # Prepare document to insert into MongoDB
+        demographic_document = {
+            'playerID': player_id,
+            'demographic_info': {
+                'age': age,
+                'year': year,
+                'major': major,
+                'language': language,
+                'confidence': confidence,
+            }
+        }
+
+        # Insert the document into the MongoDB collection
+        try:
+            mongo.db.demographics.insert_one(demographic_document)
+            return jsonify({"message": "Demographic information saved successfully"}), 200
+        except Exception as e:
+            print(f"Error saving demographic information: {e}")
+            return jsonify({"error": "Unable to save demographic information"}), 500
+        
+    # @app.route('/api/save_psychological_profile', methods=['POST'])
+    # def save_psychological_profile():
+    #     data = request.get_json()
+    #     player_id = data.get('playerID')
+    #     responses = data.get('responses')
+
+    #     if not player_id or not responses:
+    #         return jsonify({'error': 'Missing data'}), 400
+
+    #     try:
+    #         # Assuming you have a 'psychological_profiles' collection
+    #         mongo.db.psychological_profiles.insert_one({
+    #             'playerID': player_id,
+    #             'NCS6_responses': responses
+    #         })
+    #         return jsonify({'message': 'Responses saved successfully'}), 200
+    #     except Exception as e:
+    #         print(f"Error saving psychological profile: {e}")
+    #         return jsonify({'error': 'Unable to save responses'}), 500
+
+    @app.route('/api/save_psychological_profile', methods=['POST'])
+    def save_psychological_profile():
+        data = request.get_json()
+        player_id = data.get('playerID')
+        responses = data.get('responses')
+        test_type = data.get('testType')  # Differentiate between test types
+
+        if not player_id or not responses or not test_type:
+            return jsonify({'error': 'Missing data'}), 400
+
+        try:
+            # Insert into the 'psychological_profiles' collection with testType distinction
+            mongo.db.psychological_profiles.insert_one({
+                'playerID': player_id,
+                test_type: responses  # Dynamically set the key based on testType
+            })
+            return jsonify({'message': f'{test_type} responses saved successfully'}), 200
+        except Exception as e:
+            print(f"Error saving {test_type} responses: {e}")
+            return jsonify({'error': f'Unable to save {test_type} responses'}), 500
 
     
     @app.route('/api/save_response', methods=['POST'])
@@ -141,16 +217,20 @@ def init_routes(app, mongo):
         print("Route hit!")
         data = request.json
         print("Received data: ", data)  
+
         email_id = data.get('emailId')
         user_response = data.get('response')
+        player_id = data.get('playerID')
+        #highlighted_text = user_response.get('highlightedText')
 
         response_document = {
-             'email_id': email_id,
-             'response': user_response
+            'playerID': player_id,
+            'email_id': email_id,
+            'response': user_response
         }
 
-        if not email_id or not user_response:
-            return jsonify({"error": "Missing emailId or response"}), 400
+        if not email_id or not user_response or not player_id:
+            return jsonify({"error": "Missing emailId, response, or playerID"}), 400
 
         try:
             print("Attempting to insert:", response_document)
@@ -164,12 +244,16 @@ def init_routes(app, mongo):
 
     @app.route('/api/user_responses', methods=['GET'])
     def get_user_responses():
-        user_responses = mongo.db.player_data.find()
+        player_id = request.args.get('playerID')
+        if not player_id:
+            return jsonify({'error': 'Missing playerID'}), 400
+        
+        user_responses = mongo.db.player_data.find({'playerID': player_id})
         email_labels = {email['email_id']: email for email in mongo.db.emails.find()}
         correct_count = 0
         total_count = 0
 
-        print('Fetching user responses...')
+        print(f'Fetching user responses for playerID: {player_id}...')
         for response in user_responses:
             total_count += 1
             print(f'Response #{total_count}: {dumps(response)}')
@@ -207,3 +291,18 @@ def init_routes(app, mongo):
         score = (correct_count / total_count) * 100 if total_count > 0 else 0
         score = round(score)
         return jsonify({"score": score})
+
+    @app.route('/api/register_session', methods=['POST'])
+    def register_session():
+        data = request.get_json()
+        player_id = data.get('playerID')
+        study_mode = data.get('studyMode')
+
+        # Check if the playerID already exists
+        if mongo.db.sessions.find_one({"playerID": player_id}):
+            return jsonify({"error": "Duplicate playerID, please generate a new one"}), 409
+
+        # No duplicate, insert the new session
+        mongo.db.sessions.insert_one({"playerID": player_id, "studyMode": study_mode})
+        print("Inserting new session id into db")
+        return jsonify({"message": "Session registered successfully"}), 200

@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import { usePlayerID } from './playerID_context';
+
+
 const NCS6 = () => {
   const [NC1, setNC1] = useState('');
   const [NC2, setNC2] = useState('');
@@ -9,12 +12,48 @@ const NCS6 = () => {
   const [NC5, setNC5] = useState('');
   const [NC6, setNC6] = useState('');
   const navigate = useNavigate();
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log({NC1, NC2, NC3, NC4, NC5, NC6 });
-    navigate("/bigfive");
-  };
 
+  const { playerID } = usePlayerID();
+
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   console.log({NC1, NC2, NC3, NC4, NC5, NC6 });
+  //   navigate("/bigfive");
+  // };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const responses = { NC1, NC2, NC3, NC4, NC5, NC6 };
+
+    const payload = {
+      playerID, // Include playerID in the payload
+      responses,
+      testType: 'NCS6' // Specify the type of the test
+    };
+
+    console.log(payload);
+
+    try {
+      const response = await fetch('http://127.0.0.1:5000/api/save_psychological_profile', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload), // Send playerID with responses
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to save NCS6 responses');
+      }
+
+      // Navigate to the next component after successful submission
+      navigate("/bigfive");
+    } catch (error) {
+      console.error("Error saving NCS6 responses:", error);
+      // Optionally handle the error, e.g., by showing a message to the user
+    }
+  };
 
   return (
     <div className='app-container'>

@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { usePlayerID } from './playerID_context';
+
+
 const Educational = () => {
   return (
     <div style={{padding: '20px', maxWidth: '800px', margin: '0 auto'}}>

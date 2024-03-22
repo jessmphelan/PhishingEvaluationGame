@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { usePlayerID } from './playerID_context';
+
+
 const ProgressBar = ({ progress }) => {
     const Parentdiv = {
         display: 'flex',

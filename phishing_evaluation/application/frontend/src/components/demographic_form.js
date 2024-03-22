@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import { usePlayerID } from './playerID_context';
+
+
 const DemographicForm = () => {
   const [age, setAge] = useState('');
   const [year, setYear] = useState('');
@@ -8,11 +11,50 @@ const DemographicForm = () => {
   const [language, setLanguage] = useState('');
   const [confidence, setConfidence] = useState('');
 
+  const { playerID, setPlayerID } = usePlayerID();
+
   const navigate = useNavigate();
-  const handleSubmit = (event) => {
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   console.log({ age, year, major, language, confidence});
+  //   navigate("/ncs6");
+  // };
+
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log({ age, year, major, language, confidence});
-    navigate("/ncs6");
+
+    // Example payload, include all necessary fields
+    const payload = {
+      playerID, // Include playerID in the payload
+      age,
+      year,
+      major,
+      language,
+      confidence
+    };
+
+    console.log(payload)
+
+    try {
+      const response = await fetch('http://127.0.0.1:5000/api/save_demographic', { // Use your actual endpoint
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to save demographic information');
+      }
+
+      // Proceed to the next component
+      navigate("/ncs6");
+    } catch (error) {
+      console.error("Error saving demographic information:", error);
+      // Handle error (show error message, etc.)
+    }
   };
 
 
