@@ -519,3 +519,113 @@ button[type="submit"]:hover {
     opacity: 0;
   }
 }
+
+/* 
+.choice-container,
+.form-container,
+.enter-study-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.choice-button,
+.submit-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.choice-button.yes {
+  background-color: #007bff;
+  color: white;
+}
+
+.choice-button.no {
+  background-color: #007bff;
+  color: white;
+}
+
+.choice-button:hover,
+.submit-button:hover {
+  opacity: 0.9;
+}
+
+.text-input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(100% - 22px); /* Adjust based on padding 
+}
+/* 
+.submit-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.form-container label,
+.enter-study-container p {
+  display: block;
+  margin-bottom: 15px;
+} */
+
+.form-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.section-container {
+  background-color: #f9f9f9; /* Slightly off-white background for contrast */
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.button-container, .form-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.choice-button, .submit-button {
+  padding: 10px 20px;
+  background-color: #1c4072;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.choice-button:hover, .submit-button:hover {
+  background-color: #2a5a9e;
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0 20px 0; /* Add space below the input */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensure padding does not affect the overall width */
+}
+
+
+.highlight {
+  background-color: yellow;
+}

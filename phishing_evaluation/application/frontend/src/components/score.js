@@ -2,14 +2,24 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
+import { usePlayerID } from './playerID_context';
+
 const ScorePage = () => {
   const [score, setScore] = useState(0);
+
+  const { playerID } = usePlayerID();
+
+
   const navigate = useNavigate();
 
   useEffect(() => {
     const fetchScore = async () => {
       try {
-        const { data } = await axios.get('http://127.0.0.1:5000/api/user_responses');
+
+        const url = 'http://127.0.0.1:5000/api/user_responses?playerID=' + playerID;
+
+        //const { data } = await axios.get('http://127.0.0.1:5000/api/user_responses');
+        const { data } = await axios.get(url);
         setScore(data.score);
       } catch (error) {
         console.error('Error fetching score:', error);
@@ -51,10 +61,9 @@ const ScorePage = () => {
             <div class="confetti-piece"></div>
           </div>
           <div class="results-summary-container__result">
-            <div class="heading-tertiary">Your Username: phish0123 </div>
-            <div class="heading-tertiary">Your Total Score: 5392 </div>
+            <div class="heading-tertiary">Your Username: {playerID} </div>
             <div class="result-box">
-              <div class="heading-primary">..</div>
+              <div class="heading-primary"></div>
               <h1>You Scored</h1>
               <p style={{ fontSize: '36px' }}>{score}%</p>
               {score > 50 ? (
@@ -70,16 +79,16 @@ const ScorePage = () => {
             <div class="heading-secondary heading-secondary--blue">Leaderboard</div>
             <div class="summary-result-options">
               <div class="result-option">
-                <span class="result-text">First Place</span>
-                <div class="result-box">9634</div>
+                <span class="result-text">PhishUser_1711125684811</span>
+                <div class="result-box">9534</div>
               </div>
               <div class="result-option">
-                <span class="result-text">Second Place</span>
-                <div class="result-box">8927</div>
+                <span class="result-text">PhishUser_1711076464272</span>
+                <div class="result-box">9322</div>
               </div>
               <div class="result-option">
-                <span class="result-text">Third Place</span>
-                <div class="result-box">8805</div>
+                <span class="result-text">PhishUser_1711125480280</span>
+                <div class="result-box">8444</div>
               </div>
               <div style={{textAlign: 'center', paddingTop: '100px', position: 'relative', zIndex: 9999}}> {/* High z-index to bring to front */}
                 <button className="learnMoreBtn" onClick={handleLearnMoreClick} style={{cursor: 'pointer', position: 'relative', zIndex: 10000}}>

@@ -3,6 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import ProgressBar from './progress_bar.js';
 
+import { usePlayerID } from './playerID_context';
+
+
 const UntimedSection = () => {
   const [currentEmail, setCurrentEmail] = useState(null);
   const [userResponse, setUserResponse] = useState({ type: '', userTextResponse: '' });
@@ -10,6 +13,8 @@ const UntimedSection = () => {
   const [startTime, setStartTime] = useState(Date.now()); 
   const [progress, setProgress] = useState(0);
   const navigate = useNavigate();
+
+  const { playerID } = usePlayerID();
 
   useEffect(() => {
     fetchNextEmail();
@@ -27,6 +32,18 @@ const UntimedSection = () => {
     });
   };
 
+  const handleMouseUp = () => {
+    const highlightedText = window.getSelection().toString().trim();
+    if (highlightedText) {
+      setUserResponse((prevResponse) => ({
+        ...prevResponse,
+        highlightedText: highlightedText,
+      }));
+    }
+  };
+  
+
+
   const handleResponse = (field, value) => {
     const endTime = Date.now(); 
     const elapsedTime = (endTime - startTime) / 1000; 
@@ -34,14 +51,33 @@ const UntimedSection = () => {
   };
 
   const handleNextEmail = () => {
-    axios.post('http://127.0.0.1:5000/api/save_response', { emailId: currentEmail.email_id, response: userResponse })
+    // axios.post('http://127.0.0.1:5000/api/save_response', { emailId: currentEmail.email_id, response: userResponse })
+    //   .then(() => {
+    //     fetchNextEmail();
+    //     setUserResponse({type: '' });
+    //   })
+    //   .catch(error => {
+    //     console.error('Error saving response:', error);
+    //   });
+    const payload = {
+      playerID: playerID, // Include playerID in the response
+      emailId: currentEmail.email_id, // Ensure this matches your backend expectations
+      response: { 
+        ...userResponse, 
+        highlightedText: userResponse.highlightedText // Include highlighted text here
+      },
+    };
+
+    console.log(payload); // Log the payload to the console (for debugging purposes
+
+    axios.post('http://127.0.0.1:5000/api/save_response', payload)
       .then(() => {
         fetchNextEmail();
-        setUserResponse({type: '' });
+        setUserResponse({ type: '', userTextResponse: '', highlightedText: '' });
       })
       .catch(error => {
         console.error('Error saving response:', error);
-      });
+    });
 
 
     setEmailCount(prevCount => {
@@ -66,9 +102,12 @@ const UntimedSection = () => {
     <div>
     <div style={{ position: 'relative' }} className="email-evaluation-container">
       <h1>Phishing Email Evaluation</h1>
-      <h4>Please classify the email in the dropdown menu below and provide a brief explanation of your reasoning. </h4>
+      <p style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'left' }}>Please click the appropriate email type selection below to classify the email and 
+      provide a brief explanation for your reasoning. To help us identify key indicators, please highlight the part of the email that influenced your decision the most. 
+      Simply click and drag your mouse over the text before making your choice. The selection might not change color, but it will be captured. 
+      </p>
       <ProgressBar progress={progress} />
-      <div className="email-container">
+      <div className="email-container" onMouseUp={handleMouseUp}>
         {currentEmail ? 
           currentEmail.content.split('\n').map((line, index) => (
             <React.Fragment key={index}>

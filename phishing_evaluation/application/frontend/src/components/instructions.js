@@ -1,11 +1,14 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import { usePlayerID } from './playerID_context';
+
+
 const InstructionsPage = () => {
     const navigate = useNavigate();
 
     const handleStartEvaluation = () => {
-        navigate('/create_account'); // Navigate to email_evaluation page
+        navigate('/demographic'); // Navigate to email_evaluation page
     };
 
     return (

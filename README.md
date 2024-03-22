@@ -66,3 +66,22 @@ Terminal 2 (to start the database)
 ` python run.py `
 
 test
+
+
+
+# MongoDB Collections
+
+To run this locally, you can create the phishing_game mongodb database locally and add the following collections: 
+
+``` 
+- emails : contains the emails that will be displayed to the user
+
+- demographics : contains the demographic information of the user
+
+- player_data : contains the player's responses to the emails (including their responses (phishing or not, LLM or human), time taken to respond, text highlighted of what made them decide. Only in the untimed_section responses will prose response to why they made that decision be added) 
+
+- sessions: generates session id for each player
+
+- psychological_profiles : contains the psychological profiles of the players
+
+```

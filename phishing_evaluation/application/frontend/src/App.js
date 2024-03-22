@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState} from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+
+import { PlayerIDProvider } from './components/playerID_context';
 
 //Components
 import CreateAccountForm from './components/create_account.js';
@@ -16,24 +18,13 @@ import Timer from './components/timer.js';
 
 const App = () => {
   return (
+    <PlayerIDProvider>
     <Router>
       <div>
       <div className="wave-container"></div>
-        {/* <nav>
-          <ul>
-            <li><a href="/create_account_form">User Registration</a></li>
-            {/* Other navigation links }
-          </ul>
-        </nav> */
-        /* <nav>
-          <ul>
-            <li><a href="/demographic_form">Fill Out Demographic Information</a></li>
-            {/* Other navigation links }
-          </ul>
-        </nav> */}
         <Routes>
-          <Route path="/" element={<InstructionsPage />} />
-          <Route path="/create_account" element={<CreateAccountForm />} />
+          <Route path="/" element={<CreateAccountForm />} />  
+          <Route path="/instructions" element={<InstructionsPage />} />
           <Route path="/demographic" element={<DemographicForm />} />
           <Route path="/bigfive" element={<BigFive/>} />
           <Route path="/ncs6" element={<NCS6/>} />
@@ -46,6 +37,7 @@ const App = () => {
         </Routes>
       </div>
     </Router>
+    </PlayerIDProvider>
   );
 };
 
