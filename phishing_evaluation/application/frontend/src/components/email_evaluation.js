@@ -13,11 +13,11 @@ const EmailEvaluation = () => {
   const [emailCount, setEmailCount] = useState(0);
   const [startTime, setStartTime] = useState(null);
 
-  const [highlightedText, setHighlightedText] = useState(''); // Highlighted text
+  const [highlightedText, setHighlightedText] = useState(''); 
 
   const navigate = useNavigate();
 
-  const { playerID } = usePlayerID(); // Correctly access playerID from context
+  const { playerID } = usePlayerID(); 
 
   useEffect(() => {
     if (emailCount < 10) {
@@ -46,7 +46,6 @@ const EmailEvaluation = () => {
     range.deleteContents();
     range.insertNode(span);
   
-    // Return the selected text for saving or further processing
     return selectedText;
   };
 
@@ -60,7 +59,7 @@ const EmailEvaluation = () => {
     //const highlightedText = captureHighlightedText();
     if (highlightedText) {
       console.log("Highlighted Text: ", highlightedText);
-      // Update the state or handle the highlighted text as needed
+
     }
     setHighlightedText(highlightedText);
   };
@@ -72,16 +71,6 @@ const EmailEvaluation = () => {
 
   const fetchNextEmail = () => {
 
-    // const contentContainer = document.querySelector('.email-container');
-    // if (contentContainer) {
-    //   contentContainer.querySelectorAll('.highlight').forEach((highlightSpan) => {
-    //     const textNode = document.createTextNode(highlightSpan.textContent);
-    //     highlightSpan.parentNode.replaceChild(textNode, highlightSpan);
-    //   });
-    // }
-
-    
-
     axios.get('http://127.0.0.1:5000/api/next_email')
       .then(response => {
         console.log("Received email data:", response.data);
@@ -92,7 +81,7 @@ const EmailEvaluation = () => {
         console.error('Error fetching email:', error);
       });
       ResetButtonColors();
-      setHighlightedText(''); // Reset highlighted text
+      setHighlightedText(''); // reset highlighted text
   };
 
   const handleResponse = (value, BtnID) => {
@@ -111,17 +100,16 @@ const EmailEvaluation = () => {
 
 
     const responseToSend = {
-      playerID: playerID, // Including the playerID with the response
-      emailId: currentEmail.emailId, // Assuming your email object has an emailId field
+      playerID: playerID, 
+      emailId: currentEmail.emailId, 
       response: { 
         type: value, 
         elapsedTime: elapsedTime, 
-        highlightedText: userResponse.highlightedText } // Including the response and elapsed time
+        highlightedText: userResponse.highlightedText } 
     };
 
     console.log("Response to send:", responseToSend);
 
-    // Use axios or fetch to send the response to your backend
     axios.post('http://127.0.0.1:5000/api/save_response', responseToSend)
       .then(response => {
         console.log("Response saved:", response.data);
@@ -132,12 +120,12 @@ const EmailEvaluation = () => {
 
     document.getElementById(BtnID).style.backgroundColor = '#2a5a9e'; // Change the color of the button when clicked
 
-    // Automatically navigate or fetch the next email after a delay
+
     setTimeout(() => {
       if (emailCount < 9) {
-        setEmailCount(current => current + 1); // Proceed to the next email
+        setEmailCount(current => current + 1); 
       } else {
-        navigate('/untimed_section'); // Navigate away after the last email
+        navigate('/untimed_section'); 
       }
     }, 500); // Adjust delay as needed
   };

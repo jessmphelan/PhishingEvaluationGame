@@ -51,24 +51,16 @@ const UntimedSection = () => {
   };
 
   const handleNextEmail = () => {
-    // axios.post('http://127.0.0.1:5000/api/save_response', { emailId: currentEmail.email_id, response: userResponse })
-    //   .then(() => {
-    //     fetchNextEmail();
-    //     setUserResponse({type: '' });
-    //   })
-    //   .catch(error => {
-    //     console.error('Error saving response:', error);
-    //   });
     const payload = {
-      playerID: playerID, // Include playerID in the response
-      emailId: currentEmail.email_id, // Ensure this matches your backend expectations
+      playerID: playerID, 
+      emailId: currentEmail.email_id, 
       response: { 
         ...userResponse, 
-        highlightedText: userResponse.highlightedText // Include highlighted text here
+        highlightedText: userResponse.highlightedText 
       },
     };
 
-    console.log(payload); // Log the payload to the console (for debugging purposes
+    console.log(payload); 
 
     axios.post('http://127.0.0.1:5000/api/save_response', payload)
       .then(() => {
@@ -139,12 +131,6 @@ const UntimedSection = () => {
                 style={{width: '300px'}}
                 placeholder= "Please input your explanation or reasoning here"
             />
-            {/* <input 
-                type="text" 
-                value={userResponse.userTextResponse} 
-                onChange={e => handleResponse('userTextResponse', e.target.value)}
-                rows="4"
-            /> */}
         </div>
       </div>
       <button className="startEvaluationButton" aria-label="Next Email" onClick={handleNextEmail}>Next Email</button>

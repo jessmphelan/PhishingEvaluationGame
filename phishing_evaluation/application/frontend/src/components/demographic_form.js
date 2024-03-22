@@ -24,9 +24,8 @@ const DemographicForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    // Example payload, include all necessary fields
     const payload = {
-      playerID, // Include playerID in the payload
+      playerID, 
       age,
       year,
       major,
@@ -49,11 +48,10 @@ const DemographicForm = () => {
         throw new Error('Failed to save demographic information');
       }
 
-      // Proceed to the next component
+
       navigate("/ncs6");
     } catch (error) {
       console.error("Error saving demographic information:", error);
-      // Handle error (show error message, etc.)
     }
   };
 

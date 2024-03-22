@@ -31,15 +31,15 @@ const BigFive = () => {
         event.preventDefault();
 
         const payload = {
-            playerID, // Include playerID in the payload
+            playerID, 
             responses,
-            testType: 'BigFive' // Specify the type of the test
+            testType: 'BigFive' 
         };
 
-        console.log(payload); // Log the payload to the console (for debugging purposes
+        console.log(payload); 
 
         try {
-            const response = await fetch('http://127.0.0.1:5000/api/save_psychological_profile', { // Use your actual endpoint
+            const response = await fetch('http://127.0.0.1:5000/api/save_psychological_profile', { 
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -51,11 +51,10 @@ const BigFive = () => {
                 throw new Error('Failed to save BigFive responses');
             }
 
-            // Proceed to the next component
             navigate("/email_evaluation");
         } catch (error) {
             console.error("Error saving BigFive responses:", error);
-            // Optionally handle the error, e.g., by showing a message to the user
+            
         }
     };
 

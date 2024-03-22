@@ -15,11 +15,6 @@ const NCS6 = () => {
 
   const { playerID } = usePlayerID();
 
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   console.log({NC1, NC2, NC3, NC4, NC5, NC6 });
-  //   navigate("/bigfive");
-  // };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -27,9 +22,9 @@ const NCS6 = () => {
     const responses = { NC1, NC2, NC3, NC4, NC5, NC6 };
 
     const payload = {
-      playerID, // Include playerID in the payload
+      playerID, 
       responses,
-      testType: 'NCS6' // Specify the type of the test
+      testType: 'NCS6' 
     };
 
     console.log(payload);
@@ -40,18 +35,17 @@ const NCS6 = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(payload), // Send playerID with responses
+        body: JSON.stringify(payload), 
       });
 
       if (!response.ok) {
         throw new Error('Failed to save NCS6 responses');
       }
 
-      // Navigate to the next component after successful submission
       navigate("/bigfive");
     } catch (error) {
       console.error("Error saving NCS6 responses:", error);
-      // Optionally handle the error, e.g., by showing a message to the user
+     
     }
   };
 
