@@ -15,6 +15,7 @@ import UntimedSection from './components/untimed_section.js';
 import Score from './components/score.js';
 import Educational from './components/educational.js';
 import Timer from './components/timer.js';
+import EmailCollection from './components/email_collection.js';
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="/untimed_section" element={<UntimedSection />} />
           <Route path="/score" element={<Score />} />
           <Route path="/educational" element={<Educational />} />
+          <Route path="/email_collection" element={<EmailCollection />} />
           <Route path="/timer" element={<Timer />} />
           {/* Other routes */}
         </Routes>
