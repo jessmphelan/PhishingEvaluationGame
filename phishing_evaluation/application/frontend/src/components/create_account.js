@@ -128,7 +128,7 @@ const CreateAccountForm = () => {
 					<input type="text" value={tempSpecialId} onChange={(e) => setTempSpecialId(e.target.value)} className="input-field"/>
 					<div className="form-button-container">
 						<button type="button" onClick={handleGoBack} className="submit-button">Go Back</button>
-						<button type="submit" className="submit-button">Proceed</button>
+						<button type="submit" onClick={handleEnterStudy} className="submit-button">Proceed</button>
 						
 					</div>
 					</form>
