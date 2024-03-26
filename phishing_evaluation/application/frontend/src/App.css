@@ -630,3 +630,9 @@ button[type="submit"]:hover {
 .highlight {
   background-color: yellow;
 }
+
+.customPlaceholder::placeholder {
+  font-style: italic; /* Makes placeholder text italic */
+  font-size: 16px; /* Adjust the font size as needed */
+  font-family: 'Arial', sans-serif; /* Change the font family as you like */
+}
