@@ -131,7 +131,7 @@ const UntimedSection = () => {
                 rows="6" // Adjust the number of rows as needed to change the height
                 //style={{width: '300px'}}
                 //style={{width: '100%', height: '96px', padding: '10px'}}
-                style={{width: '1000px', padding: '10px'}} 
+                style={{width: '800px', padding: '10px'}} 
                 placeholder= "Please input your explanation or reasoning here"
             />
         </div>
