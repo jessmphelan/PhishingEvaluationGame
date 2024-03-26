@@ -84,4 +84,6 @@ To run this locally, you can create the phishing_game mongodb database locally a
 
 - psychological_profiles : contains the psychological profiles of the players
 
+- follow_ups : contains the players emails (if provided) and whether they'd like to be contacted/plan on attending PhishBowl
+
 ```
