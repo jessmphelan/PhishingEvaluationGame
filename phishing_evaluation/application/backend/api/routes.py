@@ -306,3 +306,30 @@ def init_routes(app, mongo):
         mongo.db.sessions.insert_one({"playerID": player_id, "studyMode": study_mode})
         print("Inserting new session id into db")
         return jsonify({"message": "Session registered successfully"}), 200
+    
+
+    @app.route('/api/save_participant_info', methods=['POST'])
+    def save_participant_info():
+        data = request.json
+        player_id = data.get('playerID')
+        email = data.get('email')
+        attending = data.get('attending')
+
+        participant_info = {
+            'email' : email,
+            'attending': attending
+        }
+
+        if mongo.db.sessions.find_one({"playerID": player_id}):
+            return jsonify({"error": "Duplicate playerID, please generate a new one"}), 409
+
+        # No duplicate, insert the new session
+        mongo.db.follow_ups.insert_one({"playerID": player_id, "participantInfo": participant_info})
+        print("Inserting participant follow up info into db")
+
+
+        response = {
+            "status": "success",
+            "message": "Participant information saved successfully."
+        }
+        return jsonify(response), 200

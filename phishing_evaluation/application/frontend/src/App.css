@@ -298,11 +298,12 @@ button[type="submit"]:hover {
 }
 
 .takeaway {
+  color: #2a5a9e;
   margin-bottom: 20px; /* Spacing between each takeaway */
 }
 
 .takeaway h2 {
-  color: #007bff; /* Blue for headings */
+  color: #1c4072; /* Blue for headings */
   font-size: 1.5em; /* Slightly larger font size for headings */
 }
 
