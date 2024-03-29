@@ -1,0 +1,24 @@
+FROM: Tahir Mahmudov, Palo Alto Networks <t.mahmudov@paloaltonet.com>
+DATE: May 15, 2023
+SUBJECT: Cortex Product Beta Notice and Review
+
+Dear Rufat,
+
+My name is Tahir Mahmudov, I am the lead Cortex Product Manager at Palo Alto Networks. We have noticed your outstanding efforts in your role as a Systems Engineer at our Federal Specialist division.
+
+Palo Alto Networks has been developing a new innovative solution aiming to revolutionize SIEM and SOAR solutions as we know it. Given your advanced knowledge of these areas, and your solid understanding of the Security Operations Center processes, we believe that you could make invaluable contributions to its final phase of testing and development.
+
+I would like to invite you to become an integral part of this final phase. Your feedback and insights would be invaluable in improving the quality and applicability of our product. Your participation would not only aid Palo Alto Networks, but it’s also an opportunity for you to delve into the future of cybersecurity solutions. 
+
+You can access the beta testing platform and corresponding materials using the following link:  www.PaloAltoSec/CortexBeta/Rufat/id564
+
+Please take this as a sincere appreciation of your hard work, effort, and the results that you have achieved at Palo Alto Networks. If you have any questions, please do not hesitate to ask.
+
+Looking forward to working closely with you on this project.
+
+Best regards,
+
+Tahir Mahmudov
+Cortex Product Manager
+Palo Alto Networks
+t.mahmudov@paloaltonet.com

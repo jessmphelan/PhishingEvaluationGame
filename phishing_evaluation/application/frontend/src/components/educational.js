@@ -7,6 +7,9 @@ const Educational = () => {
   const [email, setEmail] = useState('');
   const [attending, setAttending] = useState(false);
 
+  const [enrollInRaffle, setEnrollInRaffle] = useState(false);
+  const [wishToReceiveInfo, setWishToReceiveInfo] = useState(false);
+
   const playerID = usePlayerID();
 
   const handleSubmit = (e) => {
@@ -16,7 +19,8 @@ const Educational = () => {
     const dataToSend = {
       playerID: playerID, 
       email: email, 
-      attending: attending 
+      enrollInRaffle: enrollInRaffle,
+      wishToReceiveInfo: wishToReceiveInfo
     };
   
     console.log("Data to send:", dataToSend);
@@ -31,29 +35,30 @@ const Educational = () => {
       });
   };
 
+  
+
   return (
     <div style={{padding: '20px', maxWidth: '800px', margin: '0 auto'}}>
       <div style={{backgroundColor: 'white', padding: '20px', border: '1px solid #ccc', borderRadius: '5px', position: 'relative', zIndex: 2, textAlign:'center'}}> 
         <h1>Improving Phishing Detection</h1>
-        <p>Enhance your skills in identifying phishing emails with the following tips:</p>
         <div className="takeaways">
           <div className="takeaway">
-            <h2>1. Check for inconsistencies and impersonation attempts</h2>
+            <h2>Check for inconsistencies and impersonation attempts</h2>
             <p>Examine the sender's email address for alterations or misspellings. Look for inconsistencies in the domain, formatting, and language use.</p>
           </div>
           <div className="takeaway">
-            <h2>2. Be cautious with links and attachments</h2>
+            <h2>Be cautious with links and attachments</h2>
             <p>Hover over links to preview the URL and ensure it's legitimate. Avoid opening attachments from unknown sources.</p>
           </div>
           <div className="takeaway">
-            <h2>3. Scrutinize the content for urgency or threats</h2>
+            <h2>Scrutinize the content for urgency or threats</h2>
             <p>Be wary of messages that create a sense of urgency or threaten dire consequences. Verify any such requests directly with the entity.</p>
           </div>
         </div>
         {/* Email input and checkbox for attending the party */}
         <form onSubmit={handleSubmit} style={{marginTop: '20px'}}>
           <div>
-            <p>Please provide your email address below to be followed up after this study for more educational content, and select if you plan on attending the educational Phish Bowl Pizza Party on April 9th at 4:15 PM (at the Vaughn Home)</p>
+            <p>Please provide your email address below to be followed up after this study.</p>
             <input 
               type="email" 
               placeholder="Your email" 
@@ -62,16 +67,27 @@ const Educational = () => {
               style={{marginBottom: '10px', width: '100%', padding: '10px'}}
             />
           </div>
-          <div style={{marginBottom: '10px'}}>
-            <label>
-              <input 
-                type="checkbox" 
-                checked={attending} 
-                onChange={(e) => setAttending(e.target.checked)} 
-              /> 
-              Plan to attend the PhishBowl Pizza Party
-            </label>
-          </div>
+          {/* New checkboxes */}
+        <div style={{marginBottom: '10px'}}>
+          <label>
+            <input 
+              type="checkbox" 
+              checked={enrollInRaffle} 
+              onChange={(e) => setEnrollInRaffle(e.target.checked)} 
+            />
+            Enroll me in the raffle for $100 Virago gift card.
+          </label>
+        </div>
+        <div style={{marginBottom: '20px'}}>
+          <label>
+            <input 
+              type="checkbox" 
+              checked={wishToReceiveInfo} 
+              onChange={(e) => setWishToReceiveInfo(e.target.checked)} 
+            />
+            I wish to receive information about other student programs related to National Defense and Global Security, including Immersion Fellowships.
+          </label>
+        </div>
           <div>
             <button type="submit">Submit</button>
           </div>

@@ -1,0 +1,25 @@
+From: CrownCastleRecruitment@ccandco.com
+Date: August 15, 2023
+Subject: Re: Your Application for Senior Quality Engineer Position at Crown Castle
+
+Dear Stavros Anagnostou,
+
+We trust this message finds you in good health.
+
+We are pleased to confirm that we have received and reviewed your application for the position of Senior Quality Engineer. The selection committee was particularly impressed with your comprehensive skill set and the quality of your course work at the Dimocritus University of Thrace.
+
+Your knowledge of SQL, Postman/Swagger/SOAP UI, test automation language (Java / Python / C#), and your experience with BDD and Selenium/Playwright have set you apart from other candidates. It's clear that these skills, coupled with your dedication to testing and Quality Assurance, reflect the standards we uphold here at Crown Castle. 
+
+Therefore, we are excited to progress your application to the next stage. In order to do this, we would like to conduct an online aptitude test. This test is purpose-built to measure your ability to design and implement test automation frameworks.
+
+Please click here [http://CrownCastleCareers/apt-test/StavrosAnagnostou3232] to take the test. 
+
+Please note that the test must be completed within 72 hours from receipt of this email. Please also ensure that you have a stable internet connection.
+
+Once again, we thank you for your interest in Crown Castle and admire your passion for Quality Assurance & Testing. We look forward to potentially working with you in aligning the future of technology.
+
+Best Regards,
+
+Jessica Cornwall
+HR Senior Manager
+Crown Castle Inc.

@@ -1,0 +1,26 @@
+From: LinkedIn Jobs <noreply-jobs@linkedin.com>
+Date: January 31, 2023
+Subject: LinkedIn Job opportunity for Python Developer needing urgent attention
+
+Dear Esteemed,
+
+I hope this email finds you in great health and high spirits. I came across your profile on LinkedIn and was incredibly impressed by your skills and extensive experience as a Python Developer. Our tech team at FastLink Solutions, a cloud-based computing and automation company, believes you'd be the perfect fit for a vital project we're working on.
+
+The project involves designing and implementing innovative and result-oriented Python algorithms to support our ongoing cloud-based development. With your experience in Python, .NET, AWS Lambda, Cloudformation, Javascript (NodeJS) and your functional testing knowledge, this role could be an exciting opportunity for you. We have specifically chosen you due to your past demonstrated abilities in Automation Engineering and Cloud Development.
+
+The job will be on a remote basis initially due to the global situation, and you will be working directly under the Head of IT, Mr. Max Walters, who incidentally is an Alumni of Barstow Community College, same as you. 
+
+To apply for this position, please visit our job application page by clicking on the following link: https://www.linkedin.com/jobs/FastLink-Solutions/job_application/5526862348
+
+Any information you need about the compensation and work pattern will be provided there. Please note that this is a premium position and we are considering only the top 2% talents. So, we encourage you to apply as quickly as possible.
+
+Apologies for such a direct approach, but we believe it’s rare to find someone with your niche skills and experiences. We hope to talk to you soon.
+
+Best Regards,
+John Connor
+Recruitment Lead
+FastLink Solutions
+
+This email was sent by LinkedIn Corporation.
+2023 LinkedIn Corporation, Mountain View, California 94043, USA.
+All Rights Reserved.

@@ -1,0 +1,25 @@
+From: LinkedIn Job Alerts <no-reply@linkedin.com> 
+Date: April 27, 2023 
+Subject: Congratulations! You've Been Shortlisted for .Net Tech Lead Role  
+
+Dear Candidate,
+
+We are writing to inform you that your application for the .Net Tech Lead position, based in Austin Texas, has been shortlisted. 
+
+Based on your impressive LinkedIn profile and evident skills in Microsoft .Net, Web Services development, REST API, and JSON, you could potentially be a great fit. Your experience with GitHub, Jira, and Scrum Agile development methodology stands out in particular. 
+
+Due to the competitive nature of this role, we are conducting a screening test for all the shortlisted candidates. The test is designed to assess your coding abilities and leadership skills. 
+
+Kindly find the link below to the coding test:
+
+www.linkedin-skilltest.com/net-techlead
+
+Please complete the test within the next 24 hours. If you do not complete the test in the given time, your application will be removed from the shortlisted candidates' list.
+
+As you continue your journey with us, we want to assure you that your data and privacy will be safeguarded at all times.
+
+For any queries, you can reach out to us directly by replying to this email. 
+
+Thank you and best of luck!
+
+LinkedIn Recruiter Team

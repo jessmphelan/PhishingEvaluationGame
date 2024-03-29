@@ -314,10 +314,13 @@ def init_routes(app, mongo):
         player_id = data.get('playerID')
         email = data.get('email')
         attending = data.get('attending')
+        enroll_raffle = data.get('enrollInRaffle')
+        wish_to_receive_info = data.get('wishToReceiveInfo')
 
         participant_info = {
             'email' : email,
-            'attending': attending
+            'enrollInRaffle': enroll_raffle,
+            'wishToReceiveInfo': wish_to_receive_info
         }
 
         if mongo.db.sessions.find_one({"playerID": player_id}):

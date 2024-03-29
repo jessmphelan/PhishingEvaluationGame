@@ -1,0 +1,21 @@
+From: noreply@ibnsina.ncms.sa
+Date: August 10, 2023
+Subject: Invitation to Speak at ICML 2024 - Your contribution needed!
+
+Dear Ahmed Al Mahroos,
+
+We hope this email finds you well. We've been following your exceptional work in Machine Learning and your recent contributions to the field, which have not gone unnoticed.
+
+It is with great pleasure we inform you that you've been selected as one of the keynote speakers for the upcoming International Conference on Machine Learning (ICML) 2024, held in San Jose, California. Your expertise and thought leadership in machine learning models using Python and PyTorch would surely provide significant insights to our attendees.
+
+If you accept, you will give a presentation regarding your most recent work and findings. Furthermore, we are open to you discussing any topic that you believe could bring value to the conference and our attendees.
+
+To properly organize the event and correctly display your bio on our website and conference program, we kindly ask you to confirm your participation by signing into your personal profile, update your information, and submit your most recent outstanding achievements. Please follow this link to access your account: www.icml2024.speakers/invitation/AhmedAlMahroos
+
+After your confirmation and updates, our team will be able to assist you with any travel and accommodation arrangements, if necessary.
+
+We sincerely look forward to your involvement in ICML 2024 and believe your presence and insights will greatly benefit our attendees.
+
+Best regards,
+
+ICML Committee 2024
