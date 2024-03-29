@@ -13,6 +13,8 @@ const CreateAccountForm = () => {
 	const [isQuietSpace, setIsQuietSpace] = useState(null); // null, true, or false
 	const [specialId, setSpecialId] = useState(""); // For in-person sessions
 
+	const [userAgent, setUserAgent] = useState(''); // State to store the user agent string
+
 
 
 	const [tempSpecialId, setTempSpecialId] = useState("");
@@ -24,6 +26,8 @@ const CreateAccountForm = () => {
 
 	useEffect(() => {
 		console.log(`Current states - sessionType: ${sessionType}, isQuietSpace: ${isQuietSpace}, specialId: ${specialId}`);
+		setUserAgent(navigator.userAgent); // Store the user agent string in state
+		console.log(`User Agent: ${navigator.userAgent}`); // Log the user agent string
 	}, [sessionType, isQuietSpace, specialId]); // Log state changes for debugging
 
 	
@@ -78,7 +82,7 @@ const CreateAccountForm = () => {
 		// Determine the study mode based on the user's selections
 		let studyMode = sessionType === 'in-person' ? 'in-person' : (isQuietSpace ? 'remote-quiet' : 'remote-distractedenv');
 		
-		console.log(JSON.stringify({ playerID, studyMode }));
+		console.log(JSON.stringify({ playerID, studyMode, userAgent }));
 
 		try {
 			const response = await fetch('http://127.0.0.1:5000/api/register_session', {
@@ -86,7 +90,7 @@ const CreateAccountForm = () => {
 				headers: {
 					'Content-Type': 'application/json'
 				},
-				body: JSON.stringify({ playerID, studyMode })
+				body: JSON.stringify({ playerID, studyMode , userAgent})
 			});
 	
 			const data = await response.json();

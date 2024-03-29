@@ -297,13 +297,14 @@ def init_routes(app, mongo):
         data = request.get_json()
         player_id = data.get('playerID')
         study_mode = data.get('studyMode')
+        user_agent = data.get('userAgent')
 
         # Check if the playerID already exists
         if mongo.db.sessions.find_one({"playerID": player_id}):
             return jsonify({"error": "Duplicate playerID, please generate a new one"}), 409
 
         # No duplicate, insert the new session
-        mongo.db.sessions.insert_one({"playerID": player_id, "studyMode": study_mode})
+        mongo.db.sessions.insert_one({"playerID": player_id, "studyMode": study_mode, "userAgent": user_agent})
         print("Inserting new session id into db")
         return jsonify({"message": "Session registered successfully"}), 200
     
