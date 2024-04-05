@@ -75,7 +75,7 @@ const Educational = () => {
               checked={enrollInRaffle} 
               onChange={(e) => setEnrollInRaffle(e.target.checked)} 
             />
-            Enroll me in the raffle for $100 Virago gift card.
+            Enroll me in the raffle for $100 Uber Eats gift card.
           </label>
         </div>
         <div style={{marginBottom: '20px'}}>

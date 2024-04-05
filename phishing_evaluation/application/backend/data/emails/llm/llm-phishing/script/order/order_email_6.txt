@@ -1,0 +1,40 @@
+From: William Brown <WilliamBrown@nortontechsupportteam.com
+Date: Sat, 23 Mar 2024 00:00:00
+Subject: Urgent: Alert Regarding Your Recent Amazon Prime Order
+
+Dear valued Amazon Prime member,
+
+We're reaching out to you about an order that was recently placed with our university account. Please review your order details below:
+
+- Product: MacBook Pro
+- Quantity: 2
+- Price: $2,599.99 each
+- Delivery Address: Vanderbilt University, Nashville, TN
+
+If you did not place this order, your account may have experienced unauthorized access. We urge you to contact our customer support through the following link in order to resolve this issue:
+
+Awww.amazon.com/support
+
+In order to provide the best security measures and customer experience, please do not reply to this email. Always ensure to verify any link you click when dealing with sensitive information.
+
+Best regards,
+Amazon Support Team 
+---
+---
+
+Subject: IMPORTANT - Google Drive Storage Capacity Reached 
+
+Dear Google Drive User,
+
+Our system detected an unusual increase in your Google Drive storage space. As per our records, your drive is currently 99.7% full and maxing out soon.
+
+This could affect your ability to receive crucial university emails and documents. If you're not responsible for these changes, this might be a critical security issue that needs to be addressed immediately.
+
+Please contact our support team immediately by clicking the link below:
+
+Http://googledrive_support.com
+
+Please remember, never share your passwords and check any link before clicking.
+
+Best regards,
+Google Support Team

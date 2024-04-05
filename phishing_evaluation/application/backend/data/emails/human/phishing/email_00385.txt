@@ -1,0 +1,21 @@
+Source Link: https://it.brown.edu/alerts/read/microsoft-account-unusual-sign-activity
+To: [NA]
+From: account-security-noreply@accountprotection.microsoft.com">account-security-noreply@accountprotection.microsoft.com
+Date: 2019-03-28
+Subject: Microsoft account unusual sign-in activity
+Attachment: [NA]
+Body: 
+Microsoft account
+Unusual sign-in activity
+We detected something unusual about a recent sign-in to the Microsoft account jo*****@brown.edu.
+Sign-in details
+Country/region: Philippines
+IP address: 112.198.207.211
+Date: 3/28/2019 6:43 PM (GMT)
+Platform: Mac OS
+Browser: -
+Please go to your recent activity page to let us know whether or not this was you. If this wasn't you, we'll help you secure your account. If this was you, we'll trust similar activity in the future.
+Review recent activity
+To opt out or change where you receive security notifications, click here.
+Thanks,
+The Microsoft account team
