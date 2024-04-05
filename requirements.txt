@@ -8,3 +8,4 @@ Flask-Pymongo
 python-dotenv
 openai
 pandas
+pymupdf

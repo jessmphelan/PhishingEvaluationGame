@@ -1,0 +1,50 @@
+From: William Brown <WilliamBrown@nortontechsupportteam.com
+Date: Sat, 02 Mar 2024 00:00:00
+Subject Line: Amazon Order Confirmation - Action Required if Not Recognized
+
+Dear Jamal Robinson,
+
+Thank you for your recent purchase on Amazon. We hope you enjoy your new product(s). 
+
+Here are the details:
+
+- Product: Apple MacBook Pro 16-inch
+- Shipping Address: Vanderbilt University, Nashville, TN 37235
+
+Estimated delivery date: Approximately 7-10 business days.
+
+If you did not make this purchase, please contact our support immediately by clicking [here](http://amzn.support.login.com).
+
+Kind Regards,
+Amazon Support
+___________________________________________________
+
+Subject Line: Unusual Activity Detected: Google Play Purchase Confirmation
+
+Hello Jamal Robinson,
+
+Your Google Play account was just used to purchase a "12 months sports game subscription" priced at $99.99. 
+
+If you made this purchase, please disregard this email. 
+
+However, if this purchase was made without your consent, immediately click [here](http://googleplay.support.login.com) to contact our support.
+
+Yours Sincerely,
+Google Play Support
+___________________________________________________
+
+Subject Line: Norton Anti-Virus Software Renewal Confirmation
+
+Dear valued customer Jamal Robinson,
+
+Thank you for renewing your Norton Antivirus Software subscription. 
+
+Total amount: $59.99
+Payment Method: Ending in 3456
+
+You will be billed annually unless you cancel the subscription.
+
+In case you did not authorize this transaction, please reach out to our support by clicking [here](http://norton.support.login.com).
+
+Best Regards,
+Norton Support Team

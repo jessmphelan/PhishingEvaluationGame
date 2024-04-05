@@ -1,0 +1,42 @@
+Subject: [Important] Amazon Order Confirmation #AMS-97410 for Personal Computer
+
+Dear Ahmed,
+
+This email is to confirm that your recent order on Amazon has been acknowledged, and will be shipped within the next 24 hours. Below are the details of your order:
+
+Item: Apple MacBook Pro 15" Laptop
+Price: $2,199.99
+Shipping Address: Vanderbilt University, Nashville, TN
+
+If you did not make this order or if the details are incorrect, please click here to contact our customer service immediately for assistance. Your quick response is important to assist with any fraud prevention or wrongful charge.
+
+Best regards,
+The Amazon Support Team
+
+---
+
+Subject: Urgent! Google Drive Storage Limit Exceeded
+
+Hi Ahmed,
+
+We noticed that your Google Drive storage limit has been exceeded. To prevent interruption of service, we have temporarily upgraded your storage quota to 100GB. 
+
+Please note, there has been a temporary charge of $19.99 applied to your registered payment method. If you wish to keep this upgrade, no further action is required.
+
+If this upgrade was done in error, or you want to downgrade your storage plan, please click here to contact our support immediately to rectify the issue and prevent further charges.
+
+Best regards,
+The Google Drive Support Team
+
+---
+
+Subject: Norton Antivirus Subscription Auto-Renewal confirmation.
+
+Hello Ahmed,
+
+We are pleased to inform you that your Norton Antivirus subscription has been successfully auto-renewed. You will be billed $79.99 for the upcoming year. 
+
+If you didn't authorize this transaction, or you feel like there is a discrepancy, please click here immediately to reach our support team who will address this for you promptly.
+
+Best regards,
+The Norton Support team

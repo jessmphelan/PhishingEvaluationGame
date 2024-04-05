@@ -1,0 +1,24 @@
+To: mia.davis@vanderbilt.edu
+From: VUIT <it@vanderbilt.edu>
+Date: Wed, 28 Feb 2024 00:00:00
+Subject: Important Reminder: Change Your Password Now!
+
+Greetings Vanderbilt University Students,
+
+This is the IT Department communicating an important reminder regarding your account security. It's crucial to periodically update your passwords for all your University related accounts to safeguard your personal information and resources.
+
+Here's a step-by-step guide on how to change your password without using any direct links:
+
+1. Visit the official Vanderbilt University website and navigate to the IT Support page.
+2. Choose the "Change Your Password" option.
+3. Follow the on-screen instructions which include inputting your username and your old password.
+4. Then, you will enter your new password. Remember, it should be strong with a mix of numbers, lower & uppercase letters, and special characters.
+5. Confirm the new password by entering it again in the confirmation box.
+6. Finally, click on the "Change Password" button. 
+
+Please remember that the IT Department will NEVER request your password via email or other communication platforms. Stay vigilant and feel free to reach out to IT Support if you encounter any difficulties or suspicious activity regarding your account.
+
+We thank you for your added attention to this critical matter and are here to support your academic endeavors whilst ensuring your digital safety.
+
+Best,
+Vanderbilt University IT Department

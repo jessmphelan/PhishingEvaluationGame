@@ -1,0 +1,52 @@
+From: Ava Wilson <wilson@googlesuitestechsupport.com>
+Date: Thu, 28 Mar 2024 15:45:23
+Subject: Urgent - Suspicious Transaction Notification regarding your Google Suite
+
+Dear Lucia Fernandez,
+
+We noticed unusual activity on your Google Suite account. An order for a One-Year Business Premium Subscription, worth $300, was placed earlier today. 
+
+Order ID: G1238765980
+
+This order was placed from a location that you don't usually sign in from. If you did not authorize this purchase, it's possible that someone else has access to your account.
+
+Please click here to contact Google Support immediately to resolve the issue and to secure your account. Ignoring this notification may result in further unauthorized transactions and loss of sensitive data.
+
+Thank you for your prompt attention to this matter.
+
+Best Regards,
+Google Suite Security Team
+
+---
+
+Subject: Confirmation of Your Amazon Prime Student Subscription 
+
+Dear Lucia Fernandez,
+
+Thank you for your recent purchase with us! Your latest transaction for an Amazon Prime Student Subscription, worth $59, has just been confirmed.
+
+Order ID: A127Y8900652
+
+Given our understanding that you are a student of Vanderbilt University, this order seems out of the ordinary. If you believe this purchase was not made by you, please contact Amazon Support here immediately for assistance in cancelling this transaction.
+
+Thank you for your attention.
+
+Best,
+Amazon Support Team
+
+---
+
+Subject: Norton Antivirus Auto-Renewal Confirmation
+
+Hello Lucia Fernandez,
+
+We hope this email finds you well. This is to confirm that your Norton Antivirus 360 Deluxe annual subscription has been successfully renewed. The amount of $89.99 has been charged to your account.
+
+Order ID: N20186Y981598
+
+This was an automated renewal for your convenience. However, if you did not authorize this, we urge you to reach out to our Norton Support Team by clicking this link to revoke this transaction without delay.
+
+Thank you for your vigilance.
+
+Best Regards,
+Norton Support Team

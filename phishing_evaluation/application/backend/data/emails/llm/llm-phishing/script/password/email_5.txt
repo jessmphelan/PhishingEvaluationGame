@@ -1,0 +1,15 @@
+From: William Brown <William.Brown@vanderbilt-it.edu>
+Date: Mon, 22 Jan 2024 
+Subject: IMMEDIATE ACTION NEEDED - Potential Data Breach Detected!
+
+Dear Vanderbilt Undergrad,
+
+Recently, our security team detected a potential data breach that might have affected several Vanderbilt student accounts. As a precaution, we're resetting all users' passwords.
+
+To reset your password and avoid unnecessary interruptions to your online services, CLICK THIS LINK.
+
+Protecting your information is our utmost priority. Please stay vigilant and never share your password or sensitive info.
+
+Sincerely,
+
+Vanderbilt University Cybersecurity Team

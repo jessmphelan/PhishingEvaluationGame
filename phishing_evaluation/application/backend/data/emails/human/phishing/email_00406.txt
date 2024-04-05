@@ -1,0 +1,13 @@
+Source Link: https://it.brown.edu/alerts/read/critical-security-alert
+To: [NA]
+From: no-reply@accounts.google.com">no-reply@accounts.google.com
+Date: 2018-12-06
+Subject: Critical security alert
+Attachment: [NA]
+Body: 
+Sign-in attempt was blocked
+josiah_carberry%brown.edu@gtempaccount.com
+Someone just used your password to try to sign in to your account. Google blocked them, but you should check what happened.
+CHECK ACTIVITY [link begins: https://accounts.google.com/AccountChooser?Email=...]
+You received this email to let you know about important changes to your Google Account and services.
+© 2018 Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA

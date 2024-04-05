@@ -1,0 +1,36 @@
+To: mia.davis@vanderbilt.edu
+From: VUIT <it@vanderbilt.edu>
+Date: Fri, 22 Mar 2024 00:00:00
+Subject: Important Reminder: Password Updates are Essential for Your Online Security
+
+Dear Vanderbilt Community,
+
+We'd like to remind each one of you about a primary security practice - updating your password periodically. A robust and up-to-date password is not just a computerized gatekeeper but a critical defense against unauthorized access and potential data breaches.
+
+Here's a step-by-step guide to update your password:
+
+1. Navigate to our official Vanderbilt University IT webpage.
+2. Locate the "IT Services" menu and select "Password Management".
+3. Click on "Change my Password".
+4. You will need to enter your username and current password.
+5. Follow the prompt to enter a new password. Make sure to create a strong password by including a mix of upper case, lower case, numbers, and special symbols. Note, your new password cannot be identical to any of your last six passwords.
+6. Confirm your new password.
+7. Click "Save". 
+
+Please respect the password standard practices:
+
+- Do not share your password with anyone.
+- Regularly update your password every 60-90 days.
+- Refrain from using simple, guessable combinations.
+
+As an added step to secure your sensitive information, we highly recommend using our two-step authentication process, available on the same Password Management page.
+
+Your digital security is our utmost priority. Be proactive in updating your passwords periodically - it's a small effort that goes a long way in upholding your digital safety.
+
+For any issues or questions, please reach out to our IT Service Desk at it@vanderbilt.edu or call us at 615-343-4848.
+
+Stay safe. Stay secure.
+
+Best,
+IT Department
+Vanderbilt University

@@ -1,0 +1,68 @@
+From: Liam Martin <liammartin@googlesuitestechsupport.com>
+Date: Sat, 10 Feb 2024 00:00:00
+Subject: Unrecognized Amazon Payment Confirmation
+
+Dear Kai Jackson, 
+
+I hope this email finds you well. We are contacting you concerning a recent order that was placed and charged to your Amazon account.
+
+ORDER#: 321-A7396OCD1N
+PAYMENT METHOD: Visa Credit Card
+TOTAL AMOUNT: $475.00
+
+This order includes a package of various electronic devices and accessories that will be delivered to your registered address. 
+
+If you did not make this purchase, there might be unauthorized access on your account. Please confirm whether this transaction is yours by clicking on the link below to contact our Amazon support. 
+
+[Click here to contact Amazon Support]
+
+Please do so within 24 hours of receiving this email to prevent further transactions on your account.
+
+Kind Regards,
+Amazon Payment Team
+
+--
+
+Subject: Google Suite Subscription Renewal Notice 
+
+Dear Kai Jackson,
+
+Greetings from Google!
+
+We are reaching out to inform you that your Google Suite subscription will be auto-renewed soon. Here are the subscription details: 
+
+SUBSCRIPTION ID: GOOG-542317SG
+PAYMENT METHOD: MasterCard Debit Card
+TOTAL AMOUNT: $360.00/year
+
+Should you find any discrepancy or if you wish to discontinue this subscription, kindly click the link below to contact our Google Support.
+
+[Click here to contact Google Support]
+
+We highly recommend addressing the issue within the next 48 hours to avoid unnecessary charges. 
+
+Best regards,
+
+Google Accounts Team
+
+--
+
+Subject: Norton Anti-Virus Subscription Confirmation
+
+Dear Kai Jackson,
+
+We're reaching out to inform you that a Norton Total Security 3 year subscription has been billed to your account. 
+
+SUBSCRIPTION ID: NORT-9843ASJK
+PAYMENT METHOD: American Express Credit Card
+TOTAL AMOUNT: $260.00
+
+If you did not authorize this transaction, your account security might be at risk. To dispute this charge, please click below to reach Norton Support.
+
+[Click here to contact Norton Support]
+
+Please do so promptly to ensure your personal information remains secure.
+
+Kind regards,
+
+Norton Support Team
