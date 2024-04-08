@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 import { usePlayerID } from './playerID_context';
+
+import { OrderContext } from './ordercontext';
 
 
 const NCS6 = () => {
@@ -15,9 +18,17 @@ const NCS6 = () => {
 
   const { playerID } = usePlayerID();
 
+  const {order, firstTestCompleted, setFirstTestCompleted} = useContext(OrderContext); // Use the order from context
+
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+
+    // Check if any of the fields are empty
+    if (!NC1 || !NC2 || !NC3 || !NC4 || !NC5 || !NC6) {
+      alert('Please fill in all fields before submitting.');
+      return; // Stop the function from proceeding further if any field is empty
+    }
 
     const responses = { NC1, NC2, NC3, NC4, NC5, NC6 };
 
@@ -41,8 +52,15 @@ const NCS6 = () => {
       if (!response.ok) {
         throw new Error('Failed to save NCS6 responses');
       }
-
-      navigate("/bigfive");
+      
+      // Determine navigation based on completion
+      if (!firstTestCompleted) {
+        setFirstTestCompleted(true); // Mark the first test as completed
+        console.log("Order:", order, "First Test Completed:", firstTestCompleted);
+        navigate("/second"); // Navigate to the second test
+      } else {
+        navigate("/email_evaluation"); // Navigate to the next step after completing the second test
+      }
     } catch (error) {
       console.error("Error saving NCS6 responses:", error);
      

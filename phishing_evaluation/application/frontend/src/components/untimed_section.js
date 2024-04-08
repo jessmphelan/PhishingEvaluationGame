@@ -51,6 +51,12 @@ const UntimedSection = () => {
   };
 
   const handleNextEmail = () => {
+
+    if (userResponse.userTextResponse.trim().length === 0) {
+      alert('Please write at least one to two sentences explaining the reasoning behind your selection.');
+      return; // Prevent moving forward if the check fails
+    }
+
     const payload = {
       playerID: playerID, 
       emailId: currentEmail.email_id, 
@@ -88,6 +94,16 @@ const UntimedSection = () => {
       return newProgress;
       console.log(newProgress);
     });
+
+    // setProgress((oldProgress) => {
+    //   const increment = 100 / 3; // One third of the progress
+    //   // Calculate new progress and round to two decimal places
+    //   let newProgress = oldProgress + increment;
+    //   // Round to two decimal places
+    //   newProgress = Math.round(newProgress * 100) % 100;
+    //   return newProgress > 100 ? 100 : newProgress;
+    // });
+   
   };
 
   return (
@@ -132,7 +148,7 @@ const UntimedSection = () => {
                 //style={{width: '300px'}}
                 //style={{width: '100%', height: '96px', padding: '10px'}}
                 style={{width: '800px', padding: '10px'}} 
-                placeholder= "Please input your explanation or reasoning here"
+                placeholder="Please write one to two sentences explaining the reasoning behind your selection"
             />
         </div>
       </div>

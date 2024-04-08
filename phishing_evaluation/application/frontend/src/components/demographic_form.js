@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 
 import { usePlayerID } from './playerID_context';
 
+import { useOrder } from './ordercontext';
+
 
 const DemographicForm = () => {
   const [age, setAge] = useState('');
@@ -12,6 +14,8 @@ const DemographicForm = () => {
   const [confidence, setConfidence] = useState('');
 
   const { playerID, setPlayerID } = usePlayerID();
+
+  const {order} = useOrder();
 
   const navigate = useNavigate();
   // const handleSubmit = (event) => {
@@ -23,6 +27,13 @@ const DemographicForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+
+    // Check if any of the required fields are empty
+    if (!age || !year || !major || !language || !confidence) {
+      // Alert the user to fill all fields
+      alert('Please fill in all fields before submitting.');
+      return; // Stop the function from proceeding further
+    }
 
     const payload = {
       playerID, 
@@ -36,7 +47,7 @@ const DemographicForm = () => {
     console.log(payload)
 
     try {
-      const response = await fetch('http://127.0.0.1:5000/api/save_demographic', { // Use your actual endpoint
+      const response = await fetch('http://127.0.0.1:5000/api/save_demographic', { 
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -48,8 +59,13 @@ const DemographicForm = () => {
         throw new Error('Failed to save demographic information');
       }
 
-
-      navigate("/ncs6");
+      if (order === 'bigfive') {
+        navigate("/first");
+      } else {
+        navigate("/second");
+      }
+      //navigate(`/${order}`);
+      //navigate("/ncs6");
     } catch (error) {
       console.error("Error saving demographic information:", error);
     }
