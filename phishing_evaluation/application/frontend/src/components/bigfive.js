@@ -96,11 +96,37 @@ const BigFive = () => {
     return (
         <div className='app-container'>
             <h1>Phishing Email Evaluation</h1>
-            <form onSubmit={handleSubmit}>
+            {/* <form onSubmit={handleSubmit}>
                 {statements.map((statement, index) => (
                     <div key={index}>
                         <label>
                             I see myself as someone who {statement}
+                            <select
+                                name={`q${index + 1}`}
+                                value={responses[`q${index + 1}`]}
+                                onChange={handleChange}
+                            >
+                                <option value="">Select...</option>
+                                <option value="1">Disagree strongly</option>
+                                <option value="2">Disagree a little</option>
+                                <option value="3">Neither agree nor disagree</option>
+                                <option value="4">Agree a little</option>
+                                <option value="5">Agree strongly</option>
+                            </select>
+                        </label>
+                    </div>
+                ))}
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form> */}
+            
+            <form onSubmit={handleSubmit}>
+            <p>I see myself as someone who...</p>
+                {statements.map((statement, index) => (
+                    <div key={index}>
+                        <label>
+                            ...{statement}.
                             <select
                                 name={`q${index + 1}`}
                                 value={responses[`q${index + 1}`]}
