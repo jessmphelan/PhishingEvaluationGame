@@ -10,6 +10,19 @@
   /*width: 100%;*/
 }
 
+@media (max-width: 768px) {
+  .app-container {
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 1.5rem; // smaller font size for h1 on mobile
+  }
+
+  // Other responsive styles here
+}
+
+
 
 html, body {
   /* background-image: url('/public/images/image2.jpg');
