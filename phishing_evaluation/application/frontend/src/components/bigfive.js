@@ -16,7 +16,7 @@ const BigFive = () => {
     });
     const navigate = useNavigate();
 
-    const {order, firstTestCompleted, setFirstTestCompleted} = useContext(OrderContext); // Use the order from context
+    const {order, firstTestCompleted, setFirstTestCompleted} = useContext(OrderContext); 
 
     const { playerID } = usePlayerID(); // Use the playerID from context
 
@@ -71,7 +71,7 @@ const BigFive = () => {
                 console.log("Order:", order, "First Test Completed:", firstTestCompleted);
                 navigate("/second"); // Navigate to the second test
             } else {
-                navigate("/email_evaluation"); // Navigate to the next step after completing the second test
+                navigate("/instructionalgif"); // Navigate to the next step after completing the second test
             }
         } catch (error) {
             console.error("Error saving BigFive responses:", error);

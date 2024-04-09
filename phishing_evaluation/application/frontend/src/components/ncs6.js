@@ -59,7 +59,7 @@ const NCS6 = () => {
         console.log("Order:", order, "First Test Completed:", firstTestCompleted);
         navigate("/second"); // Navigate to the second test
       } else {
-        navigate("/email_evaluation"); // Navigate to the next step after completing the second test
+        navigate("/instructionalgif"); // Navigate to the next step after completing the second test
       }
     } catch (error) {
       console.error("Error saving NCS6 responses:", error);
