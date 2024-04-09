@@ -127,17 +127,16 @@ const UntimedSection = () => {
       </div>
       <div className="evaluation-section">
          <div className="form-group">
-            <label>Email Type:</label>
-            <select 
-              value={userResponse.type} 
-              aria-label="Select Email Type" 
-              onChange={e => handleResponse('type', e.target.value)}
-            >
-              <option value="">Select...</option>
-              <option value="Phishing Email">Phishing Email</option>
-              <option value="Real Email">Real Email</option>
-            </select>
-
+          <label>Email Type:</label>
+              <select 
+                value={userResponse.type} 
+                aria-label="Select Email Type" 
+                onChange={e => handleResponse('type', e.target.value)}
+              >
+                <option value="">Select...</option>
+                <option value="Phishing Email">Phishing Email</option>
+                <option value="Real Email">Real Email</option>
+              </select>            
         </div>
         <div className="form-group">
             <textarea 
@@ -146,14 +145,15 @@ const UntimedSection = () => {
                 onChange={e => handleResponse('userTextResponse', e.target.value)}
                 rows="6" // Adjust the number of rows as needed to change the height
                 //style={{width: '300px'}}
-                //style={{width: '100%', height: '96px', padding: '10px'}}
-                style={{width: '800px', padding: '10px'}} 
+                style={{width: '100%', height: '96px', padding: '10px'}}
+                //style={{width: '800px', padding: '10px'}} 
                 placeholder="Please write one to two sentences explaining the reasoning behind your selection"
             />
-        </div>
+        </div> 
       </div>
       <button className="startEvaluationButton" aria-label="Next Email" onClick={handleNextEmail}>Next Email</button>
     </div>
+    
   </div>
   );
 };
