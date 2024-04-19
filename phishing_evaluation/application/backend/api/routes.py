@@ -28,10 +28,11 @@ def init_routes(app, mongo):
         mongo.db.emails.insert_one(email)
         return "Email added!"
     
-    @app.route('/add_llm_emails')
+    #Email 0-24
+    @app.route('/add_llm_benign_emails')
     @cross_origin()
     def add_llm_emails():
-        directory_path = Path(__file__).parent.parent / 'data' / 'emails'/ 'llm' / 'kaggle'
+        directory_path = Path(__file__).parent.parent / 'data' / 'emails'/ 'llm' / 'benign-curated'
 
         email_id_counter = 1
 
@@ -55,10 +56,39 @@ def init_routes(app, mongo):
 
         return f"{email_id_counter - 1} emails added!"
     
+    #Email 25-48
+    @app.route('/add_llm_malign_emails')
+    @cross_origin()
+    def add_llm_emails():
+        directory_path = Path(__file__).parent.parent / 'data' / 'emails'/ 'llm' / 'phishing-curated'
+
+        email_id_counter = 1
+
+        for file in directory_path.iterdir():
+            if file.is_file():
+                with open(file, 'r') as f:
+                    content = f.read()
+
+                email = {
+                    "email_id": f"email_{email_id_counter}",
+                    "content": content,
+                    "type": "Phishing Email",
+                    "source": "LLM"
+                }
+
+                
+                mongo.db.emails.insert_one(email)
+
+            
+                email_id_counter += 1
+
+        return f"{email_id_counter - 1} emails added!"
+    
+    #Email 49-74
     @app.route('/add_benign_emails')
     @cross_origin()
     def add_benign_emails():
-        directory_path = Path(__file__).parent.parent / 'data' / 'emails'/ 'human' / 'benign'
+        directory_path = Path(__file__).parent.parent / 'data' / 'emails'/ 'human' / 'benign-curated'
 
         email_id_counter = 26
 
@@ -82,10 +112,12 @@ def init_routes(app, mongo):
 
         return f"{email_id_counter - 1} emails added!"
     
+
+    #Email 75-98
     @app.route('/add_phishing_emails')
     @cross_origin()
     def add_phishing_emails():
-        directory_path = Path(__file__).parent.parent / 'data' / 'emails'/ 'human' / 'phishing'
+        directory_path = Path(__file__).parent.parent / 'data' / 'emails'/ 'human' / 'phishing-curated'
 
         email_id_counter = 40
 

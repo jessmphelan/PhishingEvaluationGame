@@ -1,0 +1,37 @@
+To: carlos.s.garcia@vanderbilt.edu
+From:	VUIT Communications
+Date:	Wednesday, November 17, 2021 4:51 PM
+Subject:	Action Required: Password Change by 5pm Thursday Nov 18th
+
+Follow Up Flag:	Follow up
+Flag Status:	Flagged
+
+VUIT Security has detected an active phishing campaign targeting the VU community, which 
+potentially compromised your account.  To ensure your account remains safe and to prevent 
+unauthorized use, you are required to change your e-password before 5:00pm, tomorrow 
+Thursday November 18, 2021.
+ 
+If you do not change your e-password by this time, your e-password will expire and you will be 
+prevented from accessing VU applications except for the site to change your e-password. Once your 
+e-password is changed, you will be granted access again.
+
+To change your password, visit the IT website at it.vanderbilt.edu and click the "Change my 
+Password" button. Follow the on-screen prompts to update.  If you need assistance, you can reach 
+VUIT by calling 615-343-9999 Monday - Thursday 7:00 am - 11:00 pm, Friday 7:00 am - 6:00 pm, and 
+Sunday from 2:00 pm - 11:00 pm. You can also submit a help request at help.it.vanderbilt.edu.
+ 
+Thank you for your help addressing this security issue.
+
+Note: If you are unsure if an email is malicious, please report it to VUIT Information Security by one 
+of two methods:
+*	Using the Outlook email client, select the “Report Message” button in the ribbon at the top, 
+then select “Phishing.”
+*	If you are not using Outlook, or the button is not available, please send the phishing email 
+(as an attachment) to phishing@vanderbilt.edu. 
+If you have any questions, email them to phishing@vanderbilt.edu, or contact VUIT Support at 615-
+343-9999.
+Thanks,
+VUIT
+
+
+

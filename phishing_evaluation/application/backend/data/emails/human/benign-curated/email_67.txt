@@ -1,0 +1,25 @@
+To: sophia.y.chen@vanderbilt.edu
+From: service@paypal.com
+Subject: Receipt for Your Payment to Patreon
+Date: February 1, 2024
+
+Hello, Sophia Chen
+You paid $45.50 USD to Patreon
+
+Transaction ID
+0WN88702TD615981G	Transaction date
+February 1, 2024
+Merchant
+Patreon
+noreply@patreon.com
++1 0000000000
+Patreon* Membership
+Qty: 1	$45.50
+Subtotal	$45.50
+Total	$45.50 USD
+Paid Patreon with
+J.P. MORGAN CHASE BANK, N.A. x-xxxx	$45.50 USD
+Your payment was sent from sophia.y.chen@vanderbilt.edu
+View or Manage Payment[link]
+Issues with this transaction?[link]
+

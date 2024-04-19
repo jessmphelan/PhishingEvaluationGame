@@ -1,0 +1,58 @@
+From:	VUMC IT - ExpeditionTech - Microsoft MFA <expeditiontech@vumc.org>
+Sent:	Tuesday, November 30, 2021 10:00 AM
+To:	Leilani.Kealoha@vanderbilt.edu
+Subject:	ACTION REQUIRED: Group 13 Enrollment in Microsoft Multi-Factor Authentication 
+(MFA)
+
+ 
+
+
+
+Hello VUMC Colleague,
+As announced in MyVUMC, Vanderbilt Enterprise Cybersecurity is accelerating the deployment of Microsoft Multi-Factor Authentication (MFA) as a standard for accessing 
+Microsoft services. Currently, you do not regularly access Microsoft services, but we recommend you complete the enrollment process. You will continue to use MobilePASS+ 
+MFA for access to things such as C2HR and Box. Eventually, Microsoft MFA will be our primary MFA solution.
+
+What you need to do
+
+1.	Pre-register by December 15th using the enrollment instructions on the MFA webstite at https://www.vumc.org/enterprisecybersecurity/mfa-vumc#MSMFA
+2.	Check your Microsoft MFA enrollment status here.
+ Why you need to do it
+*	The Healthcare industry has historically been a top 10 target for identity attacks, and this has increased with the onset of the COVID-19 pandemic. 
+*	In July of 2021 alone, there were millions of intrusion attempts on VUMC’s network and perimeter, including phishing and malware, and even ransomware attacks.
+Key benefits of Microsoft MFA
+*	Easy and intuitive enrollment process.
+*	Self-service capabilities when you register a second authentication method: No more Help Desk calls when you get a new phone!
+*	Multiple sign-in options.
+*	Download and activate the MFA app from your smartphone or tablet.
+*	When you sign in, a notification is pushed to the app. Just tap to launch and authenticate.
+Assistance and Support
+*	For more information on Multi-Factor Authentication at VUMC see our MFA website at https://www.vumc.org/enterprisecybersecurity/mfa-vumc. 
+*	If you experience an issue during the enrollment process, call the VUMC IT Help Desk at 615-343-HELP (4357) and select option 5.
+*	Find out more about the ExpeditionTech initiative on our Program Navigator at https://www.vumc.org/it/Expedition-Tech.
+*	See the MyVUMC announcement here: 
+https://myvumc.app.vumc.org/webapps/MyVUMC/myvumc/index.html?article=26701&utm_source=August+19%2C+2021&utm_medium=email&utm_campaign=MyVUMC 
+
+The ExpeditionTech Team | Information Technology and Enterprise Cybersecurity | Vanderbilt University Medical Center
+
+Send suspicious emails to phishing@vumc.org
+
+
+
+
+
+www.vumc.org/it/expedition-tech
+
+
+View this email online.
+3401 West End Avenue Suite 560W 
+Nashville, TN | 37202 US 
+This email was sent to Leilani.Kealoha@vanderbilt.edu.  
+To continue receiving our emails, add us to your address book. 
+
+
+
+
+ 
+
+

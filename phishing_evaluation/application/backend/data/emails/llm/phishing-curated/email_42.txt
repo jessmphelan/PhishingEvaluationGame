@@ -1,0 +1,19 @@
+To: Lina Kozlova <lina.kozlova@vanderbilt.edu>
+From: Ava Wilson <wilson@googlesuitestechsupport.com>
+Date: Thu, 28 Mar 2024 15:45:23
+Subject: Urgent - Suspicious Transaction Notification regarding your Google Suite
+
+Dear Lina Kozlova,
+
+We noticed unusual activity on your Google Suite account. An order for a One-Year Business Premium Subscription, worth $300, was placed earlier today. 
+
+Order ID: G1238765980
+
+This order was placed from a location that you don't usually sign in from. If you did not authorize this purchase, it's possible that someone else has access to your account.
+
+Please click here to contact Google Support immediately to resolve the issue and to secure your account. http://googlesupport-verifyaccount.com/ Ignoring this notification may result in further unauthorized transactions and loss of sensitive data.
+
+Thank you for your prompt attention to this matter.
+
+Best Regards,
+Google Suite Security Team

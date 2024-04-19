@@ -1,0 +1,15 @@
+To: Carlos Garcia <carlos.s.garcia@vanderbilt.edu>
+From: dep.mail@icloud.com">dep.mail@icloud.com
+Date: Thu, 23 February 2024 5:49
+Subject: alert for Apple Device Enrollment Partners
+ 
+Date: Thursday, February 23, 2024 at 5:49 AM
+To: Carlos Garcia <carlos.s.garcia@vanderbilt.edu>
+Subject: Enrollment Completed
+Your enrolment has been approved
+You are now the Administrator for your AppleCare Partnership.
+You can create your Managed Apple ID and start setting up Apple Business Manager.
+More information have at www.mdmemailserver.com
+
+Best regards,
+Apple DEP Internal

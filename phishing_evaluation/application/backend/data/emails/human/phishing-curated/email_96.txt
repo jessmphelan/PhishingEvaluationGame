@@ -1,0 +1,24 @@
+To: Yuto Nakamura <yuto.nakamura@vanderbilt.edu>
+From: do-not-reply-support@lastpass.com">do-not-reply-support@lastpass.com
+Date: Tue, 14 March 16:20
+Subject: LastPass Notification: Activate your LastPass account
+
+Activate your LastPass account
+
+Hello,
+Your company LastPass invitation is still waiting.
+Here's how to activate LastPass:
+Open your original invitation from LastPass. It should be in this same inbox, or maybe in Junk/Spam.
+
+Copy your activation key from the original invitation.
+Click Get Started below.
+http://lastpass-account-activation-setup.com
+On the "Account activation" page, paste or type your activation code from the activation email.
+Follow the on-screen instructions from there and you'll be ready to go!
+
+Thanks,
+Your LastPass Administrator
+ 
+© LastPass. All Rights Reserved.
+This mandatory email was sent to yuto.nakamura@vanderbilt.edu: email opt-out settings have been ignored.
+IP address of the person who requested this email: 192.168.0.1

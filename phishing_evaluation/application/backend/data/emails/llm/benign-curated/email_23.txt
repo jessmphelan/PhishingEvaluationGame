@@ -1,0 +1,24 @@
+To: Vanderbilt University Students <michael.c.smith@vanderbilt.edu>
+From: IT Support Team <ITSupport@vanderbilt.edu>
+Date: Thursday, April 5, 2024
+Subject: Action Required: Update Your Security Preferences
+
+Dear Vanderbilt Student,
+
+In our continuous effort to safeguard our community against cyber threats, Vanderbilt University has introduced new security enhancements. To fully benefit from these improvements and tailor them to your needs, we ask for your participation in updating your security preferences.
+
+Please visit our Security Update Portal to review and adjust your security settings:
+
+Update Your Security Settings(https:/Vanderbilt.edu/itsupport/security)
+
+This step is crucial for ensuring that the security measures we've put in place align with your usage and provide you with the most effective protection. The process is straightforward and takes just a few minutes to complete.
+
+Your active engagement is vital for the success of these security initiatives. By updating your preferences, you contribute to a safer digital environment for yourself and the entire Vanderbilt community.
+
+For guidance on how to complete this update or if you encounter any issues, please do not hesitate to contact our support team at ITSupport@vanderbilt.edu. We're here to assist you every step of the way.
+
+Thank you for your prompt attention to this matter and for playing an active role in our community's digital safety.
+
+Warm regards,
+
+Vanderbilt University IT Support Team

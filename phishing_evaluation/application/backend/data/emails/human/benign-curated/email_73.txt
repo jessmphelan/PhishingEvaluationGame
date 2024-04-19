@@ -1,0 +1,37 @@
+From:	SerVU
+Sent:	Thursday, December 2, 2021 1:53 PM
+To:	eduardo.r.lopez@vanderbilt.edu
+Subject:	Incident 777624 has been created
+
+ 
+ 
+Incident 777624
+ 
+Description:
+Password reset
+ 
+Request for User Compromise: eduardo.r.lopez@vanderbilt.edu
+This user has a compromised password. We have not disabled the account. Can 
+someone help them with the password reset process?
+ 
+ 
+We are pleased to inform you that your Incident has been added to SerVU, 
+Vanderbilt University's IT ticketing system.  Your ticket ID is 777624.  Please 
+retain this number for reference purposes.  One of our representatives will 
+contact you soon.
+ 
+Customer: Eduardo Lopez
+Phone: +1 (615) 555-7472 [phone number changed for privacy]
+Email: eduardo.r.lopez@vanderbilt.edu
+ 
+ 
+To check status or to make additional comments, please reply to this email or 
+click the following link: Incident 777624
+ 
+SerVU - Incident Management
+ 
+ 
+ 
+{CMI: MCID1085076}
+ 
+ 

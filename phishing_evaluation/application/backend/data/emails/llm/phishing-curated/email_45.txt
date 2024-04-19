@@ -1,0 +1,21 @@
+To: Mike Smith <michael.c.smith@vanderbilt.edu>
+From: James Williams <James.Williams@vanderbilt-it.edu>
+Date: Mon, 08 Jan 2024 08:12
+Subject: URGENT: Immediate Action Required for Vanderbilt University Email Account Security!
+
+Dear Alex Johnson,
+
+We hope this email finds you well during this busy semester at Vanderbilt University. We are writing to inform you of a recent security incident that has affected a large number of our student email accounts, possibly including yours.
+
+Due to this, we are implementing mandatory password resets for all student email accounts, specifically focusing on out-of-state students and Greek Life participants. This move will ensure the future safety of your account credentials and personal data.
+
+Kindly click on the link below to reset your password immediately:
+
+[LINK]http://vanderbilt-security-update-reset.com
+
+A prompt response is highly encouraged to prevent any further account vulnerabilities. Please note, failure to rectify this within 48 hours might result in temporary suspension of your email account to prevent potential unauthorized accesses.
+
+We appreciate your cooperation.
+
+Yours sincerely,
+Vanderbilt University IT Team

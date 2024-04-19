@@ -1,0 +1,22 @@
+To: Lina Kozlova <lina.kozlova@vanderbilt.edu>
+From: Ava Wilson <support@google.com>
+Date: Thu, 28 Mar 2024 15:45:23
+Subject: Important: Review and Manage Your Google Suite Subscription Preferences
+
+Dear Lina Kozlova,
+
+I hope this message finds you well. As part of our commitment to providing a secure and personalized experience to our users, we periodically review account activities, including subscription options and preferences for Google Suite accounts.
+
+We would like to remind you of the importance of regularly checking your subscription settings to ensure they meet your current needs and security standards. This is especially crucial if you have multiple users or manage sensitive information within your Google Suite account.
+
+To review or update your subscription preferences, please visit your Google Suite account settings directly through the official Google Suite admin console. Here's how you can access it:
+
+[Visit Google Suite Admin Console](https://admin.google.com)
+
+Remember, maintaining up-to-date settings is key to enjoying the full benefits of Google Suite without interruptions. If you have any questions or need further assistance, our Google Suite Support Team is here to help. Please reach out to us through the Help Center or the support options available in your admin console.
+
+Thank you for choosing Google Suite. We're dedicated to helping you achieve more with our services.
+
+Best Regards,
+Ava Wilson
+Google Suite Support Team

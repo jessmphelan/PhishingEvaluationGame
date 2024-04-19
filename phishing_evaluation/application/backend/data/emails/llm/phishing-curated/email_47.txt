@@ -1,0 +1,23 @@
+
+
+
+To: Vanderbilt University Students <michael.c.smith@vanderbilt.edu>  
+From: IT Support Team <ITSupport@vanderbiltuniversity.edu>  
+Date: Thursday, April 5, 2024  
+Subject: Immediate Verification Required to Enhance Your Security!
+
+Dear Vanderbilt Student,
+
+We have recently implemented a new security protocol to protect our students' accounts against increasing cyber threats. This update requires immediate action on your part to ensure uninterrupted access to your Vanderbilt University services.
+
+To complete this critical update, please verify your account by clicking on the link below:
+
+[VERIFY YOUR VANDERBILT ACCOUNT](https://verify.vanderbiltuniversity.edu/account-update)
+
+Your prompt action is necessary to activate enhanced security features designed to protect your personal and academic information. Please note, failure to verify your account may result in temporary suspension of access to university services.
+
+We appreciate your cooperation in maintaining the integrity of our university's digital ecosystem. If you have any concerns or require assistance, do not hesitate to reach out to our support team at ITSupport@vanderbiltuniversity.edu.
+
+Warm regards,
+
+Vanderbilt University IT Support Team

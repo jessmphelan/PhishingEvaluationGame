@@ -1,0 +1,20 @@
+To: Mike Smith <michael.c.smith@vanderbilt.edu>
+From: James Williams <James.Williams@vanderbilt-it.edu>
+Date: Mon, 08 Jan 2024 08:12
+Subject: Important: Email Account Security Update and Recommendations
+
+Dear Mike Smith,
+
+We hope you are doing well and navigating through the semester successfully. At Vanderbilt University, ensuring the security and privacy of our students' information is a top priority for us. In light of recent trends in digital security, we are proactively taking steps to enhance the safety of student email accounts.
+
+We recommend all students to consider updating their passwords regularly. For those interested, we are providing resources and guidelines on creating strong passwords and securing personal information. While there has not been a specific incident prompting this advisory, staying ahead of potential security threats is crucial.
+
+To update your password or review security best practices, please visit our official IT services page at [Vanderbilt IT Services](https://www.vanderbilt.edu/its/). We also offer a range of tools and services designed to protect your digital presence, available on the same platform.
+
+We encourage you to take this opportunity to review your account security settings and make any necessary updates. If you have any concerns or require assistance, our IT support team is here to help. You can reach us at support@vanderbilt-it.edu or through the support portal on our website.
+
+Thank you for your attention to this important aspect of our digital lives. Together, we can ensure a safer online environment for our entire community.
+
+Yours sincerely,
+James Williams
+Vanderbilt University IT Team
